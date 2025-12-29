@@ -1,45 +1,545 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="PrincipalMessage.aspx.cs" Inherits="CenturyRayonSchool.PrincipalMessage" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-     <link href='https://fonts.googleapis.com/css2?family=Quintessential&display=swap' rel='stylesheet'/>
-    <style>
-        .head1{
-            font-size:xxx-large;
-    font-weight: 600;
-    margin-top: 115px;
-    color:#74cee4;
-    font-family:Quintessential;
-    text-align:center;
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+    CodeBehind="PrincipalMessage.aspx.cs" Inherits="CenturyRayonSchool.PrincipalMessage" %>
+    <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        }
-    </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="nicdark_section" style="background-color:#9d95951a">
-    <header id="header" class="header" >
-        <!--  <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                   
-                </div> 
-            </div> 
-        </div>  -->
-        <div class="head1">From the H.M's Desk</div><br />
-    </header> 
-        <div class="container-fluid">
-            <div class="card principalmsg" style="width: 50rem; margin:auto; border-width:1px;border-style:ridge;border-color:#b2a787bd; border-radius: 25px;  padding-left:30px; padding-right:30px">
-              
-                <div class="card body">
-                    <p class="card-text" style="text-align:match-parent; color:ActiveCaption; font-family:sans-serif; font-size:large; line-height: 28px; margin-left:12px">
-                       I take massive pleasure to welcome you to the website of Century Rayon school. The school website is most collaborative for parents and students. It furnishes a lot of necessary details and facts. We, at Century Rayon School, think that every child is specific and require an open schooling atmosphere. Where a child is allowed to believe, reflects to ask doubts without hesitation. Here learning is acquired knowledge through study or by experiences. If a child cannot learn the way we teach, we must teach in a way the child can learn. We get ready your children by furnishing them with more chances to learn problem-solving skills with compassion. As parents, you want the best for your child. We ensure you that they are given the right knowledge to face future challenges. Education is a shared commitment between dedicated teachers, motivated students and enthusiastic parents with high expectations. We thank you for taking the time to visit the school website. Contact us in case you like to know more about our school. We are bound to keep on improving our devices to provide quality education to your children.
-                    </p>
-                    <p class="card-text" style="text-align:match-parent; color:ActiveCaption; font-family:sans-serif; font-size:large; line-height: 28px; margin-left:12px">
-                        Kind Regards................... <br>
-                    <label style="font-weight: bold;">H.M.....</label> 
-                    </p>
+        <style>
+            :root {
+                --maroon-primary: #7c3848;
+                --maroon-light: #a24c58;
+                --maroon-dark: #5a2a34;
+                --gold: #ffc107;
+                --gold-light: #ffd54f;
+                --text-dark: #2c3e50;
+                --text-light: #6c757d;
+                --bg-light: #f5f3ee;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Poppins', sans-serif;
+                background: linear-gradient(135deg, #f5f3ee 0%, #e8e4db 100%);
+                overflow-x: hidden;
+            }
+
+            /* Hero Section */
+            .principal-hero {
+                background: linear-gradient(135deg, var(--maroon-primary) 0%, var(--maroon-dark) 50%, var(--maroon-light) 100%);
+                padding: 100px 0 120px;
+                margin-top: 70px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .principal-hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background:
+                    radial-gradient(circle at 80% 30%, rgba(255, 193, 7, 0.15) 0%, transparent 50%),
+                    radial-gradient(circle at 20% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+                pointer-events: none;
+            }
+
+            .principal-hero::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                right: 0;
+                height: 120px;
+                background: linear-gradient(to top, #f5f3ee, transparent);
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 2;
+                text-align: center;
+            }
+
+            .hero-icon {
+                width: 100px;
+                height: 100px;
+                background: linear-gradient(135deg, var(--gold), var(--gold-light));
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 30px;
+                box-shadow: 0 20px 50px rgba(255, 193, 7, 0.4);
+                animation: float 3s ease-in-out infinite;
+            }
+
+            .hero-icon i {
+                font-size: 3rem;
+                color: var(--maroon-dark);
+            }
+
+            .hero-title {
+                font-family: 'Playfair Display', serif;
+                font-size: 3.8rem;
+                font-weight: 800;
+                color: white;
+                margin-bottom: 1rem;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+                animation: fadeInDown 0.8s ease-out;
+            }
+
+            .hero-subtitle {
+                font-family: 'Merriweather', serif;
+                font-size: 1.3rem;
+                color: rgba(255, 255, 255, 0.95);
+                font-weight: 300;
+                font-style: italic;
+                animation: fadeInUp 0.8s ease-out 0.2s both;
+            }
+
+            /* Main Content */
+            .content-section {
+                padding: 0px 0 80px;
+                margin-top: -80px;
+                position: relative;
+                z-index: 10;
+            }
+
+            /* Message Card */
+            .message-card {
+                background: white;
+                border-radius: 30px;
+                padding: 60px 70px;
+                box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15);
+                position: relative;
+                overflow: hidden;
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.6s ease;
+            }
+
+            .message-card.animate-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* Decorative Quote Mark */
+            .quote-mark {
+                position: absolute;
+                top: 30px;
+                left: 50px;
+                font-size: 10rem;
+                color: rgba(124, 56, 72, 0.05);
+                font-family: 'Playfair Display', serif;
+                line-height: 1;
+                pointer-events: none;
+            }
+
+            .quote-mark-end {
+                position: absolute;
+                bottom: 30px;
+                right: 50px;
+                font-size: 10rem;
+                color: rgba(124, 56, 72, 0.05);
+                font-family: 'Playfair Display', serif;
+                line-height: 1;
+                pointer-events: none;
+                transform: rotate(180deg);
+            }
+
+            /* Top Accent Bar */
+            .message-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 8px;
+                background: linear-gradient(90deg, var(--maroon-primary), var(--gold), var(--maroon-light), var(--gold), var(--maroon-primary));
+                background-size: 200% 100%;
+                animation: gradientShift 3s ease-in-out infinite;
+            }
+
+            @keyframes gradientShift {
+
+                0%,
+                100% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+            }
+
+            /* Message Header */
+            .message-header {
+                text-align: center;
+                margin-bottom: 40px;
+                position: relative;
+            }
+
+            .message-title {
+                font-family: 'Playfair Display', serif;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--maroon-primary);
+                margin-bottom: 15px;
+            }
+
+            .title-underline {
+                width: 100px;
+                height: 4px;
+                background: linear-gradient(90deg, transparent, var(--gold), transparent);
+                margin: 0 auto;
+            }
+
+            /* Message Body */
+            .message-body {
+                position: relative;
+                z-index: 2;
+            }
+
+            .message-text {
+                font-family: 'Merriweather', serif;
+                font-size: 1.15rem;
+                line-height: 2;
+                color: var(--text-dark);
+                margin-bottom: 30px;
+                text-align: justify;
+                text-indent: 50px;
+            }
+
+            .message-text::first-letter {
+                font-size: 4em;
+                font-weight: 700;
+                color: var(--maroon-primary);
+                float: left;
+                line-height: 0.9;
+                margin: 10px 15px 0 0;
+                font-family: 'Playfair Display', serif;
+            }
+
+            /* Signature Section */
+            .signature-section {
+                margin-top: 50px;
+                padding-top: 30px;
+                border-top: 2px solid #f0f0f0;
+                text-align: right;
+            }
+
+            .wishes-text {
+                font-family: 'Merriweather', serif;
+                font-size: 1.1rem;
+                font-style: italic;
+                color: var(--text-light);
+                margin-bottom: 20px;
+            }
+
+            .signature-box {
+                display: inline-flex;
+                align-items: center;
+                gap: 20px;
+                background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+                padding: 25px 35px;
+                border-radius: 15px;
+                border-left: 5px solid var(--gold);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .signature-icon {
+                width: 60px;
+                height: 60px;
+                background: linear-gradient(135deg, var(--maroon-primary), var(--maroon-light));
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            .signature-icon i {
+                font-size: 1.8rem;
+                color: white;
+            }
+
+            .signature-details {
+                text-align: left;
+            }
+
+            .signature-role {
+                font-family: 'Playfair Display', serif;
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: var(--maroon-primary);
+                margin: 0;
+            }
+
+            .signature-org {
+                font-size: 0.95rem;
+                color: var(--text-light);
+                margin: 5px 0 0 0;
+            }
+
+            /* Animations */
+            @keyframes fadeInDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-40px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-20px);
+                }
+            }
+
+            /* Hover Effect */
+            .message-card:hover {
+                box-shadow: 0 30px 90px rgba(124, 56, 72, 0.2);
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .hero-title {
+                    font-size: 2.8rem;
+                }
+
+                .principal-hero {
+                    padding: 80px 0 100px;
+                }
+
+                .message-card {
+                    padding: 40px 35px;
+                    border-radius: 20px;
+                }
+
+                .message-title {
+                    font-size: 2rem;
+                }
+
+                .message-text {
+                    font-size: 1.05rem;
+                    line-height: 1.8;
+                    text-indent: 30px;
+                }
+
+                .quote-mark,
+                .quote-mark-end {
+                    font-size: 6rem;
+                }
+
+                .signature-section {
+                    text-align: center;
+                }
+
+                .signature-box {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .signature-details {
+                    text-align: center;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .hero-title {
+                    font-size: 2.2rem;
+                }
+
+                .hero-subtitle {
+                    font-size: 1.1rem;
+                }
+
+                .message-card {
+                    padding: 30px 25px;
+                }
+
+                .quote-mark,
+                .quote-mark-end {
+                    display: none;
+                }
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .main-content {
+                position: relative;
+                z-index: 1;
+            }
+
+            @media print {
+                .principal-hero {
+                    display: none;
+                }
+
+                .message-card {
+                    box-shadow: none;
+                }
+
+                .content-section {
+                    margin-top: 0;
+                }
+            }
+        </style>
+    </asp:Content>
+
+    <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+        <!-- Hero Section -->
+        <section class="principal-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h1 class="hero-title">From the Head Mistress's Desk</h1>
+                    <p class="hero-subtitle">"Education is not the filling of a pail, but the lighting of a fire."</p>
                 </div>
-                <div class="nicdark_space10"></div>
             </div>
-        </div>
- <div class="nicdark_space10"></div>
         </section>
-</asp:Content>
+
+        <!-- Main Content Section -->
+        <section class="content-section main-content">
+            <div class="container">
+
+                <!-- Message Card -->
+                <div class="message-card">
+                    <!-- Decorative Quote Marks -->
+                    <div class="quote-mark">"</div>
+                    <div class="quote-mark-end">"</div>
+
+                    <!-- Message Header -->
+                    <div class="message-header">
+                        <h2 class="message-title">A Message of Guidance</h2>
+                        <div class="title-underline"></div>
+                    </div>
+
+                    <!-- Message Body -->
+                    <div class="message-body">
+                        <div class="message-text">
+                            I take massive pleasure to welcome you to the website of Century Rayon school. The school
+                            website is most collaborative for parents and students. It furnishes a lot of necessary
+                            details and facts. We, at Century Rayon School, think that every child is specific and
+                            require an open schooling atmosphere where a child is allowed to believe, reflects to ask
+                            doubts without hesitation.
+                        </div>
+
+                        <div class="message-text">
+                            Here learning is acquired knowledge through study or by experiences. If a child cannot learn
+                            the way we teach, we must teach in a way the child can learn. We get ready your children by
+                            furnishing them with more chances to learn problem-solving skills with compassion. As
+                            parents, you want the best for your child. We ensure you that they are given the right
+                            knowledge to face future challenges.
+                        </div>
+
+                        <div class="message-text">
+                            Education is a shared commitment between dedicated teachers, motivated students and
+                            enthusiastic parents with high expectations. We thank you for taking the time to visit the
+                            school website. Contact us in case you like to know more about our school. We are bound to
+                            keep on improving our devices to provide quality education to your children.
+                        </div>
+
+                        <!-- Signature Section -->
+                        <div class="signature-section">
+                            <div class="wishes-text">Kind Regards...</div>
+                            <div class="signature-box">
+                                <div class="signature-icon">
+                                    <i class="fas fa-pen-fancy"></i>
+                                </div>
+                                <div class="signature-details">
+                                    <p class="signature-role">Head Mistress</p>
+                                    <p class="signature-org">Century Rayon High School</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="nicdark_space40"></div>
+
+        <!-- Animation Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.15
+                };
+
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate-in');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                const messageCard = document.querySelector('.message-card');
+                if (messageCard) {
+                    observer.observe(messageCard);
+                }
+
+                document.addEventListener('mousemove', function (e) {
+                    const card = document.querySelector('.message-card');
+                    if (!card) return;
+
+                    const rect = card.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) / rect.width - 0.5;
+                    const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+                    const quoteMarks = document.querySelectorAll('.quote-mark, .quote-mark-end');
+                    quoteMarks.forEach(function (mark) {
+                        const moveX = x * 20;
+                        const moveY = y * 20;
+                        mark.style.transform = mark.classList.contains('quote-mark-end')
+                            ? `translate(${moveX}px, ${moveY}px) rotate(180deg)`
+                            : `translate(${moveX}px, ${moveY}px)`;
+                    });
+                });
+            });
+        </script>
+
+    </asp:Content>

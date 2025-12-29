@@ -1,83 +1,78 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="Officehours.aspx.cs" Inherits="CenturyRayonSchool.Officehours" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css2?family=Quintessential&display=swap' rel='stylesheet'/>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+  CodeBehind="Officehours.aspx.cs" Inherits="CenturyRayonSchool.Officehours" %>
+  <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!-- Modern CSS -->
+    <link href="css/admin-modern.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+  </asp:Content>
 
+  <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
-    <link href="../css/fontawesome-all.css" rel="stylesheet"/>
+    <section class="admin-modern-section">
+      <!-- Hero Header -->
+      <div class="admin-hero-header">
+        <h1 class="admin-hero-title">Office Hours</h1>
+        <p class="admin-hero-subtitle">School Timing Information</p>
+      </div>
 
-    
-    <style>
-        .head1{
-            font-size:xxx-large;
-    font-weight: 600;
-    margin-top: 115px;
-    color:#74cee4;
-    font-family:Quintessential;
-    text-align:center;
+      <div class="admin-container">
 
-        }
+        <!-- Time Cards Container -->
+        <div class="time-cards-container">
 
-        h1 {
-    color: #333;
-    font: 700 2.75rem/3.375rem "Montserrat", sans-serif;
-}
-        h3 {
-    color: #333;
-    font: 700 1.625rem/2.125rem "Montserrat", sans-serif;
-}
-    </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-    <section class="nicdark_section" style="background-color:#9d95951a">
-       <header id="header" class="header" >
-       
-        <div class="head1">Office Hours</div><br />
-    </header> 
-    <%--<div id="register" class="form-1">--%>
-        <div class="container-fluid">
-           
-                <div class="card prayer-card" style="width: 50rem; margin:auto; border-width:1px;border-style:ridge;border-color:#b2a787bd; border-radius: 25px; padding-left:30px; padding-right:30px">
-                     
-                    <div class="card-body">
-                       
-                       
-                        <table class="table table-hover">
-                          <tbody>
-                            <tr>
-                              <th scope="row">1.</th>
-                              <td>Office Hours</td>
-                              <td>:</td>
-                              <td>10.30 a.m. to 5.30 p.m.</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2.</th>
-                              <td>Morning Shift</td>
-                              <td>:</td>
-                              <td>7.00 a.m. to 12.35 p.m.</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3.</th>
-                              <td>Afternoon Shift</td>
-                              <td>:</td>
-                              <td>12.30 p.m. to 6.05 p.m.</td>
-                            </tr>
-                          </tbody>
-                        </table>
+          <!-- Office Hours Card -->
+          <div class="time-card office">
+            <div class="time-card-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="time-card-label">Office Hours</div>
+            <div class="time-card-time">10:30 AM - 5:30 PM</div>
+          </div>
 
+          <!-- Morning Shift Card -->
+          <div class="time-card morning">
+            <div class="time-card-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="time-card-label">Morning Shift</div>
+            <div class="time-card-time">7:00 AM - 12:35 PM</div>
+          </div>
 
-                    </div>
+          <!-- Afternoon Shift Card -->
+          <div class="time-card afternoon">
+            <div class="time-card-icon">
+              <i class="fas fa-moon"></i>
+            </div>
+            <div class="time-card-label">Afternoon Shift</div>
+            <div class="time-card-time">12:30 PM - 6:05 PM</div>
+          </div>
 
-                </div>
-                
         </div>
-    <%--</div>--%>
-    <div class="nicdark_space20"></div>
- </section>
 
+        <!-- Additional Information Card -->
+        <div class="admin-card" style="animation-delay: 0.4s;">
+          <h2 class="admin-card-title">
+            <i class="fas fa-info-circle"></i>
+            Important Information
+          </h2>
 
+          <div class="info-item">
+            <i class="fas fa-check-circle"></i>
+            <span>The school operates in two shifts to accommodate all students effectively</span>
+          </div>
 
+          <div class="info-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Office remains open throughout the day for administrative assistance</span>
+          </div>
 
-</asp:Content>
+          <div class="info-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Parents are requested to visit during office hours for any inquiries</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </asp:Content>

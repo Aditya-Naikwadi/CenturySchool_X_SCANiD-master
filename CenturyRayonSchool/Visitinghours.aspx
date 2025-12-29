@@ -1,101 +1,120 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="Visitinghours.aspx.cs" Inherits="CenturyRayonSchool.Visitinghours" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css2?family=Quintessential&display=swap' rel='stylesheet'/>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+  CodeBehind="Visitinghours.aspx.cs" Inherits="CenturyRayonSchool.Visitinghours" %>
+  <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!-- Modern CSS -->
+    <link href="css/admin-modern.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+  </asp:Content>
 
+  <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
-    <link href="../css/fontawesome-all.css" rel="stylesheet"/>
+    <section class="admin-modern-section">
+      <!-- Hero Header -->
+      <div class="admin-hero-header">
+        <h1 class="admin-hero-title">Visiting Hours</h1>
+        <p class="admin-hero-subtitle">For Parents & Guardians</p>
+      </div>
 
-    
-    <style>
-        .head1{
-            font-size:xxx-large;
-    font-weight: 600;
-    margin-top: 115px;
-    color:#74cee4;
-    font-family:Quintessential;
-    text-align:center;
+      <div class="admin-container">
 
-        }
+        <!-- Info Sections Container -->
+        <div class="info-sections-container">
 
-        h1 {
-    color: #333;
-    font: 700 2.75rem/3.375rem "Montserrat", sans-serif;
-}
-        h3 {
-    color: #333;
-    font: 700 1.625rem/2.125rem "Montserrat", sans-serif;
-}
-    </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="nicdark_section" style="background-color:#9d95951a">
-       <header id="header" class="header" >
-       
-        <div class="head1">Visiting Hours</div><br />
-    </header> 
-    <%--<div id="register" class="form-1">--%>
-        <div class="container-fluid">
-           
-                <div class="card prayer-card" style="width: 50rem; margin:auto; border-width:1px;border-style:ridge;border-color:#b2a787bd; border-radius: 25px; padding-left:30px; padding-right:30px">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center; color: black; font-family: sans-serif; font-weight: bold; font-size: large"><u>FOR PARENTS</u></h5>
-                        <br />
-                        <table class="table table-hover table-borderless">
-                          <tbody>
-                            <tr>
-                              <td>Office Hours: 10.30 a.m. to 1.00 p.m. only.</td>
-                            </tr>
-                            <tr>
-                              <td>Fees : Fees to be deposited in UCO Bank, as per the date given by school authority.</td>
-                            </tr>
-                               <tr>
-                              <td>H.M.	: H.M. will be available between 11.00 a.m. to 12.30 p.m. only on Saturday.</td>
-                              </tr>
-                               <tr>
-                              <td>Supervisors & Teachers : 20 Minutes after school hours.</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <hr />
-                         <table class="table table-hover table-borderless">
-                          <tbody>
-                            <tr>
-                              <td colspan="3">Parents should contact the class teachers regarding their wards on the last date of every month between the following timings.</td>
-                            </tr>
-                            <tr>
-                              
-                              <td>English Medium</td>
-                              <td>:</td>
-                              <td>10.00 a.m. to 11.00 a.m.</td>
-                            </tr>
+          <!-- Office Hours Section -->
+          <div class="info-section">
+            <div class="info-section-header">
+              <div class="info-section-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3 class="info-section-title">Office Hours for Parents</h3>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-calendar-check"></i>
+              <span><strong>Office Hours:</strong> 10:30 AM to 1:00 PM only</span>
+            </div>
+          </div>
 
-                              <tr>
-                              
-                              <td>Hindi/Marathi Medium</td>
-                              <td>:</td>
-                              <td>04.00 p.m. to 05.00 p.m.</td>
-                            </tr>
-                           
-                          </tbody>
-                        </table>
-                        <hr />
-                        <table class="table table-hover table-borderless">
-                          <tbody>
-                            <tr>
-                              <td>It is compulsory for parents to see the answer paper of their wards on open day.</td>
-                            </tr>
-                            
-                          </tbody>
-                        </table>
+          <!-- Fees Information Section -->
+          <div class="info-section">
+            <div class="info-section-header">
+              <div class="info-section-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <h3 class="info-section-title">Fees Payment</h3>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-university"></i>
+              <span><strong>Fees:</strong> Fees to be deposited in UCO Bank, as per the date given by school
+                authority</span>
+            </div>
+          </div>
 
+          <!-- H.M. Visiting Hours Section -->
+          <div class="info-section">
+            <div class="info-section-header">
+              <div class="info-section-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3 class="info-section-title">Head Master Availability</h3>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span><strong>H.M.:</strong> H.M. will be available between 11:00 AM to 12:30 PM only on Saturday</span>
+            </div>
+          </div>
 
-                    </div>
-                </div>
-                
+          <!-- Teachers & Supervisors Section -->
+          <div class="info-section">
+            <div class="info-section-header">
+              <div class="info-section-icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <h3 class="info-section-title">Supervisors & Teachers</h3>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <span><strong>Availability:</strong> 20 minutes after school hours</span>
+            </div>
+          </div>
+
+          <!-- Monthly Contact Timings Section -->
+          <div class="info-section">
+            <div class="info-section-header">
+              <div class="info-section-icon">
+                <i class="fas fa-calendar-week"></i>
+              </div>
+              <h3 class="info-section-title">Monthly Contact Timings</h3>
+            </div>
+            <p class="info-item">
+              <i class="fas fa-info-circle"></i>
+              <span>Parents should contact the class teachers regarding their wards on the last date of every month
+                between the following timings:</span>
+            </p>
+
+            <div class="timing-grid">
+              <div class="timing-item">
+                <span class="timing-label">English Medium</span>
+                <span class="timing-value">10:00 AM - 11:00 AM</span>
+              </div>
+              <div class="timing-item">
+                <span class="timing-label">Hindi/Marathi Medium</span>
+                <span class="timing-value">4:00 PM - 5:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Important Notice -->
+          <div class="highlight-box">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div class="highlight-box-content">
+              <strong>Important:</strong> It is compulsory for parents to see the answer paper of their wards on open
+              day.
+            </div>
+          </div>
+
         </div>
-    <%--</div>--%>
-    <div class="nicdark_space20"></div>
- </section>
-</asp:Content>
+
+      </div>
+    </section>
+
+  </asp:Content>
