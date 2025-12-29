@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="CenturyRayonSchool.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+  
+    <title>Dashboard</title>
+      <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet"/>
+
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="dashboard-main-wrapper">
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-blue fixed-top">
+                <a class="navbar-brand text-white text-center" href="Photogallery.aspx">Admin Dashboard </a>
+                <img src="centuryimages/centurylogopng.png" height="60" style="margin-left: 210px;" alt="">
+                <div class="mb-0 w-100 text-white ml-2">
+                    <h3 class="mb-0 ">Century Rayon High School, Shahad </h3>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-white navbar-right-top">
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link dropdown-toggle" aria-expanded="false">
+                        <span class="d-none text-white d-lg-inline-flex">
+                            <asp:Label Text="" runat="server" id="admin_username_lbl" CssClass="text-uppercase"/></span>
+                        </span>
+                        <img class="rounded-circle me-lg-2" src="centuryimages/centurylogopng.png" alt="" style="height: 40px;">
+                    </a>
+                </div>
+                <div class="nav-item ">
+                    <%--<a class="nav-link text-white" >Logout</a>--%>
+                   <asp:LinkButton class="nav-link text-white" ID="logoutanch" runat="server" OnClick="logoutanch_Click" CausesValidation="false">Logout</asp:LinkButton>
+                </div>
+            </ul>
+        </div>
+        </div>
+
+         <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list" style=" width: auto; height: 100%;">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+                            
+                             <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#menu_photogallery" aria-controls="menu_photogallery" id="item_photogallery"><i class="fa fa-fw fa-user-circle"></i>Photo Gallery</a>
+                                <div id="menu_photogallery" class="collapse submenu">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="photogallery.aspx" id="menu_add_photogallery">Add Photo Gallery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="ListPhotogallery.aspx" id="menu_view_photogallery">View Gallery List</a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a class="nav-link" href="#" id="A1"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#menu_studentcorner" aria-controls="menu_studentcorner" id="item_studentcorner"><i class="fa fa-fw fa-user-circle"></i>Student's Corner</a>
+                                <div id="menu_studentcorner" class="collapse submenu">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Admin_News.aspx" id="menu_addnews">Upload Notice(s)</a>
+                                            <a class="nav-link" href="ListNews.aspx" id="menu_viewnews"> View Notice List</a>                                        
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Admin_Event.aspx" id="menu_addevents">Upload New Upcoming Event(s)</a>
+                                            <a class="nav-link" href="ListEvents.aspx" id="menu_viewevents"> View Event List</a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a class="nav-link" href="#" id="A2"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+        <div class="dashboard-wrapper">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+            <%--<footer class="page-footer font-small blue" >
+                <div class="footer-copyright text-center py-3">&#169;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Copyright:
+                    <a href="#"> ScanId Systems Pvt Ltd</a>
+                </div>
+            </footer>--%>
+
+    </div>
+
+    
+
+     
+    
+
+
+
+
+
+   </form>
+</body>
+</html>

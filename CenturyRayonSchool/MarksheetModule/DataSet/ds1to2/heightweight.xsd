@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="heightweight" targetNamespace="http://tempuri.org/heightweight.xsd" xmlns:mstns="http://tempuri.org/heightweight.xsd" xmlns="http://tempuri.org/heightweight.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="heightweight" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="heightweight" msprop:Generator_UserDSName="heightweight">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="height" msprop:Generator_TableClassName="heightDataTable" msprop:Generator_TableVarName="tableheight" msprop:Generator_RowChangedName="heightRowChanged" msprop:Generator_TablePropName="height" msprop:Generator_RowDeletingName="heightRowDeleting" msprop:Generator_RowChangingName="heightRowChanging" msprop:Generator_RowEvHandlerName="heightRowChangeEventHandler" msprop:Generator_RowDeletedName="heightRowDeleted" msprop:Generator_RowClassName="heightRow" msprop:Generator_UserTableName="height" msprop:Generator_RowEvArgName="heightRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0031_stTerm" msprop:Generator_ColumnVarNameInTable="column1stTerm" msprop:Generator_ColumnPropNameInRow="_1stTerm" msprop:Generator_ColumnPropNameInTable="_1stTermColumn" msprop:Generator_UserColumnName="1stTerm" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_ndTerm" msprop:Generator_ColumnVarNameInTable="column2ndTerm" msprop:Generator_ColumnPropNameInRow="_2ndTerm" msprop:Generator_ColumnPropNameInTable="_2ndTermColumn" msprop:Generator_UserColumnName="2ndTerm" type="xs:string" minOccurs="0" />
+              <xs:element name="column1" msprop:Generator_ColumnVarNameInTable="columncolumn1" msprop:Generator_ColumnPropNameInRow="column1" msprop:Generator_ColumnPropNameInTable="column1Column" msprop:Generator_UserColumnName="column1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

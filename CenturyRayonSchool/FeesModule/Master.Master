@@ -1,0 +1,288 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="CenturyRayonSchool.FeesModule.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Module</title>
+    <link rel="icon" href="../img/centurylogopng.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Resources/adminlte/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="Resources/adminlte/select2.min.css" />
+
+    <%-- Scripts --%>
+    <script src="Resources/adminlte/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="Resources/adminlte/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <!-- Bootstrap 4 -->
+    <script src="Resources/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Resources/adminlte/dist/js/adminlte.js"></script>
+    <script src="Resources/adminlte/select2.min.js"></script>
+    <%--<script src="Resources/adminlte/dist/js/demo.js"></script>--%>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+    
+
+    <link rel="stylesheet" href="Resources/style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="display:none;">
+            <asp:Label Text="-1" runat="server" id="lblusercode"/> <%--this is important--%>
+        </div>
+        <nav class="main-header navbar navbar-expand navbar-new navbar-white navbar-light menuflex">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item padding-mobile">
+                    <a class="nav-link mt-1" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item center-mobile">
+                    <div class="d-flex align-items-center ml-2">
+                        <div>
+                            <img src="../img/centurylogopng.png" class="h-50" alt="">
+                        </div>
+                        <div class="page-title-box ml-2">
+                            <h3 class="mb-0">Century Rayon High School, Shahad</h3>
+                        </div>
+                    </div>
+
+                </li>
+               
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle dropdown-log" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <asp:Label runat="server" Text="Insiya Kanchwala" ID="lblmasterusername" CssClass="uppercase"></asp:Label>
+                        <img src="../img/male.png" class="img-circle img-user" alt="User Image">
+                    </a>
+                    <div class="dropdown-menu dropdown-log">
+                        <a class="dropdown-item" href="#">
+                            
+                            <button class="btn btn-outline-info" runat="server" id="btnlogout" onserverclick="btnlogout_ServerClick"> <i class="fas fa-sign-out-alt"></i> Logout</button>
+                           <%-- <span class="text-sm">Logout</span>--%>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-bg elevation-4" id="hide-menu">
+            <a class="nav-link menu-mobile" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            <a href="#" class="brand-link module-name border-bottom">
+                <div class="brand-text text-center">
+                    Fees<br />
+                    Management System
+                </div>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column nav-side" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="Dashboard.aspx" class="nav-link" id="menu_dash">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+
+                          <% if (username=="adminfees")
+                                     { %> 
+                         <li class="nav-item" id="FeesSettings">
+                            <a href="#" class="nav-link" id="FeesSettingsItem">
+                                <i class="fas fa-key nav-icon"></i>
+                                <p>
+                                   Settings
+                                <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                              <ul class="nav nav-treeview">
+                                   <li class="nav-item">
+                                    <a href="ActiveAcademicYear.aspx" class="nav-link" id="menu_activeacademic">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Activate Academic Year</p>
+                                    </a>
+                                </li>
+
+                              </ul>
+                             <ul class="nav nav-treeview">
+                                   <li class="nav-item">
+                                    <a href="ActivationOfAdmissionPage.aspx" class="nav-link" id="menu_activedate">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Activate Admission Page</p>
+                                    </a>
+                                </li>
+
+                              </ul>
+                         </li>
+                          <% } %> 
+                         
+                       
+
+
+
+
+                        <li class="nav-item" id="FeesModuleSection">
+                            <a href="#" class="nav-link" id="FeesModuleItem">
+                                <i class="fas fa-rupee-sign nav-icon"></i>
+                                <p>
+                                    Fee Modules
+                                <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+
+                                 <% if (checkStatus("feeheader",listmodules))
+                                     { %> 
+                                <li class="nav-item">
+                                    <a href="FeesHeader.aspx" class="nav-link" id="menu_feesHeader">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Fee Headers</p>
+                                    </a>
+                                </li>
+                                <% } %> 
+
+                                <% if (checkStatus("feeparticular",listmodules))
+                                    { %>
+                                <li class="nav-item">
+                                    <a href="FeesParticulars.aspx" class="nav-link" id="menu_feesParticular">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Fee Particulars</p>
+                                    </a>
+                                </li>
+                                 <% } %> 
+
+                                <% if (checkStatus("feescollection",listmodules))
+                                    { %>
+                                <li class="nav-item">
+                                    <a href="FeesCollection.aspx" class="nav-link" id="menu_feesCollection">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Fee Collections</p>
+                                    </a>
+                                </li>
+                                  <% } %> 
+
+                                 <% if (checkStatus("feescancel",listmodules))
+                                    { %>
+                                <li class="nav-item">
+                                    <a href="FeeCancel.aspx" class="nav-link" id="menu_feecancel">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Fee Cancellation</p>
+                                    </a>
+                                </li>
+
+                                 <li class="nav-item">
+                                    <a href="BulkRollNO.aspx" class="nav-link" id="menu_roll">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>RollNo Update</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="GRNoUpdation.aspx" class="nav-link" id="menu_grno">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>GRNO Update</p>
+                                    </a>
+                                </li>
+                                  <% } %> 
+
+                            </ul>
+                        </li>
+
+                         <% if (checkStatus("feereports",listmodules))
+                        { %>
+
+                              <li class="nav-item" id="FeesReportSection">
+                                <a href="#" class="nav-link" id="FeesReportItem">
+                                    <i class="fa fa-file-invoice nav-icon"></i>
+                                    <p>
+                                        Fee Reports
+                                    <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                   <ul class="nav nav-treeview">
+
+                                        <li class="nav-item">
+                                            <a href="FeesCollectionReport.aspx" class="nav-link" id="menu_feecollectreport">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p> Fees Collection Report</p>
+                                            </a>
+                                        </li>
+
+                                       <li class="nav-item">
+                                            <a href="FeesOutstandingReport.aspx" class="nav-link" id="menu_feeoutstandingreport">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p> Fees Outstanding Report</p>
+                                            </a>
+                                        </li>
+                                        
+
+                                       
+                                   </ul>
+                             </li>
+                            <% } %> 
+                         <% if (checkStatus("admissionmodule",listmodules))
+                        { %>
+                        <li class="nav-item">
+                                    <a href="../AdmissionModule/AdmissionForm.aspx" class="nav-link" id="menu_admission">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Admission Module</p>
+                                    </a>
+                                </li>
+
+                     <% } %> 
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <div class="content-wrapper">
+
+            <section class="content" style="padding-top: 15px;">
+                <div class="container-fluid">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <script>
+                        //$('#hide-menu').click(function (e) {
+                        //    e.stopPropagation();
+                        //});
+                    </script>
+                </div>
+            </section>
+
+        </div>
+    </form>
+</body>
+</html>

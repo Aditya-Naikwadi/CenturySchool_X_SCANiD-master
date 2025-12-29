@@ -1,0 +1,164 @@
+2025-06-18 11:11:10,683 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCReport.aspx.cs:line 138
+ClientConnectionId:2980acdf-6f98-4102-b94c-13b1a494317c
+Error Number:241,State:1,Class:16
+2025-06-18 11:30:54,146 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate)
+ClientConnectionId:5b1f12d6-a9ba-4a85-be32-5b490e527b80
+Error Number:241,State:1,Class:16
+2025-06-18 11:31:14,791 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate)
+ClientConnectionId:5b1f12d6-a9ba-4a85-be32-5b490e527b80
+Error Number:241,State:1,Class:16
+2025-06-18 11:31:41,485 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate)
+ClientConnectionId:5b1f12d6-a9ba-4a85-be32-5b490e527b80
+Error Number:241,State:1,Class:16
+2025-06-18 11:38:51,058 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'cast', expected 'AS'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCReport.aspx.cs:line 138
+ClientConnectionId:6bfab382-2690-4932-9b15-4a9491b7a267
+Error Number:1035,State:10,Class:15
+2025-06-18 17:50:19,699 INFO ErrorsLog - uploadStudent process started
+2025-06-18 17:55:38,853 INFO ErrorsLog - Column :11 Row Count :2 2018-09-17 Student:Error in Date
+2025-06-18 17:57:56,814 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:01:10,103 INFO ErrorsLog - Column :11 Row Count :2 2018-09-17 Student:Error in Date
+2025-06-18 18:01:10,111 INFO ErrorsLog - Column :48 Row Count :2 01-01-1901 Student:Error in Date
+2025-06-18 18:01:10,119 INFO ErrorsLog - Column :55 Row Count :2 2024-06-15 Student:Error in Date
+2025-06-18 18:01:10,125 INFO ErrorsLog - Column :65 Row Count :2 2024-07-25 Student:Error in Date
+2025-06-18 18:01:17,494 INFO ErrorsLog - uploadStudent process completed
+2025-06-18 18:01:55,753 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:01:56,511 INFO ErrorsLog - Column :11 Row Count :2 2018-09-17 Student:Error in Date
+2025-06-18 18:01:56,518 INFO ErrorsLog - Column :48 Row Count :2 01-01-1901 Student:Error in Date
+2025-06-18 18:01:56,525 INFO ErrorsLog - Column :55 Row Count :2 2024-06-15 Student:Error in Date
+2025-06-18 18:01:56,532 INFO ErrorsLog - Column :65 Row Count :2 2024-07-25 Student:Error in Date
+2025-06-18 18:02:20,006 INFO ErrorsLog - uploadStudent process completed
+2025-06-18 18:02:45,289 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:03:01,065 INFO ErrorsLog - Column :11 Row Count :2 2018-09-17 Student:Error in Date
+2025-06-18 18:03:01,072 INFO ErrorsLog - Column :48 Row Count :2 01-01-1901 Student:Error in Date
+2025-06-18 18:03:01,080 INFO ErrorsLog - Column :55 Row Count :2 2024-06-15 Student:Error in Date
+2025-06-18 18:03:06,812 INFO ErrorsLog - Column :65 Row Count :2 2024-07-25 Student:Error in Date
+2025-06-18 18:04:06,307 INFO ErrorsLog - uploadStudent process completed
+2025-06-18 18:04:20,436 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:07:02,803 INFO ErrorsLog - Column :66 Row Count :2 /1 Student:Error in RFID
+2025-06-18 18:08:51,766 INFO ErrorsLog - uploadStudent process completed
+2025-06-18 18:09:03,802 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:12:40,064 ERROR ErrorsLog - StudentList.uploadStudent
+System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UC_StudentMaster_UniqueCombination'. Cannot insert duplicate key in object 'dbo.studentmaster'. The duplicate key value is (II, 21878, 2025/2026).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CenturyRayonSchool.FeesModule.StudentList.uploadStudent(String filepath) in D:\CenturyRayonWebsite\CenturyRayonSchool\FeesModule\StudentList.aspx.cs:line 806
+ClientConnectionId:b2d33eb8-e686-4c97-8cd2-3c07a3dd3e06
+Error Number:2627,State:1,Class:14
+2025-06-18 18:14:55,045 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:15:10,480 INFO ErrorsLog - uploadStudent process completed
+2025-06-18 18:19:19,016 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:19:31,023 ERROR ErrorsLog - StudentList.uploadStudent
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '4651'.
+The label 'ID' has already been declared. Label names must be unique within a query batch or stored procedure.
+Unclosed quotation mark after the character string ',');'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CenturyRayonSchool.FeesModule.StudentList.uploadStudent(String filepath) in D:\CenturyRayonWebsite\CenturyRayonSchool\FeesModule\StudentList.aspx.cs:line 806
+ClientConnectionId:b2d33eb8-e686-4c97-8cd2-3c07a3dd3e06
+Error Number:102,State:1,Class:15
+2025-06-18 18:20:19,324 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:20:20,215 ERROR ErrorsLog - StudentList.uploadStudent
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '4651'.
+The label 'ID' has already been declared. Label names must be unique within a query batch or stored procedure.
+Unclosed quotation mark after the character string ',');'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CenturyRayonSchool.FeesModule.StudentList.uploadStudent(String filepath) in D:\CenturyRayonWebsite\CenturyRayonSchool\FeesModule\StudentList.aspx.cs:line 806
+ClientConnectionId:c09a4985-1ad6-483a-b02e-2b0cc1a843df
+Error Number:102,State:1,Class:15
+2025-06-18 18:22:42,271 INFO ErrorsLog - uploadStudent process started
+2025-06-18 18:22:50,393 INFO ErrorsLog - uploadStudent process completed

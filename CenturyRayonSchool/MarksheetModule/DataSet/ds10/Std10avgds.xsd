@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Std10avgds" targetNamespace="http://tempuri.org/Std9avgds.xsd" xmlns:mstns="http://tempuri.org/Std9avgds.xsd" xmlns="http://tempuri.org/Std9avgds.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Std10avgds" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Std10avgds" msprop:Generator_UserDSName="Std10avgds">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="std10avg" msprop:Generator_TableClassName="std10avgDataTable" msprop:Generator_TableVarName="tablestd10avg" msprop:Generator_RowChangedName="std10avgRowChanged" msprop:Generator_TablePropName="std10avg" msprop:Generator_RowDeletingName="std10avgRowDeleting" msprop:Generator_RowChangingName="std10avgRowChanging" msprop:Generator_RowEvHandlerName="std10avgRowChangeEventHandler" msprop:Generator_RowDeletedName="std10avgRowDeleted" msprop:Generator_RowClassName="std10avgRow" msprop:Generator_UserTableName="std10avg" msprop:Generator_RowEvArgName="std10avgRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Rollno" msprop:Generator_ColumnVarNameInTable="columnRollno" msprop:Generator_ColumnPropNameInRow="Rollno" msprop:Generator_ColumnPropNameInTable="RollnoColumn" msprop:Generator_UserColumnName="Rollno" type="xs:string" minOccurs="0" />
+              <xs:element name="StudentName" msprop:Generator_ColumnVarNameInTable="columnStudentName" msprop:Generator_ColumnPropNameInRow="StudentName" msprop:Generator_ColumnPropNameInTable="StudentNameColumn" msprop:Generator_UserColumnName="StudentName" type="xs:string" minOccurs="0" />
+              <xs:element name="Grno" msprop:Generator_ColumnVarNameInTable="columnGrno" msprop:Generator_ColumnPropNameInRow="Grno" msprop:Generator_ColumnPropNameInTable="GrnoColumn" msprop:Generator_UserColumnName="Grno" type="xs:string" minOccurs="0" />
+              <xs:element name="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" type="xs:string" minOccurs="0" />
+              <xs:element name="Sem1Total" msprop:Generator_ColumnVarNameInTable="columnSem1Total" msprop:Generator_ColumnPropNameInRow="Sem1Total" msprop:Generator_ColumnPropNameInTable="Sem1TotalColumn" msprop:Generator_UserColumnName="Sem1Total" type="xs:string" minOccurs="0" />
+              <xs:element name="Sem1Outof" msprop:Generator_ColumnVarNameInTable="columnSem1Outof" msprop:Generator_ColumnPropNameInRow="Sem1Outof" msprop:Generator_ColumnPropNameInTable="Sem1OutofColumn" msprop:Generator_UserColumnName="Sem1Outof" type="xs:string" minOccurs="0" />
+              <xs:element name="Sem2Total" msprop:Generator_ColumnVarNameInTable="columnSem2Total" msprop:Generator_ColumnPropNameInRow="Sem2Total" msprop:Generator_ColumnPropNameInTable="Sem2TotalColumn" msprop:Generator_UserColumnName="Sem2Total" type="xs:string" minOccurs="0" />
+              <xs:element name="Sem2Outof" msprop:Generator_ColumnVarNameInTable="columnSem2Outof" msprop:Generator_ColumnPropNameInRow="Sem2Outof" msprop:Generator_ColumnPropNameInTable="Sem2OutofColumn" msprop:Generator_UserColumnName="Sem2Outof" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="outof" msprop:Generator_ColumnVarNameInTable="columnoutof" msprop:Generator_ColumnPropNameInRow="outof" msprop:Generator_ColumnPropNameInTable="outofColumn" msprop:Generator_UserColumnName="outof" type="xs:string" minOccurs="0" />
+              <xs:element name="Gracemarks" msprop:Generator_ColumnVarNameInTable="columnGracemarks" msprop:Generator_ColumnPropNameInRow="Gracemarks" msprop:Generator_ColumnPropNameInTable="GracemarksColumn" msprop:Generator_UserColumnName="Gracemarks" type="xs:string" minOccurs="0" />
+              <xs:element name="AvgTotal" msprop:Generator_ColumnVarNameInTable="columnAvgTotal" msprop:Generator_ColumnPropNameInRow="AvgTotal" msprop:Generator_ColumnPropNameInTable="AvgTotalColumn" msprop:Generator_UserColumnName="AvgTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="AvgOutof" msprop:Generator_ColumnVarNameInTable="columnAvgOutof" msprop:Generator_ColumnPropNameInRow="AvgOutof" msprop:Generator_ColumnPropNameInTable="AvgOutofColumn" msprop:Generator_UserColumnName="AvgOutof" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+              <xs:element name="PassPromotedDetained" msprop:Generator_ColumnVarNameInTable="columnPassPromotedDetained" msprop:Generator_ColumnPropNameInRow="PassPromotedDetained" msprop:Generator_ColumnPropNameInTable="PassPromotedDetainedColumn" msprop:Generator_UserColumnName="PassPromotedDetained" type="xs:string" minOccurs="0" />
+              <xs:element name="NewDiv" msprop:Generator_ColumnVarNameInTable="columnNewDiv" msprop:Generator_ColumnPropNameInRow="NewDiv" msprop:Generator_ColumnPropNameInTable="NewDivColumn" msprop:Generator_UserColumnName="NewDiv" type="xs:string" minOccurs="0" />
+              <xs:element name="Reexam" msprop:Generator_ColumnVarNameInTable="columnReexam" msprop:Generator_ColumnPropNameInRow="Reexam" msprop:Generator_ColumnPropNameInTable="ReexamColumn" msprop:Generator_UserColumnName="Reexam" type="xs:string" minOccurs="0" />
+              <xs:element name="remarks" msprop:Generator_ColumnVarNameInTable="columnremarks" msprop:Generator_ColumnPropNameInRow="remarks" msprop:Generator_ColumnPropNameInTable="remarksColumn" msprop:Generator_UserColumnName="remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

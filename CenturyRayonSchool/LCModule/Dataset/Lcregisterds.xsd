@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Lcregisterds" targetNamespace="http://tempuri.org/Lcregisterds.xsd" xmlns:mstns="http://tempuri.org/Lcregisterds.xsd" xmlns="http://tempuri.org/Lcregisterds.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Lcregisterds" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Lcregisterds" msprop:Generator_UserDSName="Lcregisterds">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="lcregister" msprop:Generator_TableClassName="lcregisterDataTable" msprop:Generator_TableVarName="tablelcregister" msprop:Generator_TablePropName="lcregister" msprop:Generator_RowDeletingName="lcregisterRowDeleting" msprop:Generator_RowChangingName="lcregisterRowChanging" msprop:Generator_RowEvHandlerName="lcregisterRowChangeEventHandler" msprop:Generator_RowDeletedName="lcregisterRowDeleted" msprop:Generator_UserTableName="lcregister" msprop:Generator_RowChangedName="lcregisterRowChanged" msprop:Generator_RowEvArgName="lcregisterRowChangeEvent" msprop:Generator_RowClassName="lcregisterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="std" msprop:Generator_ColumnVarNameInTable="columnstd" msprop:Generator_ColumnPropNameInRow="std" msprop:Generator_ColumnPropNameInTable="stdColumn" msprop:Generator_UserColumnName="std" type="xs:string" minOccurs="0" />
+              <xs:element name="div" msprop:Generator_ColumnVarNameInTable="columndiv" msprop:Generator_ColumnPropNameInRow="div" msprop:Generator_ColumnPropNameInTable="divColumn" msprop:Generator_UserColumnName="div" type="xs:string" minOccurs="0" />
+              <xs:element name="grno" msprop:Generator_ColumnVarNameInTable="columngrno" msprop:Generator_ColumnPropNameInRow="grno" msprop:Generator_ColumnPropNameInTable="grnoColumn" msprop:Generator_UserColumnName="grno" type="xs:string" minOccurs="0" />
+              <xs:element name="studentname" msprop:Generator_ColumnVarNameInTable="columnstudentname" msprop:Generator_ColumnPropNameInRow="studentname" msprop:Generator_ColumnPropNameInTable="studentnameColumn" msprop:Generator_UserColumnName="studentname" type="xs:string" minOccurs="0" />
+              <xs:element name="lcdate" msprop:Generator_ColumnVarNameInTable="columnlcdate" msprop:Generator_ColumnPropNameInRow="lcdate" msprop:Generator_ColumnPropNameInTable="lcdateColumn" msprop:Generator_UserColumnName="lcdate" type="xs:string" minOccurs="0" />
+              <xs:element name="lcno" msprop:Generator_ColumnVarNameInTable="columnlcno" msprop:Generator_ColumnPropNameInRow="lcno" msprop:Generator_ColumnPropNameInTable="lcnoColumn" msprop:Generator_UserColumnName="lcno" type="xs:string" minOccurs="0" />
+              <xs:element name="lcremark" msprop:Generator_ColumnVarNameInTable="columnlcremark" msprop:Generator_ColumnPropNameInRow="lcremark" msprop:Generator_ColumnPropNameInTable="lcremarkColumn" msprop:Generator_UserColumnName="lcremark" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

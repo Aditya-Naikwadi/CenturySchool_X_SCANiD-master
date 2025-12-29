@@ -1,0 +1,842 @@
+2025-05-27 10:34:46,127 ERROR ErrorsLog - BulkLCGenrate.Button1_ServerClick
+System.IndexOutOfRangeException: apaar_id
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at CenturyRayonSchool.LCModule.BulkLCGenerate.Button1_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\BulkLCGenerate.aspx.cs:line 287
+2025-05-27 10:35:50,420 ERROR ErrorsLog - BulkLCGenrate.Button1_ServerClick
+System.IndexOutOfRangeException: apaar_id
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at CenturyRayonSchool.LCModule.BulkLCGenerate.Button1_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\BulkLCGenerate.aspx.cs:line 287
+2025-05-27 10:36:15,318 ERROR ErrorsLog - BulkLCGenrate.Button1_ServerClick
+System.IndexOutOfRangeException: apaar_id
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at CenturyRayonSchool.LCModule.BulkLCGenerate.Button1_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\BulkLCGenerate.aspx.cs:line 287
+2025-05-27 10:37:55,512 ERROR ErrorsLog - BulkLCGenrate.Button1_ServerClick
+System.IndexOutOfRangeException: apaar_id
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at CenturyRayonSchool.LCModule.BulkLCGenerate.Button1_ServerClick(Object sender, EventArgs e)
+2025-05-27 10:40:46,183 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 10:40:46,205 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 10:40:54,740 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 10:40:57,740 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 10:41:00,098 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 10:41:03,038 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 10:41:05,718 INFO ErrorsLog - 25900  Pdf Created
+2025-05-27 10:41:08,327 INFO ErrorsLog - 25901  Pdf Created
+2025-05-27 10:41:10,875 INFO ErrorsLog - 25937  Pdf Created
+2025-05-27 10:41:13,241 INFO ErrorsLog - 25887  Pdf Created
+2025-05-27 10:41:15,466 INFO ErrorsLog - 25915  Pdf Created
+2025-05-27 10:41:17,858 INFO ErrorsLog - 25883  Pdf Created
+2025-05-27 10:41:20,901 INFO ErrorsLog - 26084  Pdf Created
+2025-05-27 10:41:23,699 INFO ErrorsLog - 25916  Pdf Created
+2025-05-27 10:41:26,404 INFO ErrorsLog - 25906  Pdf Created
+2025-05-27 10:41:28,963 INFO ErrorsLog - 25904  Pdf Created
+2025-05-27 10:41:31,684 INFO ErrorsLog - 25905  Pdf Created
+2025-05-27 10:41:34,255 INFO ErrorsLog - 25912  Pdf Created
+2025-05-27 10:41:36,575 INFO ErrorsLog - 25903  Pdf Created
+2025-05-27 10:41:39,085 INFO ErrorsLog - 26621  Pdf Created
+2025-05-27 10:41:42,278 INFO ErrorsLog - 25907  Pdf Created
+2025-05-27 10:41:44,757 INFO ErrorsLog - 26184  Pdf Created
+2025-05-27 10:41:47,845 INFO ErrorsLog - 25886  Pdf Created
+2025-05-27 10:41:50,544 INFO ErrorsLog - 25913  Pdf Created
+2025-05-27 10:41:52,846 INFO ErrorsLog - 25884  Pdf Created
+2025-05-27 10:41:55,258 INFO ErrorsLog - 26071  Pdf Created
+2025-05-27 10:41:58,116 INFO ErrorsLog - 26072  Pdf Created
+2025-05-27 10:42:00,760 INFO ErrorsLog - 25910  Pdf Created
+2025-05-27 10:42:03,188 INFO ErrorsLog - 25897  Pdf Created
+2025-05-27 10:42:04,979 INFO ErrorsLog - 26185  Pdf Created
+2025-05-27 10:42:07,388 INFO ErrorsLog - 25923  Pdf Created
+2025-05-27 10:42:09,266 INFO ErrorsLog - 25889  Pdf Created
+2025-05-27 10:42:11,578 INFO ErrorsLog - 25908  Pdf Created
+2025-05-27 10:42:13,847 INFO ErrorsLog - 25919  Pdf Created
+2025-05-27 10:42:16,251 INFO ErrorsLog - 26622  Pdf Created
+2025-05-27 10:42:18,653 INFO ErrorsLog - 25924  Pdf Created
+2025-05-27 10:42:21,179 INFO ErrorsLog - 25917  Pdf Created
+2025-05-27 10:42:23,545 INFO ErrorsLog - 25911  Pdf Created
+2025-05-27 10:42:25,928 INFO ErrorsLog - 26186  Pdf Created
+2025-05-27 10:42:28,284 INFO ErrorsLog - 26282  Pdf Created
+2025-05-27 10:42:30,637 INFO ErrorsLog - 25898  Pdf Created
+2025-05-27 10:42:33,149 INFO ErrorsLog - 25893  Pdf Created
+2025-05-27 10:42:35,255 INFO ErrorsLog - 25902  Pdf Created
+2025-05-27 10:42:37,733 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 10:42:39,890 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 10:42:42,887 INFO ErrorsLog - 25909  Pdf Created
+2025-05-27 10:42:45,722 INFO ErrorsLog - 25830  Pdf Created
+2025-05-27 10:42:48,429 INFO ErrorsLog - 25920  Pdf Created
+2025-05-27 10:42:51,037 INFO ErrorsLog - 25938  Pdf Created
+2025-05-27 10:42:53,485 INFO ErrorsLog - 25899  Pdf Created
+2025-05-27 10:42:55,930 INFO ErrorsLog - 25892  Pdf Created
+2025-05-27 10:42:57,652 INFO ErrorsLog - File Successfully Merged
+2025-05-27 10:47:14,584 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 10:47:14,588 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 10:47:17,122 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 10:47:20,286 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 10:47:23,487 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 10:47:24,552 INFO ErrorsLog - File Successfully Merged
+2025-05-27 10:52:36,105 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 10:52:36,106 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 10:52:40,665 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 10:52:45,633 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 10:52:47,420 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 10:52:48,474 INFO ErrorsLog - File Successfully Merged
+2025-05-27 11:11:10,386 ERROR ErrorsLog - GenrateLC.searchstudent_ServerClick
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at CenturyRayonSchool.LCModule.GenrateLC.setStdStudying(String std, String doa, SqlConnection con) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 233
+   at CenturyRayonSchool.LCModule.GenrateLC.searchstudent_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 213
+2025-05-27 12:02:15,170 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:02:15,177 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:02:19,701 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 12:02:20,593 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 12:02:21,438 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 12:02:22,802 INFO ErrorsLog - 25276  Pdf Created
+2025-05-27 12:02:23,653 INFO ErrorsLog - 24669  Pdf Created
+2025-05-27 12:02:25,038 INFO ErrorsLog - 24892  Pdf Created
+2025-05-27 12:02:25,918 INFO ErrorsLog - 26752  Pdf Created
+2025-05-27 12:02:26,767 INFO ErrorsLog - 24524  Pdf Created
+2025-05-27 12:02:27,630 INFO ErrorsLog - 24805  Pdf Created
+2025-05-27 12:02:28,467 INFO ErrorsLog - 24922  Pdf Created
+2025-05-27 12:02:29,339 INFO ErrorsLog - 24728  Pdf Created
+2025-05-27 12:02:30,179 INFO ErrorsLog - 24738  Pdf Created
+2025-05-27 12:02:31,065 INFO ErrorsLog - 24729  Pdf Created
+2025-05-27 12:02:31,912 INFO ErrorsLog - 24912  Pdf Created
+2025-05-27 12:02:32,767 INFO ErrorsLog - 24872  Pdf Created
+2025-05-27 12:02:33,617 INFO ErrorsLog - 24765  Pdf Created
+2025-05-27 12:02:35,002 INFO ErrorsLog - 26750  Pdf Created
+2025-05-27 12:02:35,886 INFO ErrorsLog - 25860  Pdf Created
+2025-05-27 12:02:36,736 INFO ErrorsLog - 25843  Pdf Created
+2025-05-27 12:02:38,098 INFO ErrorsLog - 24791  Pdf Created
+2025-05-27 12:02:38,957 INFO ErrorsLog - 24668  Pdf Created
+2025-05-27 12:02:40,319 INFO ErrorsLog - 25876  Pdf Created
+2025-05-27 12:02:41,188 INFO ErrorsLog - 24914  Pdf Created
+2025-05-27 12:02:42,043 INFO ErrorsLog - 24803  Pdf Created
+2025-05-27 12:02:42,942 INFO ErrorsLog - 24923  Pdf Created
+2025-05-27 12:02:43,828 INFO ErrorsLog - 24694  Pdf Created
+2025-05-27 12:02:44,820 INFO ErrorsLog - 24900  Pdf Created
+2025-05-27 12:02:45,768 INFO ErrorsLog - 24559  Pdf Created
+2025-05-27 12:02:47,203 INFO ErrorsLog - 24788  Pdf Created
+2025-05-27 12:02:48,065 INFO ErrorsLog - 26087  Pdf Created
+2025-05-27 12:02:49,469 INFO ErrorsLog - 24677  Pdf Created
+2025-05-27 12:02:50,849 INFO ErrorsLog - 25877  Pdf Created
+2025-05-27 12:02:51,723 INFO ErrorsLog - 24877  Pdf Created
+2025-05-27 12:02:53,153 INFO ErrorsLog - 26233  Pdf Created
+2025-05-27 12:02:54,016 INFO ErrorsLog - 25935  Pdf Created
+2025-05-27 12:02:55,128 INFO ErrorsLog - 24757  Pdf Created
+2025-05-27 12:02:56,180 INFO ErrorsLog - 26059  Pdf Created
+2025-05-27 12:02:57,701 INFO ErrorsLog - 24804  Pdf Created
+2025-05-27 12:02:58,655 INFO ErrorsLog - 26749  Pdf Created
+2025-05-27 12:02:59,681 INFO ErrorsLog - 25845  Pdf Created
+2025-05-27 12:03:01,015 INFO ErrorsLog - File Successfully Merged
+2025-05-27 12:15:23,878 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:15:23,884 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:15:26,890 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 12:15:29,778 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 12:15:34,831 INFO ErrorsLog - 25336  Pdf Created
+2025-05-27 12:15:41,522 INFO ErrorsLog - File Successfully Merged
+2025-05-27 12:28:37,672 ERROR ErrorsLog - PrintAllLC file generation error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername)
+2025-05-27 12:41:21,115 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:41:21,123 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:41:22,456 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 12:41:23,384 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 12:41:24,243 INFO ErrorsLog - 25336  Pdf Created
+2025-05-27 12:41:25,439 INFO ErrorsLog - File Successfully Merged
+2025-05-27 12:44:51,189 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:44:51,892 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 12:44:52,560 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 12:44:53,146 INFO ErrorsLog - 25336  Pdf Created
+2025-05-27 12:44:54,180 INFO ErrorsLog - File Successfully Merged
+2025-05-27 12:47:26,402 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:47:26,402 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:47:27,055 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 12:47:27,707 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 12:47:28,742 INFO ErrorsLog - File Successfully Merged
+2025-05-27 12:50:56,940 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:50:56,940 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:50:57,594 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 12:50:58,215 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 12:50:59,238 INFO ErrorsLog - File Successfully Merged
+2025-05-27 12:51:05,331 ERROR ErrorsLog - PrintAllLC file generation/download error
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername)
+2025-05-27 12:53:47,837 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:53:47,838 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 12:53:48,462 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 12:53:49,135 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 12:53:50,161 INFO ErrorsLog - File Successfully Merged
+2025-05-27 12:53:55,238 ERROR ErrorsLog - PrintAllLC file generation/download error
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername)
+2025-05-27 13:02:30,308 ERROR ErrorsLog - PrintMarksheet.printallpdf
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCFile\X (Hindi)_A\24634.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at CenturyRayonSchool.LCModule.LCPrint.printallpdf(String select_std, String select_div, String grno, String foldername, String year) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCPrint.aspx.cs:line 378
+2025-05-27 13:03:28,811 ERROR ErrorsLog - PrintMarksheet.printallpdf
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCFile\X (Hindi)_A\24634.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at CenturyRayonSchool.LCModule.LCPrint.printallpdf(String select_std, String select_div, String grno, String foldername, String year) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCPrint.aspx.cs:line 378
+2025-05-27 13:05:08,378 ERROR ErrorsLog - PrintMarksheet.printallpdf
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCFile\X (Hindi)_B\24678.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at CenturyRayonSchool.LCModule.LCPrint.printallpdf(String select_std, String select_div, String grno, String foldername, String year) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCPrint.aspx.cs:line 378
+2025-05-27 13:08:08,298 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:08:08,304 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:08:08,929 INFO ErrorsLog - 24678  Pdf Created
+2025-05-27 13:08:09,596 INFO ErrorsLog - 24678  Pdf Created
+2025-05-27 13:08:10,207 INFO ErrorsLog - 25798  Pdf Created
+2025-05-27 13:08:10,829 INFO ErrorsLog - 24838  Pdf Created
+2025-05-27 13:08:11,585 INFO ErrorsLog - 24766  Pdf Created
+2025-05-27 13:08:12,282 INFO ErrorsLog - 24515  Pdf Created
+2025-05-27 13:08:12,931 INFO ErrorsLog - 24930  Pdf Created
+2025-05-27 13:08:13,613 INFO ErrorsLog - 24693  Pdf Created
+2025-05-27 13:08:14,281 INFO ErrorsLog - 24924  Pdf Created
+2025-05-27 13:08:14,952 INFO ErrorsLog - 25826  Pdf Created
+2025-05-27 13:08:15,607 INFO ErrorsLog - 24827  Pdf Created
+2025-05-27 13:08:16,312 INFO ErrorsLog - 24801  Pdf Created
+2025-05-27 13:08:16,999 INFO ErrorsLog - 24898  Pdf Created
+2025-05-27 13:08:17,653 INFO ErrorsLog - 24913  Pdf Created
+2025-05-27 13:08:18,326 INFO ErrorsLog - 24910  Pdf Created
+2025-05-27 13:08:18,980 INFO ErrorsLog - 25828  Pdf Created
+2025-05-27 13:08:19,642 INFO ErrorsLog - 24633  Pdf Created
+2025-05-27 13:08:20,307 INFO ErrorsLog - 25853  Pdf Created
+2025-05-27 13:08:20,941 INFO ErrorsLog - 24925  Pdf Created
+2025-05-27 13:08:21,590 INFO ErrorsLog - 24739  Pdf Created
+2025-05-27 13:08:22,252 INFO ErrorsLog - 25827  Pdf Created
+2025-05-27 13:08:22,878 INFO ErrorsLog - 25797  Pdf Created
+2025-05-27 13:08:23,524 INFO ErrorsLog - 26054  Pdf Created
+2025-05-27 13:08:24,177 INFO ErrorsLog - 24903  Pdf Created
+2025-05-27 13:08:24,791 INFO ErrorsLog - 24597  Pdf Created
+2025-05-27 13:08:25,490 INFO ErrorsLog - 25801  Pdf Created
+2025-05-27 13:08:26,115 INFO ErrorsLog - 25842  Pdf Created
+2025-05-27 13:08:26,784 INFO ErrorsLog - 24904  Pdf Created
+2025-05-27 13:08:27,406 INFO ErrorsLog - 24767  Pdf Created
+2025-05-27 13:08:28,048 INFO ErrorsLog - 24727  Pdf Created
+2025-05-27 13:08:28,729 INFO ErrorsLog - 24806  Pdf Created
+2025-05-27 13:08:29,361 INFO ErrorsLog - 24499  Pdf Created
+2025-05-27 13:08:29,993 INFO ErrorsLog - 24874  Pdf Created
+2025-05-27 13:08:30,623 INFO ErrorsLog - 24937  Pdf Created
+2025-05-27 13:08:31,270 INFO ErrorsLog - 24604  Pdf Created
+2025-05-27 13:08:31,904 INFO ErrorsLog - 24893  Pdf Created
+2025-05-27 13:08:32,531 INFO ErrorsLog - 24670  Pdf Created
+2025-05-27 13:08:33,875 INFO ErrorsLog - File Successfully Merged
+2025-05-27 13:29:10,637 ERROR ErrorsLog - PrintMarksheet.printallpdf
+System.IO.IOException: The process cannot access the file 'D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCFile\X (Hindi)_B\26054.pdf' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at CenturyRayonSchool.LCModule.LCPrint.DeleteDirectory(String path) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCPrint.aspx.cs:line 429
+   at CenturyRayonSchool.LCModule.LCPrint.DeleteDirectory(String path) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCPrint.aspx.cs:line 434
+   at CenturyRayonSchool.LCModule.LCPrint.printallpdf(String select_std, String select_div, String grno, String foldername, String year) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCPrint.aspx.cs:line 329
+2025-05-27 13:34:09,832 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:34:09,840 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:34:10,562 INFO ErrorsLog - 24678  Pdf Created
+2025-05-27 13:34:11,306 INFO ErrorsLog - 24678  Pdf Created
+2025-05-27 13:34:11,948 INFO ErrorsLog - 25798  Pdf Created
+2025-05-27 13:34:12,589 INFO ErrorsLog - 24838  Pdf Created
+2025-05-27 13:34:13,242 INFO ErrorsLog - 24766  Pdf Created
+2025-05-27 13:34:13,914 INFO ErrorsLog - 24515  Pdf Created
+2025-05-27 13:34:14,576 INFO ErrorsLog - 24930  Pdf Created
+2025-05-27 13:34:15,271 INFO ErrorsLog - 24693  Pdf Created
+2025-05-27 13:34:15,880 INFO ErrorsLog - 24924  Pdf Created
+2025-05-27 13:34:16,459 INFO ErrorsLog - 25826  Pdf Created
+2025-05-27 13:34:17,051 INFO ErrorsLog - 24827  Pdf Created
+2025-05-27 13:34:17,639 INFO ErrorsLog - 24801  Pdf Created
+2025-05-27 13:34:18,229 INFO ErrorsLog - 24898  Pdf Created
+2025-05-27 13:34:18,842 INFO ErrorsLog - 24913  Pdf Created
+2025-05-27 13:34:19,430 INFO ErrorsLog - 24910  Pdf Created
+2025-05-27 13:34:20,004 INFO ErrorsLog - 25828  Pdf Created
+2025-05-27 13:34:20,561 INFO ErrorsLog - 24633  Pdf Created
+2025-05-27 13:34:21,128 INFO ErrorsLog - 25853  Pdf Created
+2025-05-27 13:34:21,720 INFO ErrorsLog - 24925  Pdf Created
+2025-05-27 13:34:22,313 INFO ErrorsLog - 24739  Pdf Created
+2025-05-27 13:34:22,882 INFO ErrorsLog - 25827  Pdf Created
+2025-05-27 13:34:23,445 INFO ErrorsLog - 25797  Pdf Created
+2025-05-27 13:34:24,021 INFO ErrorsLog - 26054  Pdf Created
+2025-05-27 13:34:24,607 INFO ErrorsLog - 24903  Pdf Created
+2025-05-27 13:34:25,180 INFO ErrorsLog - 24597  Pdf Created
+2025-05-27 13:34:25,779 INFO ErrorsLog - 25801  Pdf Created
+2025-05-27 13:34:26,443 INFO ErrorsLog - 25842  Pdf Created
+2025-05-27 13:34:27,127 INFO ErrorsLog - 24904  Pdf Created
+2025-05-27 13:34:27,738 INFO ErrorsLog - 24767  Pdf Created
+2025-05-27 13:34:28,445 INFO ErrorsLog - 24727  Pdf Created
+2025-05-27 13:34:29,182 INFO ErrorsLog - 24806  Pdf Created
+2025-05-27 13:34:29,890 INFO ErrorsLog - 24499  Pdf Created
+2025-05-27 13:34:30,536 INFO ErrorsLog - 24874  Pdf Created
+2025-05-27 13:34:31,200 INFO ErrorsLog - 24937  Pdf Created
+2025-05-27 13:34:31,801 INFO ErrorsLog - 24604  Pdf Created
+2025-05-27 13:34:32,438 INFO ErrorsLog - 24893  Pdf Created
+2025-05-27 13:34:33,147 INFO ErrorsLog - 24670  Pdf Created
+2025-05-27 13:34:34,497 INFO ErrorsLog - File Successfully Merged
+2025-05-27 13:41:28,003 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:41:28,003 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:41:29,017 INFO ErrorsLog - File Successfully Merged
+2025-05-27 13:41:54,181 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:41:54,182 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:41:54,901 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 13:41:55,676 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 13:41:56,337 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 13:41:56,996 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 13:41:57,584 INFO ErrorsLog - 25900  Pdf Created
+2025-05-27 13:41:58,190 INFO ErrorsLog - 25901  Pdf Created
+2025-05-27 13:41:58,763 INFO ErrorsLog - 25937  Pdf Created
+2025-05-27 13:41:59,348 INFO ErrorsLog - 25887  Pdf Created
+2025-05-27 13:41:59,932 INFO ErrorsLog - 25915  Pdf Created
+2025-05-27 13:42:00,498 INFO ErrorsLog - 25883  Pdf Created
+2025-05-27 13:42:01,074 INFO ErrorsLog - 26084  Pdf Created
+2025-05-27 13:42:01,635 INFO ErrorsLog - 25916  Pdf Created
+2025-05-27 13:42:02,227 INFO ErrorsLog - 25906  Pdf Created
+2025-05-27 13:42:02,815 INFO ErrorsLog - 25904  Pdf Created
+2025-05-27 13:42:03,422 INFO ErrorsLog - 25905  Pdf Created
+2025-05-27 13:42:04,000 INFO ErrorsLog - 25912  Pdf Created
+2025-05-27 13:42:04,576 INFO ErrorsLog - 25903  Pdf Created
+2025-05-27 13:42:05,159 INFO ErrorsLog - 26621  Pdf Created
+2025-05-27 13:42:05,729 INFO ErrorsLog - 25907  Pdf Created
+2025-05-27 13:42:06,317 INFO ErrorsLog - 26184  Pdf Created
+2025-05-27 13:42:06,885 INFO ErrorsLog - 25886  Pdf Created
+2025-05-27 13:42:07,467 INFO ErrorsLog - 25913  Pdf Created
+2025-05-27 13:42:08,058 INFO ErrorsLog - 25884  Pdf Created
+2025-05-27 13:42:08,645 INFO ErrorsLog - 26071  Pdf Created
+2025-05-27 13:42:09,231 INFO ErrorsLog - 26072  Pdf Created
+2025-05-27 13:42:09,859 INFO ErrorsLog - 25910  Pdf Created
+2025-05-27 13:42:10,430 INFO ErrorsLog - 25897  Pdf Created
+2025-05-27 13:42:11,011 INFO ErrorsLog - 26185  Pdf Created
+2025-05-27 13:42:11,637 INFO ErrorsLog - 25923  Pdf Created
+2025-05-27 13:42:12,285 INFO ErrorsLog - 25889  Pdf Created
+2025-05-27 13:42:12,959 INFO ErrorsLog - 25908  Pdf Created
+2025-05-27 13:42:13,559 INFO ErrorsLog - 25919  Pdf Created
+2025-05-27 13:42:14,298 INFO ErrorsLog - 26622  Pdf Created
+2025-05-27 13:42:15,016 INFO ErrorsLog - 25924  Pdf Created
+2025-05-27 13:42:15,805 INFO ErrorsLog - 25917  Pdf Created
+2025-05-27 13:42:16,535 INFO ErrorsLog - 25911  Pdf Created
+2025-05-27 13:42:17,270 INFO ErrorsLog - 26186  Pdf Created
+2025-05-27 13:42:17,999 INFO ErrorsLog - 26282  Pdf Created
+2025-05-27 13:42:18,734 INFO ErrorsLog - 25898  Pdf Created
+2025-05-27 13:42:19,414 INFO ErrorsLog - 25893  Pdf Created
+2025-05-27 13:42:20,062 INFO ErrorsLog - 25902  Pdf Created
+2025-05-27 13:42:20,724 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 13:42:21,351 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 13:42:21,984 INFO ErrorsLog - 25909  Pdf Created
+2025-05-27 13:42:22,593 INFO ErrorsLog - 25830  Pdf Created
+2025-05-27 13:42:23,209 INFO ErrorsLog - 25920  Pdf Created
+2025-05-27 13:42:23,892 INFO ErrorsLog - 25938  Pdf Created
+2025-05-27 13:42:24,596 INFO ErrorsLog - 25899  Pdf Created
+2025-05-27 13:42:25,331 INFO ErrorsLog - 25892  Pdf Created
+2025-05-27 13:42:26,530 INFO ErrorsLog - File Successfully Merged
+2025-05-27 13:51:32,313 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:51:32,313 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 13:51:32,905 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 13:51:33,506 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 13:51:34,211 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 13:51:34,803 INFO ErrorsLog - 25276  Pdf Created
+2025-05-27 13:51:35,371 INFO ErrorsLog - 24669  Pdf Created
+2025-05-27 13:51:35,932 INFO ErrorsLog - 24892  Pdf Created
+2025-05-27 13:51:36,507 INFO ErrorsLog - 26752  Pdf Created
+2025-05-27 13:51:37,098 INFO ErrorsLog - 24524  Pdf Created
+2025-05-27 13:51:37,674 INFO ErrorsLog - 24805  Pdf Created
+2025-05-27 13:51:38,241 INFO ErrorsLog - 24922  Pdf Created
+2025-05-27 13:51:38,797 INFO ErrorsLog - 24728  Pdf Created
+2025-05-27 13:51:39,358 INFO ErrorsLog - 24738  Pdf Created
+2025-05-27 13:51:39,919 INFO ErrorsLog - 24729  Pdf Created
+2025-05-27 13:51:40,502 INFO ErrorsLog - 24912  Pdf Created
+2025-05-27 13:51:41,173 INFO ErrorsLog - 24872  Pdf Created
+2025-05-27 13:51:41,749 INFO ErrorsLog - 24765  Pdf Created
+2025-05-27 13:51:42,360 INFO ErrorsLog - 26750  Pdf Created
+2025-05-27 13:51:42,940 INFO ErrorsLog - 25860  Pdf Created
+2025-05-27 13:51:43,592 INFO ErrorsLog - 25843  Pdf Created
+2025-05-27 13:51:44,235 INFO ErrorsLog - 24791  Pdf Created
+2025-05-27 13:51:44,926 INFO ErrorsLog - 24668  Pdf Created
+2025-05-27 13:51:45,578 INFO ErrorsLog - 25876  Pdf Created
+2025-05-27 13:51:46,265 INFO ErrorsLog - 24914  Pdf Created
+2025-05-27 13:51:46,922 INFO ErrorsLog - 24803  Pdf Created
+2025-05-27 13:51:47,629 INFO ErrorsLog - 24923  Pdf Created
+2025-05-27 13:51:48,314 INFO ErrorsLog - 24694  Pdf Created
+2025-05-27 13:51:48,974 INFO ErrorsLog - 24900  Pdf Created
+2025-05-27 13:51:49,602 INFO ErrorsLog - 24559  Pdf Created
+2025-05-27 13:51:50,241 INFO ErrorsLog - 24788  Pdf Created
+2025-05-27 13:51:50,963 INFO ErrorsLog - 26087  Pdf Created
+2025-05-27 13:51:51,556 INFO ErrorsLog - 24677  Pdf Created
+2025-05-27 13:51:52,133 INFO ErrorsLog - 25877  Pdf Created
+2025-05-27 13:51:52,743 INFO ErrorsLog - 24877  Pdf Created
+2025-05-27 13:51:53,312 INFO ErrorsLog - 26233  Pdf Created
+2025-05-27 13:51:53,875 INFO ErrorsLog - 25935  Pdf Created
+2025-05-27 13:51:54,455 INFO ErrorsLog - 24757  Pdf Created
+2025-05-27 13:51:55,029 INFO ErrorsLog - 26059  Pdf Created
+2025-05-27 13:51:55,596 INFO ErrorsLog - 24804  Pdf Created
+2025-05-27 13:51:56,173 INFO ErrorsLog - 26749  Pdf Created
+2025-05-27 13:51:56,742 INFO ErrorsLog - 25845  Pdf Created
+2025-05-27 13:51:57,867 INFO ErrorsLog - File Successfully Merged
+2025-05-27 14:48:04,485 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 14:48:04,486 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 14:48:05,190 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 14:48:05,912 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 14:48:06,933 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:00:13,078 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:00:13,085 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:00:14,378 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 15:00:15,304 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 15:00:16,177 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 15:00:17,397 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:04:58,106 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:04:58,112 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:04:59,341 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 15:05:00,233 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 15:05:01,125 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 15:05:01,984 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 15:05:03,180 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:33:03,096 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:33:03,096 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:33:14,203 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 15:33:25,709 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 15:33:26,668 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 15:33:27,612 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 15:36:33,960 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:37:23,403 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:37:23,406 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:37:24,806 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 15:37:25,618 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 15:37:26,961 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 15:37:30,897 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:40:33,398 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:40:33,398 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:40:34,818 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 15:40:36,158 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 15:40:36,996 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 15:40:40,516 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:42:09,298 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:42:09,298 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:42:10,144 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 15:42:11,535 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 15:42:12,347 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 15:42:13,173 INFO ErrorsLog - 25276  Pdf Created
+2025-05-27 15:42:13,978 INFO ErrorsLog - 24669  Pdf Created
+2025-05-27 15:42:21,471 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:45:15,414 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:45:15,415 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 15:46:42,514 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 15:46:48,936 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 15:47:01,447 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:49:17,093 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 15:49:18,075 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 15:49:19,092 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:53:43,607 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 15:53:44,533 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 15:53:45,768 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:56:58,395 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 15:56:59,448 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 15:57:00,380 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 15:57:01,413 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:58:55,286 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 15:58:56,743 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 15:58:58,119 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 15:58:59,042 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 15:59:00,068 INFO ErrorsLog - File Successfully Merged
+2025-05-27 15:59:45,646 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 15:59:46,583 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 15:59:47,485 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 15:59:48,466 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 15:59:49,375 INFO ErrorsLog - 25900  Pdf Created
+2025-05-27 15:59:50,771 INFO ErrorsLog - 25901  Pdf Created
+2025-05-27 15:59:52,167 INFO ErrorsLog - 25937  Pdf Created
+2025-05-27 15:59:53,033 INFO ErrorsLog - 25887  Pdf Created
+2025-05-27 15:59:53,915 INFO ErrorsLog - 25915  Pdf Created
+2025-05-27 15:59:54,803 INFO ErrorsLog - 25883  Pdf Created
+2025-05-27 15:59:55,683 INFO ErrorsLog - 26084  Pdf Created
+2025-05-27 15:59:57,068 INFO ErrorsLog - 25916  Pdf Created
+2025-05-27 15:59:58,441 INFO ErrorsLog - 25906  Pdf Created
+2025-05-27 15:59:59,822 INFO ErrorsLog - 25904  Pdf Created
+2025-05-27 16:00:01,202 INFO ErrorsLog - 25905  Pdf Created
+2025-05-27 16:00:02,093 INFO ErrorsLog - 25912  Pdf Created
+2025-05-27 16:00:02,952 INFO ErrorsLog - 25903  Pdf Created
+2025-05-27 16:00:03,836 INFO ErrorsLog - 26621  Pdf Created
+2025-05-27 16:00:04,809 INFO ErrorsLog - 25907  Pdf Created
+2025-05-27 16:00:05,738 INFO ErrorsLog - 26184  Pdf Created
+2025-05-27 16:00:06,662 INFO ErrorsLog - 25886  Pdf Created
+2025-05-27 16:00:07,585 INFO ErrorsLog - 25913  Pdf Created
+2025-05-27 16:00:08,574 INFO ErrorsLog - 25884  Pdf Created
+2025-05-27 16:00:09,975 INFO ErrorsLog - 26071  Pdf Created
+2025-05-27 16:00:10,859 INFO ErrorsLog - 26072  Pdf Created
+2025-05-27 16:00:11,750 INFO ErrorsLog - 25910  Pdf Created
+2025-05-27 16:00:12,839 INFO ErrorsLog - 25897  Pdf Created
+2025-05-27 16:00:13,929 INFO ErrorsLog - 26185  Pdf Created
+2025-05-27 16:00:15,435 INFO ErrorsLog - 25923  Pdf Created
+2025-05-27 16:00:16,401 INFO ErrorsLog - 25889  Pdf Created
+2025-05-27 16:00:17,904 INFO ErrorsLog - 25908  Pdf Created
+2025-05-27 16:00:19,295 INFO ErrorsLog - 25919  Pdf Created
+2025-05-27 16:00:20,179 INFO ErrorsLog - 26622  Pdf Created
+2025-05-27 16:00:21,566 INFO ErrorsLog - 25924  Pdf Created
+2025-05-27 16:00:22,945 INFO ErrorsLog - 25917  Pdf Created
+2025-05-27 16:00:24,344 INFO ErrorsLog - 25911  Pdf Created
+2025-05-27 16:00:25,265 INFO ErrorsLog - 26186  Pdf Created
+2025-05-27 16:00:26,649 INFO ErrorsLog - 26282  Pdf Created
+2025-05-27 16:00:28,029 INFO ErrorsLog - 25898  Pdf Created
+2025-05-27 16:00:29,038 INFO ErrorsLog - 25893  Pdf Created
+2025-05-27 16:00:29,920 INFO ErrorsLog - 25902  Pdf Created
+2025-05-27 16:00:30,762 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 16:00:31,804 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 16:00:32,898 INFO ErrorsLog - 25909  Pdf Created
+2025-05-27 16:00:33,842 INFO ErrorsLog - 25830  Pdf Created
+2025-05-27 16:00:35,342 INFO ErrorsLog - 25920  Pdf Created
+2025-05-27 16:00:36,290 INFO ErrorsLog - 25938  Pdf Created
+2025-05-27 16:00:37,229 INFO ErrorsLog - 25899  Pdf Created
+2025-05-27 16:00:38,334 INFO ErrorsLog - 25892  Pdf Created
+2025-05-27 16:00:39,451 INFO ErrorsLog - File Successfully Merged
+2025-05-27 16:10:49,179 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 16:10:50,154 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 16:10:51,088 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 16:10:52,235 INFO ErrorsLog - File Successfully Merged
+2025-05-27 16:21:01,058 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 16:21:02,038 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 16:21:02,969 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 16:21:04,218 INFO ErrorsLog - File Successfully Merged
+2025-05-27 16:23:46,127 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 16:23:47,069 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 16:23:47,923 INFO ErrorsLog - 25336  Pdf Created
+2025-05-27 16:23:48,835 INFO ErrorsLog - 24599  Pdf Created
+2025-05-27 16:23:50,221 INFO ErrorsLog - 24577  Pdf Created
+2025-05-27 16:23:51,095 INFO ErrorsLog - 24829  Pdf Created
+2025-05-27 16:23:52,516 INFO ErrorsLog - 24518  Pdf Created
+2025-05-27 16:23:53,401 INFO ErrorsLog - 24762  Pdf Created
+2025-05-27 16:23:54,822 INFO ErrorsLog - 24723  Pdf Created
+2025-05-27 16:23:56,215 INFO ErrorsLog - 26708  Pdf Created
+2025-05-27 16:23:57,083 INFO ErrorsLog - 24758  Pdf Created
+2025-05-27 16:23:57,941 INFO ErrorsLog - 24644  Pdf Created
+2025-05-27 16:23:59,326 INFO ErrorsLog - 25761  Pdf Created
+2025-05-27 16:24:00,198 INFO ErrorsLog - 24519  Pdf Created
+2025-05-27 16:24:01,584 INFO ErrorsLog - 24927  Pdf Created
+2025-05-27 16:24:02,579 INFO ErrorsLog - 24540  Pdf Created
+2025-05-27 16:24:03,468 INFO ErrorsLog - 24537  Pdf Created
+2025-05-27 16:24:04,530 INFO ErrorsLog - 24539  Pdf Created
+2025-05-27 16:24:05,614 INFO ErrorsLog - 24520  Pdf Created
+2025-05-27 16:24:07,202 INFO ErrorsLog - 26705  Pdf Created
+2025-05-27 16:24:08,124 INFO ErrorsLog - 24746  Pdf Created
+2025-05-27 16:24:09,614 INFO ErrorsLog - 24643  Pdf Created
+2025-05-27 16:24:11,068 INFO ErrorsLog - 24601  Pdf Created
+2025-05-27 16:24:12,504 INFO ErrorsLog - 24647  Pdf Created
+2025-05-27 16:24:13,420 INFO ErrorsLog - 24780  Pdf Created
+2025-05-27 16:24:14,555 INFO ErrorsLog - 24710  Pdf Created
+2025-05-27 16:24:15,671 INFO ErrorsLog - 24782  Pdf Created
+2025-05-27 16:24:17,275 INFO ErrorsLog - 24503  Pdf Created
+2025-05-27 16:24:18,786 INFO ErrorsLog - 24709  Pdf Created
+2025-05-27 16:24:19,843 INFO ErrorsLog - 24501  Pdf Created
+2025-05-27 16:24:20,932 INFO ErrorsLog - 24640  Pdf Created
+2025-05-27 16:24:22,135 INFO ErrorsLog - 24502  Pdf Created
+2025-05-27 16:24:23,451 INFO ErrorsLog - 24850  Pdf Created
+2025-05-27 16:24:24,716 INFO ErrorsLog - 24759  Pdf Created
+2025-05-27 16:24:25,992 INFO ErrorsLog - 24517  Pdf Created
+2025-05-27 16:24:27,760 INFO ErrorsLog - 24760  Pdf Created
+2025-05-27 16:24:28,754 INFO ErrorsLog - 24645  Pdf Created
+2025-05-27 16:24:30,404 INFO ErrorsLog - 24538  Pdf Created
+2025-05-27 16:24:31,864 INFO ErrorsLog - 24637  Pdf Created
+2025-05-27 16:24:33,031 INFO ErrorsLog - 24602  Pdf Created
+2025-05-27 16:24:34,067 INFO ErrorsLog - 24641  Pdf Created
+2025-05-27 16:24:35,058 INFO ErrorsLog - 26077  Pdf Created
+2025-05-27 16:24:36,499 INFO ErrorsLog - 26086  Pdf Created
+2025-05-27 16:24:37,362 INFO ErrorsLog - 24848  Pdf Created
+2025-05-27 16:24:38,278 INFO ErrorsLog - 24885  Pdf Created
+2025-05-27 16:24:39,732 INFO ErrorsLog - 24536  Pdf Created
+2025-05-27 16:24:40,968 INFO ErrorsLog - 25354  Pdf Created
+2025-05-27 16:24:42,321 INFO ErrorsLog - 24933  Pdf Created
+2025-05-27 16:24:43,959 INFO ErrorsLog - 24603  Pdf Created
+2025-05-27 16:24:44,921 INFO ErrorsLog - 24730  Pdf Created
+2025-05-27 16:24:46,492 INFO ErrorsLog - 26709  Pdf Created
+2025-05-27 16:24:47,439 INFO ErrorsLog - 24535  Pdf Created
+2025-05-27 16:24:48,935 INFO ErrorsLog - 26702  Pdf Created
+2025-05-27 16:24:50,336 INFO ErrorsLog - 26700  Pdf Created
+2025-05-27 16:24:51,217 INFO ErrorsLog - 26762  Pdf Created
+2025-05-27 16:24:52,473 INFO ErrorsLog - File Successfully Merged
+2025-05-27 16:39:13,340 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 16:39:19,518 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 16:39:20,399 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 16:39:21,276 INFO ErrorsLog - 25336  Pdf Created
+2025-05-27 16:39:22,664 INFO ErrorsLog - 24599  Pdf Created
+2025-05-27 16:39:23,852 INFO ErrorsLog - File Successfully Merged
+2025-05-27 16:39:24,406 ERROR ErrorsLog - DownloadFile.PrintAllLC
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername)
+2025-05-27 16:41:37,062 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 16:41:37,975 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 16:41:39,097 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 16:41:40,531 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 16:41:41,990 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 16:41:43,435 INFO ErrorsLog - 25900  Pdf Created
+2025-05-27 16:41:44,310 INFO ErrorsLog - 25901  Pdf Created
+2025-05-27 16:41:45,205 INFO ErrorsLog - 25937  Pdf Created
+2025-05-27 16:41:46,060 INFO ErrorsLog - 25887  Pdf Created
+2025-05-27 16:41:46,945 INFO ErrorsLog - 25915  Pdf Created
+2025-05-27 16:41:47,828 INFO ErrorsLog - 25883  Pdf Created
+2025-05-27 16:41:48,791 INFO ErrorsLog - 26084  Pdf Created
+2025-05-27 16:41:49,723 INFO ErrorsLog - 25916  Pdf Created
+2025-05-27 16:41:50,620 INFO ErrorsLog - 25906  Pdf Created
+2025-05-27 16:41:52,054 INFO ErrorsLog - 25904  Pdf Created
+2025-05-27 16:41:53,837 INFO ErrorsLog - 25905  Pdf Created
+2025-05-27 16:41:54,876 INFO ErrorsLog - 25912  Pdf Created
+2025-05-27 16:41:56,743 INFO ErrorsLog - 25903  Pdf Created
+2025-05-27 16:41:59,200 INFO ErrorsLog - 26621  Pdf Created
+2025-05-27 16:42:00,779 INFO ErrorsLog - 25907  Pdf Created
+2025-05-27 16:42:02,190 INFO ErrorsLog - 26184  Pdf Created
+2025-05-27 16:42:04,099 INFO ErrorsLog - 25886  Pdf Created
+2025-05-27 16:42:05,392 INFO ErrorsLog - 25913  Pdf Created
+2025-05-27 16:42:06,736 INFO ErrorsLog - 25884  Pdf Created
+2025-05-27 16:42:08,546 INFO ErrorsLog - 26071  Pdf Created
+2025-05-27 16:42:09,920 INFO ErrorsLog - 26072  Pdf Created
+2025-05-27 16:42:11,281 INFO ErrorsLog - 25910  Pdf Created
+2025-05-27 16:42:13,086 INFO ErrorsLog - 25897  Pdf Created
+2025-05-27 16:42:14,134 INFO ErrorsLog - 26185  Pdf Created
+2025-05-27 16:42:15,244 INFO ErrorsLog - 25923  Pdf Created
+2025-05-27 16:42:16,828 INFO ErrorsLog - 25889  Pdf Created
+2025-05-27 16:42:17,777 INFO ErrorsLog - 25908  Pdf Created
+2025-05-27 16:42:19,375 INFO ErrorsLog - 25919  Pdf Created
+2025-05-27 16:42:20,759 INFO ErrorsLog - 26622  Pdf Created
+2025-05-27 16:42:21,670 INFO ErrorsLog - 25924  Pdf Created
+2025-05-27 16:42:22,732 INFO ErrorsLog - 25917  Pdf Created
+2025-05-27 16:42:24,279 INFO ErrorsLog - 25911  Pdf Created
+2025-05-27 16:42:25,285 INFO ErrorsLog - 26186  Pdf Created
+2025-05-27 16:42:26,278 INFO ErrorsLog - 26282  Pdf Created
+2025-05-27 16:42:27,364 INFO ErrorsLog - 25898  Pdf Created
+2025-05-27 16:42:28,431 INFO ErrorsLog - 25893  Pdf Created
+2025-05-27 16:42:29,478 INFO ErrorsLog - 25902  Pdf Created
+2025-05-27 16:42:30,536 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 16:42:32,080 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 16:42:33,534 INFO ErrorsLog - 25909  Pdf Created
+2025-05-27 16:42:34,623 INFO ErrorsLog - 25830  Pdf Created
+2025-05-27 16:42:36,213 INFO ErrorsLog - 25920  Pdf Created
+2025-05-27 16:42:37,778 INFO ErrorsLog - 25938  Pdf Created
+2025-05-27 16:42:38,769 INFO ErrorsLog - 25899  Pdf Created
+2025-05-27 16:42:40,632 INFO ErrorsLog - 25892  Pdf Created
+2025-05-27 16:42:41,768 INFO ErrorsLog - File Successfully Merged
+2025-05-27 16:43:28,396 ERROR ErrorsLog - DownloadFile.PrintAllLC
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername)
+2025-05-27 16:47:04,765 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 16:47:06,619 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 16:47:07,534 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 16:47:08,415 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 16:47:09,280 INFO ErrorsLog - 25276  Pdf Created
+2025-05-27 16:47:10,520 INFO ErrorsLog - File Successfully Merged
+2025-05-27 16:47:41,307 ERROR ErrorsLog - DownloadFile.PrintAllLC
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername)
+2025-05-27 16:50:31,551 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 16:50:38,658 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 16:50:40,644 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 16:50:42,614 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 16:50:44,757 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 16:50:46,254 INFO ErrorsLog - File Successfully Merged
+2025-05-27 16:52:06,185 INFO ErrorsLog - 25015  Pdf Created
+2025-05-27 16:52:07,227 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:03:05,473 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:03:08,276 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 17:03:10,826 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 17:03:12,365 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:08:16,247 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:08:20,048 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 17:08:23,342 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 17:08:26,215 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 17:08:28,459 INFO ErrorsLog - 25276  Pdf Created
+2025-05-27 17:08:30,811 INFO ErrorsLog - 24669  Pdf Created
+2025-05-27 17:08:32,287 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:08:42,498 ERROR ErrorsLog - DownloadFile.PrintAllLC
+System.Web.HttpException (0x80004005): Cannot redirect after HTTP headers have been sent.
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\DownloadFile.aspx.cs:line 198
+2025-05-27 17:09:42,859 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:09:45,177 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 17:09:47,600 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 17:09:48,635 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:10:10,751 ERROR ErrorsLog - DownloadFile.PrintAllLC
+System.Web.HttpException (0x80004005): Cannot redirect after HTTP headers have been sent.
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\DownloadFile.aspx.cs:line 198
+2025-05-27 17:13:19,491 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 17:13:21,905 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 17:13:24,471 INFO ErrorsLog - 25336  Pdf Created
+2025-05-27 17:13:27,297 INFO ErrorsLog - 24599  Pdf Created
+2025-05-27 17:13:29,583 INFO ErrorsLog - 24577  Pdf Created
+2025-05-27 17:13:30,670 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:14:03,253 ERROR ErrorsLog - DownloadFile.PrintAllLC
+System.Web.HttpException (0x80004005): Cannot redirect after HTTP headers have been sent.
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername)
+2025-05-27 17:14:39,155 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 17:14:41,814 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 17:14:44,541 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 17:14:47,105 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 17:14:50,131 INFO ErrorsLog - 25900  Pdf Created
+2025-05-27 17:14:51,184 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:15:18,851 ERROR ErrorsLog - DownloadFile.PrintAllLC
+System.Web.HttpException (0x80004005): Cannot redirect after HTTP headers have been sent.
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at CenturyRayonSchool.LCModule.DownloadFile.PrintAllLC(String filename, String foldername)
+2025-05-27 17:17:47,125 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:17:50,698 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 17:17:52,964 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 17:17:55,743 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 17:17:58,749 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 17:18:01,149 INFO ErrorsLog - 25900  Pdf Created
+2025-05-27 17:18:02,561 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:21:17,386 INFO ErrorsLog - 25015  Pdf Created
+2025-05-27 17:21:18,927 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:31:00,753 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 17:31:02,342 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 17:31:03,965 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:35:55,352 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:35:59,388 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 17:36:02,031 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 17:36:04,933 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 17:36:06,520 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:40:14,001 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:40:17,546 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 17:40:20,150 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 17:40:21,647 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:44:37,724 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:44:39,349 INFO ErrorsLog - 24516  Pdf Created
+2025-05-27 17:44:40,892 INFO ErrorsLog - 24749  Pdf Created
+2025-05-27 17:44:42,074 INFO ErrorsLog - 25336  Pdf Created
+2025-05-27 17:44:43,305 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:46:52,609 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:46:54,028 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 17:46:54,975 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 17:46:56,375 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 17:46:57,573 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:54:59,104 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:55:01,087 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 17:55:02,789 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 17:55:04,441 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 17:55:05,707 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:55:29,569 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:55:31,039 INFO ErrorsLog - 24634  Pdf Created
+2025-05-27 17:55:32,456 INFO ErrorsLog - 26751  Pdf Created
+2025-05-27 17:55:33,953 INFO ErrorsLog - 24905  Pdf Created
+2025-05-27 17:55:34,963 INFO ErrorsLog - 25276  Pdf Created
+2025-05-27 17:55:36,011 INFO ErrorsLog - 24669  Pdf Created
+2025-05-27 17:55:37,161 INFO ErrorsLog - 24892  Pdf Created
+2025-05-27 17:55:38,227 INFO ErrorsLog - 26752  Pdf Created
+2025-05-27 17:55:39,311 INFO ErrorsLog - 24524  Pdf Created
+2025-05-27 17:55:40,374 INFO ErrorsLog - 24805  Pdf Created
+2025-05-27 17:55:41,927 INFO ErrorsLog - 24922  Pdf Created
+2025-05-27 17:55:42,848 INFO ErrorsLog - 24728  Pdf Created
+2025-05-27 17:55:44,303 INFO ErrorsLog - 24738  Pdf Created
+2025-05-27 17:55:45,141 INFO ErrorsLog - 24729  Pdf Created
+2025-05-27 17:55:46,077 INFO ErrorsLog - 24912  Pdf Created
+2025-05-27 17:55:47,252 INFO ErrorsLog - 24872  Pdf Created
+2025-05-27 17:55:48,903 INFO ErrorsLog - 24765  Pdf Created
+2025-05-27 17:55:49,951 INFO ErrorsLog - 26750  Pdf Created
+2025-05-27 17:55:51,002 INFO ErrorsLog - 25860  Pdf Created
+2025-05-27 17:55:52,570 INFO ErrorsLog - 25843  Pdf Created
+2025-05-27 17:55:53,407 INFO ErrorsLog - 24791  Pdf Created
+2025-05-27 17:55:54,866 INFO ErrorsLog - 24668  Pdf Created
+2025-05-27 17:55:55,701 INFO ErrorsLog - 25876  Pdf Created
+2025-05-27 17:55:57,175 INFO ErrorsLog - 24914  Pdf Created
+2025-05-27 17:55:58,030 INFO ErrorsLog - 24803  Pdf Created
+2025-05-27 17:55:59,015 INFO ErrorsLog - 24923  Pdf Created
+2025-05-27 17:55:59,968 INFO ErrorsLog - 24694  Pdf Created
+2025-05-27 17:56:00,932 INFO ErrorsLog - 24900  Pdf Created
+2025-05-27 17:56:02,410 INFO ErrorsLog - 24559  Pdf Created
+2025-05-27 17:56:03,408 INFO ErrorsLog - 24788  Pdf Created
+2025-05-27 17:56:04,478 INFO ErrorsLog - 26087  Pdf Created
+2025-05-27 17:56:06,054 INFO ErrorsLog - 24677  Pdf Created
+2025-05-27 17:56:07,503 INFO ErrorsLog - 25877  Pdf Created
+2025-05-27 17:56:08,511 INFO ErrorsLog - 24877  Pdf Created
+2025-05-27 17:56:10,121 INFO ErrorsLog - 26233  Pdf Created
+2025-05-27 17:56:11,507 INFO ErrorsLog - 25935  Pdf Created
+2025-05-27 17:56:12,346 INFO ErrorsLog - 24757  Pdf Created
+2025-05-27 17:56:13,833 INFO ErrorsLog - 26059  Pdf Created
+2025-05-27 17:56:14,685 INFO ErrorsLog - 24804  Pdf Created
+2025-05-27 17:56:16,093 INFO ErrorsLog - 26749  Pdf Created
+2025-05-27 17:56:16,938 INFO ErrorsLog - 25845  Pdf Created
+2025-05-27 17:56:18,082 INFO ErrorsLog - File Successfully Merged
+2025-05-27 17:57:10,641 INFO ErrorsLog - Directory deleted successfully
+2025-05-27 17:57:12,130 INFO ErrorsLog - 25914  Pdf Created
+2025-05-27 17:57:13,132 INFO ErrorsLog - 25888  Pdf Created
+2025-05-27 17:57:14,539 INFO ErrorsLog - 25885  Pdf Created
+2025-05-27 17:57:15,937 INFO ErrorsLog - 25895  Pdf Created
+2025-05-27 17:57:16,824 INFO ErrorsLog - 25900  Pdf Created
+2025-05-27 17:57:17,703 INFO ErrorsLog - 25901  Pdf Created
+2025-05-27 17:57:19,066 INFO ErrorsLog - 25937  Pdf Created
+2025-05-27 17:57:20,457 INFO ErrorsLog - 25887  Pdf Created
+2025-05-27 17:57:21,871 INFO ErrorsLog - 25915  Pdf Created
+2025-05-27 17:57:22,734 INFO ErrorsLog - 25883  Pdf Created
+2025-05-27 17:57:24,158 INFO ErrorsLog - 26084  Pdf Created
+2025-05-27 17:57:25,025 INFO ErrorsLog - 25916  Pdf Created
+2025-05-27 17:57:26,614 INFO ErrorsLog - 25906  Pdf Created
+2025-05-27 17:57:27,628 INFO ErrorsLog - 25904  Pdf Created
+2025-05-27 17:57:29,197 INFO ErrorsLog - 25905  Pdf Created
+2025-05-27 17:57:30,286 INFO ErrorsLog - 25912  Pdf Created
+2025-05-27 17:57:31,346 INFO ErrorsLog - 25903  Pdf Created
+2025-05-27 17:57:32,394 INFO ErrorsLog - 26621  Pdf Created
+2025-05-27 17:57:33,585 INFO ErrorsLog - 25907  Pdf Created
+2025-05-27 17:57:35,016 INFO ErrorsLog - 26184  Pdf Created
+2025-05-27 17:57:36,287 INFO ErrorsLog - 25886  Pdf Created
+2025-05-27 17:57:37,510 INFO ErrorsLog - 25913  Pdf Created
+2025-05-27 17:57:38,670 INFO ErrorsLog - 25884  Pdf Created
+2025-05-27 17:57:40,237 INFO ErrorsLog - 26071  Pdf Created
+2025-05-27 17:57:41,734 INFO ErrorsLog - 26072  Pdf Created
+2025-05-27 17:57:42,727 INFO ErrorsLog - 25910  Pdf Created
+2025-05-27 17:57:43,901 INFO ErrorsLog - 25897  Pdf Created
+2025-05-27 17:57:45,586 INFO ErrorsLog - 26185  Pdf Created
+2025-05-27 17:57:46,638 INFO ErrorsLog - 25923  Pdf Created
+2025-05-27 17:57:48,260 INFO ErrorsLog - 25889  Pdf Created
+2025-05-27 17:57:49,149 INFO ErrorsLog - 25908  Pdf Created
+2025-05-27 17:57:50,706 INFO ErrorsLog - 25919  Pdf Created
+2025-05-27 17:57:52,173 INFO ErrorsLog - 26622  Pdf Created
+2025-05-27 17:57:53,691 INFO ErrorsLog - 25924  Pdf Created
+2025-05-27 17:57:55,096 INFO ErrorsLog - 25917  Pdf Created
+2025-05-27 17:57:55,930 INFO ErrorsLog - 25911  Pdf Created
+2025-05-27 17:57:56,861 INFO ErrorsLog - 26186  Pdf Created
+2025-05-27 17:57:57,845 INFO ErrorsLog - 26282  Pdf Created
+2025-05-27 17:57:58,842 INFO ErrorsLog - 25898  Pdf Created
+2025-05-27 17:57:59,999 INFO ErrorsLog - 25893  Pdf Created
+2025-05-27 17:58:01,683 INFO ErrorsLog - 25902  Pdf Created
+2025-05-27 17:58:02,738 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 17:58:03,944 INFO ErrorsLog - 25894  Pdf Created
+2025-05-27 17:58:05,558 INFO ErrorsLog - 25909  Pdf Created
+2025-05-27 17:58:06,526 INFO ErrorsLog - 25830  Pdf Created
+2025-05-27 17:58:07,553 INFO ErrorsLog - 25920  Pdf Created
+2025-05-27 17:58:08,639 INFO ErrorsLog - 25938  Pdf Created
+2025-05-27 17:58:09,711 INFO ErrorsLog - 25899  Pdf Created
+2025-05-27 17:58:10,806 INFO ErrorsLog - 25892  Pdf Created
+2025-05-27 17:58:11,977 INFO ErrorsLog - File Successfully Merged
+2025-05-27 18:05:07,290 INFO ErrorsLog - 25170  Pdf Created
+2025-05-27 18:05:08,502 INFO ErrorsLog - File Successfully Merged

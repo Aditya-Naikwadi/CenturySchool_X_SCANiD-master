@@ -1,0 +1,570 @@
+/*
+ * Century Rayon School - Responsive Overrides CSS
+ * Version: 2.0
+ * Description: Mobile-first responsive design enhancements
+ */
+
+/* ==========================================
+   MOBILE NAVIGATION
+   ========================================== */
+.mobile-nav-modern {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: var(--shadow-xl);
+    z-index: calc(var(--z-modal) + 10);
+    transition: left var(--transition-base);
+    overflow-y: auto;
+}
+
+.mobile-nav-modern.open {
+    left: 0;
+}
+
+.mobile-nav-header {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-maroon), var(--maroon-dark));
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+}
+
+.mobile-nav-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.mobile-menu-modern {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-modern li {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.mobile-menu-modern li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-base);
+}
+
+.mobile-menu-modern li a:hover {
+    background: var(--bg-light);
+    padding-left: 2rem;
+    color: var(--primary-maroon);
+}
+
+.mobile-nav-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+}
+
+.mobile-nav-backdrop.show {
+    display: block;
+}
+
+/* ==========================================
+   TABLET (768px - 992px)
+   ========================================== */
+@media (max-width: 992px) {
+
+    /* Display mobile navigation */
+    .mobile-nav-modern {
+        display: block;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Sections */
+    .section-modern {
+        padding: 3rem 0;
+    }
+
+    .section-header-modern {
+        margin-bottom: 2.5rem;
+    }
+
+    .section-header-modern h2 {
+        font-size: 2rem;
+    }
+
+    /* Cards */
+    .card-modern {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Buttons */
+    .btn-modern {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-lg-modern {
+        padding: 0.85rem 1.75rem;
+        font-size: 1rem;
+    }
+
+    /* Tables */
+    .table-modern thead th,
+    .table-modern tbody td {
+        padding: 0.85rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Modals */
+    .modal-content-modern {
+        max-width: 90%;
+    }
+
+    .modal-header-modern,
+    .modal-body-modern,
+    .modal-footer-modern {
+        padding: 1.25rem 1.5rem;
+    }
+}
+
+/* ==========================================
+   MOBILE (576px - 768px)
+   ========================================== */
+@media (max-width: 768px) {
+
+    /* Container */
+    .container-modern {
+        padding: 0 1rem;
+    }
+
+    /* Typography */
+    html {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.15rem;
+    }
+
+    /* Sections */
+    .section-modern {
+        padding: 2.5rem 0;
+    }
+
+    .section-header-modern {
+        margin-bottom: 2rem;
+    }
+
+    .section-header-modern h2 {
+        font-size: 1.75rem;
+    }
+
+    .section-header-modern p {
+        font-size: 1rem;
+    }
+
+    /* Card Grid - Stack on Mobile */
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col-md-4,
+    .col-md-6,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-6 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    /* Tables - Make scrollable */
+    .table-modern-wrapper {
+        border-radius: var(--radius-md);
+    }
+
+    .table-modern {
+        font-size: 0.85rem;
+        min-width: 600px;
+        /* Force horizontal scroll */
+    }
+
+    .table-modern thead th,
+    .table-modern tbody td {
+        padding: 0.75rem 0.85rem;
+        white-space: nowrap;
+    }
+
+    /* Forms */
+    .form-group-modern {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-control-modern {
+        padding: 0.65rem 0.85rem;
+        font-size: 0.95rem;
+    }
+
+    /* Buttons - Full width on mobile */
+    .btn-modern-block {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Modal */
+    .modal-content-modern {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+
+    .modal-header-modern h3,
+    .modal-header-modern h4 {
+        font-size: 1.25rem;
+    }
+
+    /* Footer */
+    .modern-footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .modern-footer h5 {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .modern-footer h5:first-child {
+        margin-top: 0;
+    }
+
+    /* Badges */
+    .badge-modern {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.65rem;
+    }
+
+    /* Pagination */
+    .pagination-modern li a,
+    .pagination-modern li span {
+        min-width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumb-modern {
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE (< 576px)
+   ========================================== */
+@media (max-width: 576px) {
+
+    /* Typography - Even Smaller */
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Container */
+    .container-modern {
+        padding: 0 0.75rem;
+    }
+
+    /* Sections */
+    .section-modern {
+        padding: 2rem 0;
+    }
+
+    .section-header-modern {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-header-modern h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-divider-modern {
+        width: 60px;
+        height: 3px;
+    }
+
+    /* Cards - More Compact */
+    .card-modern-header,
+    .card-modern-body,
+    .card-modern-footer {
+        padding: 1rem;
+    }
+
+    /* Forms */
+    .form-label-modern {
+        font-size: 0.9rem;
+    }
+
+    .form-control-modern {
+        padding: 0.6rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    /* Buttons */
+    .btn-modern {
+        padding: 0.6rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-sm-modern {
+        padding: 0.45rem 0.75rem;
+        font-size: 0.825rem;
+    }
+
+    .btn-lg-modern {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* Modal */
+    .modal-header-modern,
+    .modal-body-modern {
+        padding: 1rem 1.25rem;
+    }
+
+    .modal-footer-modern {
+        padding: 1rem 1.25rem;
+        flex-direction: column;
+    }
+
+    .modal-footer-modern .btn-modern {
+        width: 100%;
+    }
+
+    /* Tables - Smaller */
+    .table-modern {
+        font-size: 0.8rem;
+    }
+
+    .table-modern thead th,
+    .table-modern tbody td {
+        padding: 0.65rem 0.75rem;
+    }
+
+    /* Accordion */
+    .accordion-header-modern {
+        padding: 1rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .accordion-body-modern {
+        padding: 1rem 1.25rem;
+    }
+
+    /* Alert */
+    .alert-modern {
+        padding: 0.85rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .alert-modern-icon {
+        font-size: 1.1rem;
+    }
+
+    /* Scroll to Top */
+    .scroll-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+    .modern-footer {
+        font-size: 0.9rem;
+    }
+
+    .modern-footer-bottom {
+        font-size: 0.85rem;
+    }
+}
+
+/* ==========================================
+   LARGE DESKTOP (> 1400px)
+   ========================================== */
+@media (min-width: 1400px) {
+    .container-modern {
+        max-width: 1400px;
+    }
+
+    .section-header-modern h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-header-modern p {
+        font-size: 1.15rem;
+    }
+}
+
+/* ==========================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ========================================== */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Larger touch targets */
+    .btn-modern,
+    .form-control-modern,
+    .modern-menu>li>a,
+    .mobile-menu-modern li a {
+        min-height: 44px;
+        /* iOS minimum touch target */
+    }
+
+    /* Remove hover effects on touch devices */
+    .btn-modern:hover,
+    .card-modern:hover {
+        transform: none;
+    }
+
+    /* Larger tap areas for links */
+    a {
+        padding: 0.25rem;
+        margin: -0.25rem;
+    }
+}
+
+/* ==========================================
+   PRINT STYLES
+   ========================================== */
+@media print {
+
+    /* Hide navigation and interactive elements */
+    .modern-header,
+    .modern-mobile-toggle,
+    .mobile-nav-modern,
+    .modern-footer,
+    .scroll-to-top,
+    .btn-modern,
+    .alert-modern {
+        display: none !important;
+    }
+
+    /* Optimize for print */
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    .card-modern {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+
+    .table-modern {
+        border-collapse: collapse;
+    }
+
+    .table-modern thead {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+    }
+
+    .table-modern th,
+    .table-modern td {
+        border: 1px solid #ddd;
+    }
+
+    /* Ensure links show URL */
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.85em;
+    }
+
+    /* Page breaks */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================
+   REDUCED MOTION PREFERENCE
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

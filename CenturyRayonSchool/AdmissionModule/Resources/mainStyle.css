@@ -1,0 +1,186 @@
+﻿body {
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+.font-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-cursive {
+    font-family: 'Handlee', cursive;
+}
+
+.font-nunito {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.font-overpass {
+    font-family: 'Overpass', sans-serif;
+}
+.font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+.font-pt, body {
+    font-family: 'PT Sans', sans-serif !important;
+}
+.main-header {
+    background-color: rgba(22,34,57,0.95);
+    /*height: 80px;*/
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    top: 0;
+}
+.navbar-toggler {
+    background-color: white !important;
+}
+.main-header .logo-img {
+    padding-left: 60px;
+}
+.main-header .logo-img .navbar-brand {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-header .logo-img .navbar-brand em {
+    font-style: normal;
+    color: #f5a425;
+}
+.wrapper {
+    margin-top:70px;
+}
+.main-menu {
+    padding-right: 60px;
+}
+.main-menu li:first-child {
+    margin-left: 0px;
+}
+.main-menu li {
+    display: inline-block;
+    margin-left: 16px;
+    position: relative;
+}
+.main-menu li a:hover {
+    border: 2px solid #f5a425 !important;
+}
+.main-menu li a {
+    padding: 10px 15px;
+    font-size: 13px !important;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #fff !important;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+.navbar-nav .nav-link.active {
+    color: #f5a425 !important;
+}
+.main-page {
+    justify-content: center;
+    display: flex;
+    /* position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    margin-bottom: -7px;*/
+    /*background-image: url("Images/28466.jpg");
+    background-image: url(Images/28466.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity:0.5*/
+}
+.main-page img{
+    /*height:100vh;*/
+    width: 100%;
+    margin-top: -240px;
+    opacity: 0.5;
+    position: fixed;
+}
+.main-page h1{
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    position: absolute;
+    font-size: 54px;
+    color: #f5a425;
+    font-weight: bolder;
+    text-align: center;
+    width: 55%;
+}
+.main-page .btn-track{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    left: 88%;
+    top: 13%;
+}
+@media only screen and (min-width:290px) and (max-width:426px) {
+    .main-menu li {
+        margin-left: 0px !important;
+    }
+}
+.card-shw {
+    box-shadow: 0 2px 15px -3px rgba(0,0,0,30%),0 10px 20px -2px rgba(0,0,0,0.04);
+    border: rgba(0,0,0,0.175) !important;
+}
+.border-btm {
+    border-bottom: 2px solid #e8e8e8 !important;
+}
+.form-fields .col-md-4, .form-fields .col-md-6, .form-fields .col-md-12 {
+    margin-bottom: 1rem;
+}
+.form-control[readonly] {
+    background-color: #e9ecef;
+}
+.btn-add {
+    border-width: 2px;
+    border-radius: 50% !important;
+    font-size: 14px;
+}
+.border-r {
+    border-right: 1px solid #adb5bd73;
+}
+.note{
+    font-size:14px
+}
+.align-end{
+    align-items:end!important
+}
+.successMsg {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.3rem;
+    cursor:pointer
+}
+input[type="submit" i]:disabled {
+    color: black;
+}
+.appDetails p{
+    margin-bottom:0.5rem;
+}
+.appDetails hr {
+    margin: 0.5rem 0 !important;
+}

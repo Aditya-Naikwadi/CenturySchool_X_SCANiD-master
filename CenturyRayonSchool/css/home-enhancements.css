@@ -1,0 +1,644 @@
+/*
+ * Century Rayon School - Home Page UI/UX Enhancements
+ * Version: 1.0
+ * Description: Modern animations, transitions, and visual effects for homepage
+ */
+
+/* ==========================================
+   GLOBAL ANIMATIONS & KEYFRAMES
+   ========================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ==========================================
+   SMOOTH SCROLL BEHAVIOR
+   ========================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   HERO CAROUSEL ENHANCEMENTS
+   ========================================== */
+
+.tp-banner-container {
+    position: relative;
+    overflow: hidden;
+}
+
+#heroCarousel .carousel-item {
+    position: relative;
+    transition: transform 0.8s ease-in-out;
+}
+
+#heroCarousel .carousel-item img {
+    animation: fadeIn 0.8s ease-in-out;
+    transition: transform 8s ease-out;
+}
+
+#heroCarousel .carousel-item.active img {
+    transform: scale(1.05);
+}
+
+/* Modern gradient overlay for hero images */
+#heroCarousel .carousel-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0.3) 100%);
+    pointer-events: none;
+}
+
+/* Enhanced carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(124, 56, 72, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    margin: 0 20px;
+}
+
+#heroCarousel:hover .carousel-control-prev,
+#heroCarousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(124, 56, 72, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* ==========================================
+   SECTION ANIMATIONS
+   ========================================== */
+
+.section-wrapper {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.section-wrapper.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-title {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.section-divider {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-divider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shimmer 2s infinite;
+}
+
+/* ==========================================
+   ANNOUNCEMENT CARDS ENHANCEMENTS
+   ========================================== */
+
+.announcement-card {
+    position: relative;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.announcement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+}
+
+.announcement-card:hover::before {
+    opacity: 1;
+}
+
+.announcement-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(124, 56, 72, 0.3);
+}
+
+/* Staggered animation delays */
+.announcement-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.announcement-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.announcement-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Icon animations */
+.bi-cake2-fill,
+.bi-exclamation-triangle-fill,
+.bi-balloon-fill {
+    display: inline-block;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.bi-cake2-fill {
+    animation-delay: 0s;
+}
+
+.bi-exclamation-triangle-fill {
+    animation-delay: 0.3s;
+}
+
+.bi-balloon-fill {
+    animation-delay: 0.6s;
+}
+
+/* Modern scrolling content */
+.scrolling-content {
+    position: relative;
+}
+
+.scrolling-content::before,
+.scrolling-content::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.scrolling-content::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(124, 56, 72, 1), transparent);
+}
+
+.scrolling-content::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(124, 56, 72, 1), transparent);
+}
+
+/* ==========================================
+   EVENTS SECTION ENHANCEMENTS
+   ========================================== */
+
+.event-card {
+    position: relative;
+    overflow: hidden;
+    animation: scaleIn 0.6s ease-out;
+}
+
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(124, 56, 72, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.event-card:hover::before {
+    left: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 0 15px 35px rgba(124, 56, 72, 0.25);
+}
+
+/* Date badge enhancement */
+.event-card .card-header {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.event-card:hover .card-header {
+    background: linear-gradient(135deg, #7c3848, #a24c58);
+}
+
+/* Staggered delays for events */
+.event-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.event-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.event-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Icon animations on hover */
+.event-card .bi-geo-alt-fill,
+.event-card .bi-clock {
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .bi-geo-alt-fill {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.event-card:hover .bi-clock {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+/* ==========================================
+   NOTICE CARDS ENHANCEMENTS
+   ========================================== */
+
+.notice-card {
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.notice-card img {
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.notice-card:hover img {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+}
+
+.notice-card .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+/* Image overlay effect */
+.notice-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    pointer-events: none;
+}
+
+/* Staggered delays */
+.notice-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.notice-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.notice-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* ==========================================
+   PHOTO GALLERY ENHANCEMENTS
+   ========================================== */
+
+.gallery-carousel {
+    position: relative;
+    animation: scaleIn 0.8s ease-out;
+}
+
+#carouselGallery .carousel-item {
+    transition: opacity 0.6s ease-in-out;
+}
+
+#carouselGallery img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#carouselGallery:hover img {
+    transform: scale(1.02);
+}
+
+/* Enhanced gallery controls */
+#carouselGallery .carousel-control-prev,
+#carouselGallery .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(124, 56, 72, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#carouselGallery:hover .carousel-control-prev,
+#carouselGallery:hover .carousel-control-next {
+    opacity: 1;
+}
+
+#carouselGallery .carousel-control-prev:hover,
+#carouselGallery .carousel-control-next:hover {
+    background: rgba(124, 56, 72, 1);
+    transform: scale(1.15);
+}
+
+/* Gallery indicators */
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+    width: 40px;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+/* Caption animations */
+.carousel-caption {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* ==========================================
+   SOCIAL FLOAT ENHANCEMENTS
+   ========================================== */
+
+.social-float {
+    animation: slideInRight 0.8s ease-out;
+}
+
+.social-float a {
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-float a:hover {
+    transform: scale(1.2) rotate(360deg);
+    box-shadow: 0 5px 15px rgba(124, 56, 72, 0.4);
+}
+
+/* ==========================================
+   MODAL ENHANCEMENTS
+   ========================================== */
+
+.modal.fade .modal-dialog {
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.modal.show .modal-dialog {
+    animation: scaleIn 0.4s ease-out;
+}
+
+.modal-content {
+    border: none;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================
+   BUTTON ENHANCEMENTS
+   ========================================== */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ==========================================
+   UTILITY CLASSES FOR ANIMATIONS
+   ========================================== */
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.fade-in-down {
+    animation: fadeInDown 0.6s ease-out;
+}
+
+.scale-in {
+    animation: scaleIn 0.6s ease-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+}
+
+/* ==========================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+
+    .section-wrapper {
+        padding: 2rem 0;
+    }
+
+    .announcement-card:hover {
+        transform: translateY(-5px) scale(1);
+    }
+
+    .event-card:hover {
+        transform: translateY(-5px) rotate(0deg);
+    }
+
+    .notice-card:hover img {
+        transform: scale(1.05);
+    }
+}
+
+/* ==========================================
+   PERFORMANCE OPTIMIZATION
+   ========================================== */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Hardware acceleration for smooth animations */
+.announcement-card,
+.event-card,
+.notice-card,
+.gallery-carousel {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}

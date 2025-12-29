@@ -1,0 +1,138 @@
+2025-12-05 16:55:43,482 ERROR ErrorsLog - NewsEventsModel.GetNewsList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.Model.NewsEventsModel.GetNewsList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\NewsEventsModel.cs:line 105
+2025-12-05 16:55:43,768 ERROR ErrorsLog - EventModel.GetUpCommingEventList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.EventModel.GetUpCommingEventList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\EventModel.cs:line 159
+2025-12-05 16:55:43,958 ERROR ErrorsLog - IndexPageModel.getTodayBirthday
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 17
+2025-12-05 16:56:49,873 ERROR ErrorsLog - NewsEventsModel.GetNewsList
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.Model.NewsEventsModel.GetNewsList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\NewsEventsModel.cs:line 105
+2025-12-05 16:56:49,938 ERROR ErrorsLog - EventModel.GetUpCommingEventList
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.EventModel.GetUpCommingEventList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\EventModel.cs:line 159
+2025-12-05 16:56:49,955 ERROR ErrorsLog - IndexPageModel.getTodayBirthday
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 17
+2025-12-05 16:57:41,828 ERROR ErrorsLog - NewsEventsModel.GetNewsList
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.Model.NewsEventsModel.GetNewsList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\NewsEventsModel.cs:line 105
+2025-12-05 16:57:41,920 ERROR ErrorsLog - EventModel.GetUpCommingEventList
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.EventModel.GetUpCommingEventList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\EventModel.cs:line 159
+2025-12-05 16:57:41,944 ERROR ErrorsLog - IndexPageModel.getTodayBirthday
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 17
+2025-12-05 17:00:09,212 ERROR ErrorsLog - NewsEventsModel.GetNewsList
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.Model.NewsEventsModel.GetNewsList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\NewsEventsModel.cs:line 105
+2025-12-05 17:00:09,274 ERROR ErrorsLog - EventModel.GetUpCommingEventList
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.EventModel.GetUpCommingEventList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\EventModel.cs:line 159
+2025-12-05 17:00:09,290 ERROR ErrorsLog - IndexPageModel.getTodayBirthday
+System.Configuration.ConfigurationErrorsException: The configuration section cannot contain a CDATA or text element. (D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\web.config line 59)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Web.HttpContext.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   at System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   at System.Web.Configuration.WebConfigurationManager.get_ConnectionStrings()
+   at CenturyRayonSchool.Model.Connection.getConnection() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\Connection.cs:line 15
+   at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 17

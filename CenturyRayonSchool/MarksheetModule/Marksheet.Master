@@ -1,0 +1,286 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Marksheet.master.cs" Inherits="CenturyRayonSchool.MarksheetModule.Marksheet" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet  Module</title>
+    <link rel="icon" href="../img/centurylogopng.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Resources/adminlte/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="Resources/adminlte/plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="Resources/adminlte/select2.min.css" />
+
+    <%-- Scripts --%>
+    <script src="Resources/adminlte/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="Resources/adminlte/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <!-- Bootstrap 4 -->
+    <script src="Resources/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Resources/adminlte/dist/js/adminlte.js"></script>
+    <script src="Resources/adminlte/select2.min.js"></script>
+    <%--<script src="Resources/adminlte/dist/js/demo.js"></script>--%>
+
+
+
+    <link rel="stylesheet" href="Resources/style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="display: none;">
+            <asp:Label Text="-1" runat="server" ID="lblusercode" />
+            <%--this is important--%>
+        </div>
+        <nav class="main-header navbar navbar-expand navbar-new navbar-white navbar-light menuflex">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item padding-mobile">
+                    <a class="nav-link mt-1" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item center-mobile">
+                    <div class="d-flex align-items-center ml-2">
+                        <div>
+                            <img src="../img/centurylogopng.png" class="h-50" alt="">
+                        </div>
+                        <div class="page-title-box ml-2">
+                            <h3 class="mb-0">Century Rayon High School, Shahad</h3>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle dropdown-log" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <asp:Label runat="server" Text="Insiya Kanchwala" ID="lblmasterusername" CssClass="uppercase"></asp:Label>
+                        <img src="../img/male.png" class="img-circle img-user" alt="User Image">
+                    </a>
+                    <div class="dropdown-menu dropdown-log">
+                        <a class="dropdown-item" href="#">
+
+                            <button class="btn btn-outline-info" runat="server" id="btnlogout" onserverclick="btnlogout_ServerClick"><i class="fas fa-sign-out-alt"></i>Logout</button>
+                            <span class="text-sm">Logout</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-bg elevation-4" id="hide-menu">
+            <a class="nav-link menu-mobile" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            <a href="#" class="brand-link module-name border-bottom">
+                <div class="brand-text text-center">
+                    Marksheet<br />
+                    Management System
+                </div>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column nav-side" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="Dashboard.aspx" class="nav-link" id="menu_dash">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" id="MarksheetModuleSection">
+                            <a href="#" class="nav-link" id="MarksheetModuleItem">
+                                <i class="fa fa-file-invoice nav-icon"></i>
+                                <p>
+                                    Marksheet Master
+                                <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+
+
+                                <% if (checkStatus("Master", listmodules))
+                                    { %>
+
+                                <li class="nav-item">
+                                    <a href="SubjectList.aspx" class="nav-link" id="menu_subjectlist">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Subject'S List</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ExamMaster.aspx" class="nav-link" id="menu_exammaster">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Exam Master</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="SubjectMaster.aspx" class="nav-link" id="menu_SubjectMaster">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Subject Master</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="WorkingDays.aspx" class="nav-link" id="menu_Working">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Working Days</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="TeacherMapping.aspx" class="nav-link" id="menu_teachermap">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Teacher Mapping</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <% } %>
+
+                        <li class="nav-item" id="MarksheetMarkSection">
+                            <a href="#" class="nav-link" id="MarksheetMarksItem">
+                                <i class="fa fa-file-invoice nav-icon"></i>
+                                <p>
+                                    Marks Entry Module
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <% if (checkStatus("Marksentry", listmodules))
+                                    { %>
+                                <li class="nav-item">
+                                    <a href="SubjectMarks.aspx" class="nav-link" id="menu_SubjectMarks">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>MarksEntry (I TO VIII)</p>
+                                    </a>
+                                </li>
+                                <% } %>
+                                <% if (checkStatus("Marksentry9", listmodules))
+                                    { %>
+                                <li class="nav-item">
+                                    <a href="SubjectMarks8to9.aspx" class="nav-link" id="menu_SubjectMarks8to9">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>MarksEntry (IX)</p>
+                                    </a>
+                                </li>
+
+                                <% } %>
+
+
+                                <% if (checkStatus("Remark_Att", listmodules))
+                                    { %>
+                                <li class="nav-item">
+                                    <a href="AttendanceMark.aspx" class="nav-link" id="menu_attendnace">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Attendance Marking</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Remark.aspx" class="nav-link" id="menu_remark">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Remarks </p>
+                                    </a>
+                                </li>
+                                <% } %>
+                            </ul>
+                        </li>
+
+                        <% if (checkStatus("Printing", listmodules))
+                            { %>
+                        <li class="nav-item">
+                            <a href="PrintMarksheet.aspx" class="nav-link" id="menu_print">
+                                <i class="fa fa-file-invoice nav-icon"></i>
+                                <p>Print Marksheet</p>
+                            </a>
+                        </li>
+
+                        <% } %>
+                        <li class="nav-item">
+                            <a href="RollNoUpdate.aspx" class="nav-link" id="menu_roll">
+                                <i class="fa fa-file-invoice nav-icon"></i>
+                                <p>Update RollNo</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" id="MarksheetReportSection">
+                            <a href="#" class="nav-link" id="MarksheetReportItem">
+                                <i class="fa fa-file-invoice nav-icon"></i>
+                                <p>
+                                    Marksheets Reports
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="display: none">
+                                <% if (checkStatus("ReportPrimary", listmodules))
+                                    { %>
+                                <li class="nav-item">
+                                    <a href="ConsolidationReport1to8.aspx" class="nav-link" id="menu_consolidatet">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Consolidate Report 1 to 8</p>
+                                    </a>
+                                </li>
+                                <% } %>
+                                <% if (checkStatus("Report9", listmodules))
+                                    { %>
+                                <li class="nav-item">
+                                    <a href="Consolidate9th.aspx" class="nav-link" id="menu_consolidate9">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Consolidate Report 9</p>
+                                    </a>
+                                </li>
+                                <% } %>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <div class="content-wrapper">
+
+            <section class="content" style="padding-top: 15px;">
+                <div class="container-fluid">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <script>
+                        //$('#hide-menu').click(function (e) {
+                        //    e.stopPropagation();
+                        //});
+                    </script>
+                </div>
+            </section>
+
+        </div>
+    </form>
+</body>
+</html>

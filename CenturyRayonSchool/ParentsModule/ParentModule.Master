@@ -1,0 +1,279 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ParentModule.master.cs" Inherits="CenturyRayonSchool.ParentsModule.ParentModule" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/ParentsModule/css/site.css" />
+    <link rel="shortcut icon" type="/image/x-icon" href="/img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/bootstrap.min.css">
+    <link href="/ParentsModule/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="/ParentsModule/fonts/flaticon.css">
+    <!-- Full Calender CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/fullcalendar.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="/ParentsModule/fonts/flaticon.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/animate.min.css">
+    <!-- Data Table CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/jquery.dataTables.min.css">
+    <!-- Select 2 CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/select2.min.css">
+    <!-- Date Picker CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/datepicker.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/ParentsModule/css/style.css">
+    <!-- jquery-->
+    <script src="/ParentsModule/js/jquery-3.3.1.min.js"></script>
+    <!-- Modernize js -->
+    <script src="/ParentsModule/js/modernizr-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+     <form id="form1" runat="server">
+         <div style="display: none;">
+            <asp:Label Text="-1" runat="server" ID="lblgrno" />
+            <asp:Label Text="-1" runat="server" ID="lblstd" />
+            <asp:Label Text="-1" runat="server" ID="lblyear" />
+            <asp:Label Text="-1" runat="server" ID="lblusername" />
+            <asp:Label Text="-1" runat="server" ID="lblcid" />
+            <%--this is important--%>
+        </div>
+    <!-- Header Menu Area Start Here -->
+    <div class="navbar navbar-expand-md header-menu-one bg-light " style="background:linear-gradient(to right, #fff, #ffaa01);">
+        <div class="nav-bar-header-one">
+            <div class="header-logo" style="padding:10px">
+                <a href="/ParentsModule/ParentsDashboard.aspx">
+                    <!-- New Logo -->
+                    <asp:Label CssClass="h3" runat="server">Parent's Module</asp:Label>
+                  <%--  <img src="/ParentsModule/img/SCANIDlogo.png" alt="logo" style="width: 170px;">--%>
+                </a>
+            </div>
+            
+        </div>
+       <%-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-navbar" aria-controls="mobile-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>--%>
+
+
+        <div class="header-main-menu navbar-collapse" id="mobile-navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item header-search-bar" style="display: flex;">
+                    <div id="divAcademicHeader" style="float: left;">
+                        <asp:Label CssClass="h3" runat="server">Academicyear : </asp:Label> <asp:Label CssClass="h3" runat="server" ID="lblAcademicyear"></asp:Label>
+                    </div>
+                </li>
+                <li class="navbar-item header-search-bar" style="display: flex;">
+                     <div  style="float: left;">
+                        <label class="h1">Century Rayon High School, Shahad </label>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav  ml-auto">
+                <li class="navbar-item dropdown header-admin">
+                    <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        <div class="admin-img">
+                            <img src="/ParentsModule/img/figure/logout.jpg" alt="Admin">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="item-content">
+                            <ul class="settings-list">
+                                <li><a href="/ParentsModule/ParentsLogin.aspx"><i class="flaticon-turn-off"></i>Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header Menu Area End Here -->
+
+    
+        <!-- Sidebar Area Start Here -->
+       <%-- <div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color">
+            <div class="mobile-sidebar-header d-md-none">
+                <div class="header-logo">
+                    <a href="/ParentsModule/ParentsDashboard.aspx"><img src="/img/logo1.png" alt="logo"></a>
+                </div>
+            </div>
+            <%--<div class="sidebar-menu-content">
+                <ul class="nav nav-sidebar-menu">
+                    <li class="nav-item" id="lidashbboard">
+                        <a href="/ParentsModule/ParentsDashboard.aspx" class="nav-link"><i class="flaticon-dashboard"></i><span>Dashboard</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>--%>
+        <!-- Sidebar Area End Here -->
+     <div class="content-wrapper">
+            <section class="content">
+                <div class="container-fluid">
+                    <asp:ContentPlaceHolder ID="head" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </section>
+        </div>
+  
+
+    <%--<!-- Footer Area Start Here -->
+    <footer class="footer-wrap-layout1" style="text-align: center;">
+        <div class="copyright">
+            © Copyrights <a href="#">ScanId</a> 2023. All rights reserved. Designed by <a href="#">ScanId</a>
+        </div>
+    </footer>--%>
+    <!-- Footer Area End Here -->
+    <!-- Plugins js -->
+    <script src="/ParentsModule/js/plugins.js"></script>
+    <!-- Popper js -->
+    <script src="/ParentsModule/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/ParentsModule/js/bootstrap.min.js"></script>
+    <!-- Counterup Js -->
+    <script src="/ParentsModule/js/jquery.counterup.min.js"></script>
+    <!-- Moment Js -->
+    <script src="/ParentsModule/js/moment.min.js"></script>
+    <script src="/ParentsModule/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- Waypoints Js -->
+    <script src="/ParentsModule/js/jquery.waypoints.min.js"></script>
+    <!-- Select 2 Js -->
+    <script src="/ParentsModule/js/select2.min.js"></script>
+    <!-- Date Picker Js -->
+    <script src="/ParentsModule/js/datepicker.min.js"></script>
+    <!-- Scroll Up Js -->
+    <script src="/ParentsModule/js/jquery.scrollUp.min.js"></script>
+    <!-- Full Calender Js -->
+    <script src="/ParentsModule/js/fullcalendar.min.js"></script>
+    <!-- Chart Js -->
+    <script src="/ParentsModule/js/Chart.min.js"></script>
+    <!-- Data Table Js -->
+    <script src="/ParentsModule/js/jquery.dataTables.min.js"></script>
+    <!-- Custom Js -->
+    <script src="/ParentsModule/js/main.js"></script>
+    <script src="/ParentsModule/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/ParentsModule/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/ParentsModule/js/jquery.dirtyfields.js"></script>
+    <script src="/ParentsModule/js/moment.min.js"></script>
+
+    <style>
+        .modal-content .modal-body .success-message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .modal-content .modal-body .success-message .item-icon {
+                margin-right: 45px;
+                text-align: center;
+                display: inline-block;
+                font-size: 14px;
+                color: #ffffff;
+                height: 44px;
+                width: 44px;
+                line-height: 44px;
+                border-radius: 50%;
+                background-color: #92c755;
+                position: relative;
+            }
+            .h1{
+                font-size: 3.9rem;
+                    margin-bottom: 0.5rem;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    color: #55b786;
+                     font-family:sans-serif;
+                }
+            
+
+        .error {
+            margin-right: 45px;
+            text-align: center;
+            display: inline-block;
+            font-size: 14px;
+            color: #ffffff;
+            height: 44px;
+            width: 44px;
+            line-height: 44px;
+            border-radius: 50%;
+            background-color: red !important;
+            position: relative;
+        }
+
+        .modal-content .modal-footer .footer-btn {
+            cursor: pointer;
+            font-size: 14px;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 15px;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .modal-content .modal-body .success-message .item-title {
+            font-size: 16px;
+            color: #646464;
+            font-style: italic;
+            margin-bottom: 0;
+            flex: 1;
+        }
+        .h4{
+            font-size:3rem;
+            font-weight:bold;
+             font-family:sans-serif;
+        }
+        .h3{
+            font-size:2rem;
+            font-weight:bold;
+             font-family:sans-serif;
+        }
+        .login__input {
+            border: none;
+            border-bottom: 2px solid #D1D1D4;
+            background: none;
+            font-weight: bolder;
+            width: 100%;
+            transition: .2s;
+            font-size: 19px;
+            text-align:center;
+             font-family:sans-serif;
+        }
+
+            .login__input:active,
+            .login__input:focus,
+            .login__input:hover {
+                outline: none;
+                border-bottom-color: #005b39;
+            }
+              .login__field {
+                    font-size: 20px;
+                    font-family:sans-serif;
+        }
+              .btn{
+                      width: 70%;
+    height: 5rem;
+    border-radius: 28px;
+    font-size: 2rem;
+              }
+    </style>
+         </form>
+</body>
+</html>

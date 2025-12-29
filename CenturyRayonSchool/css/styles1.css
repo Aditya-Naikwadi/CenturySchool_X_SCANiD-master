@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+
+.head1{
+    font-size: xxx-large;
+    font-weight: 600;
+    margin-top: 8px;
+    color:cornsilk;
+    font-family:Quintessential;
+}
+
+.head2{
+    font-size: xx-large;
+    font-weight: 600;
+    color: black;
+}
+
+.para1{
+    color: #333;
+    font-weight: 600;
+    font-size: large;
+    
+}
+
+.parahead1{
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.para1-bold{
+    color: #333;
+    font-weight: bold;
+    font-size: large;
+}
+
+.parasubhead1{
+    color: #333;
+    font-weight: lighter;
+    font-size: x-large;
+}

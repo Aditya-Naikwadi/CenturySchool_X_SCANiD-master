@@ -1,0 +1,21 @@
+2025-10-11 11:03:31,930 ERROR ErrorsLog - PrintMarksheet.PrintMarksheetPrimarySem1 - Main Catch
+System.Runtime.InteropServices.COMException (0x8002000B): Invalid index. (Exception from HRESULT: 0x8002000B (DISP_E_BADINDEX))
+   at CrystalDecisions.ReportAppServer.DataDefModel.FieldsClass.get_Item(Int32 Index)
+   at CrystalDecisions.CrystalReports.Engine.ParameterFieldDefinitions.get_Item(Int32 index)
+   at CrystalDecisions.CrystalReports.Engine.ParameterFieldDefinitions.get_Item(String fieldName)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.SetParameterValue(String name, Object val)
+   at CenturyRayonSchool.MarksheetModule.PrintMarksheet.PrintMarksheetPrimarySem1(SqlConnection con, String grno, String std, String div, String examname, String resultdate, String year)
+2025-10-11 11:04:47,822 ERROR ErrorsLog - PrintMarksheet.PrintMarksheetPrimarySem1 - Main Catch
+System.Runtime.InteropServices.COMException (0x8002000B): Invalid index. (Exception from HRESULT: 0x8002000B (DISP_E_BADINDEX))
+   at CrystalDecisions.ReportAppServer.DataDefModel.FieldsClass.get_Item(Int32 Index)
+   at CrystalDecisions.CrystalReports.Engine.ParameterFieldDefinitions.get_Item(Int32 index)
+   at CrystalDecisions.CrystalReports.Engine.ParameterFieldDefinitions.get_Item(String fieldName)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.SetParameterValue(String name, Object val)
+   at CenturyRayonSchool.MarksheetModule.PrintMarksheet.PrintMarksheetPrimarySem1(SqlConnection con, String grno, String std, String div, String examname, String resultdate, String year)
+2025-10-11 11:08:56,834 ERROR ErrorsLog - PrintMarksheet.PrintMarksheetPrimarySem1 - Main Catch
+System.Runtime.InteropServices.COMException (0x8002000B): Invalid index. (Exception from HRESULT: 0x8002000B (DISP_E_BADINDEX))
+   at CrystalDecisions.ReportAppServer.DataDefModel.FieldsClass.get_Item(Int32 Index)
+   at CrystalDecisions.CrystalReports.Engine.ParameterFieldDefinitions.get_Item(Int32 index)
+   at CrystalDecisions.CrystalReports.Engine.ParameterFieldDefinitions.get_Item(String fieldName)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.SetParameterValue(String name, Object val)
+   at CenturyRayonSchool.MarksheetModule.PrintMarksheet.PrintMarksheetPrimarySem1(SqlConnection con, String grno, String std, String div, String examname, String resultdate, String year) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\MarksheetModule\PrintMarksheet.aspx.cs:line 897

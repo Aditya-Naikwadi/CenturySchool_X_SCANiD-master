@@ -1,0 +1,105 @@
+html {
+    font-size: 14px;
+    /* font-family: 'Roboto', sans-serif;*/
+    font-family: "math";
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.required {
+    color: red;
+    font-size: small;
+}
+
+.requiredlabel {
+    
+}
+
+.requiredlabel:after {
+        content: " *";
+        color: red;
+        
+}
+
+.dirtyField {
+    color: red;
+    font-weight:bold;
+}
+
+
+.disabledcontrol {
+   background-color:lightgray !important;
+}
+
+.newlink {
+    color: #042954;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.tablealinks {
+    color: #042954;
+}
+
+.table {
+    min-height: 120px;
+}
+
+#loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid green;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    /*margin-left: 250px;
+        margin-top: 250px;*/
+    align-items: center;
+    display: inline-block;
+    margin-top:10px;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.photocirclestyle {
+    position: relative;
+    line-height: 85px;
+    border-radius: 50%;
+    text-align: center;
+}

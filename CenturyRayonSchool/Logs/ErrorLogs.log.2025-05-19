@@ -1,0 +1,80 @@
+2025-05-19 11:45:22,231 ERROR ErrorsLog - GenrateLC.SaveLC_ServerClick
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'updateddate'.
+Invalid column name 'updatedby'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CenturyRayonSchool.LCModule.GenrateLC.saveLC(String std, String grno, StudentMaster stm, Boolean newlcrecord) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 492
+   at CenturyRayonSchool.LCModule.GenrateLC.SaveLC_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 454
+ClientConnectionId:9fab7954-d587-4e59-b484-4c871ec32f72
+Error Number:207,State:1,Class:16
+2025-05-19 11:52:14,359 ERROR ErrorsLog - GenrateLC.SaveLC_ServerClick
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'updateddate'.
+Invalid column name 'updatedby'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CenturyRayonSchool.LCModule.GenrateLC.saveLC(String std, String grno, StudentMaster stm, Boolean newlcrecord) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 492
+   at CenturyRayonSchool.LCModule.GenrateLC.SaveLC_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 454
+ClientConnectionId:5f1e5a28-5aa5-40f3-898c-d28e9f393841
+Error Number:207,State:1,Class:16
+2025-05-19 11:52:50,097 ERROR ErrorsLog - GenrateLC.searchstudent_ServerClick
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at CenturyRayonSchool.LCModule.GenrateLC.setStdStudying(String std, String doa, SqlConnection con) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 231
+   at CenturyRayonSchool.LCModule.GenrateLC.searchstudent_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 211
+2025-05-19 11:52:58,909 ERROR ErrorsLog - GenrateLC.searchstudent_ServerClick
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at CenturyRayonSchool.LCModule.GenrateLC.setStdStudying(String std, String doa, SqlConnection con) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 231
+   at CenturyRayonSchool.LCModule.GenrateLC.searchstudent_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 211
+2025-05-19 11:53:05,092 ERROR ErrorsLog - GenrateLC.searchstudent_ServerClick
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at CenturyRayonSchool.LCModule.GenrateLC.setStdStudying(String std, String doa, SqlConnection con) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 231
+   at CenturyRayonSchool.LCModule.GenrateLC.searchstudent_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 211
+2025-05-19 11:53:05,410 ERROR ErrorsLog - GenrateLC.searchstudent_ServerClick
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at CenturyRayonSchool.LCModule.GenrateLC.setStdStudying(String std, String doa, SqlConnection con) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 231
+   at CenturyRayonSchool.LCModule.GenrateLC.searchstudent_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 211
+2025-05-19 16:05:12,489 ERROR ErrorsLog - GenrateLC.SaveLC_ServerClick
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'updateddate'.
+Invalid column name 'updatedby'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CenturyRayonSchool.LCModule.GenrateLC.saveLC(String std, String grno, StudentMaster stm, Boolean newlcrecord) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 492
+   at CenturyRayonSchool.LCModule.GenrateLC.SaveLC_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 454
+ClientConnectionId:6f3fc1f8-1ff2-41b8-9c03-c9053505a1f5
+Error Number:207,State:1,Class:16
+2025-05-19 16:17:50,903 ERROR ErrorsLog - GenrateLC.SaveLC_ServerClick
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'updateddate'.
+Invalid column name 'updatedby'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CenturyRayonSchool.LCModule.GenrateLC.saveLC(String std, String grno, StudentMaster stm, Boolean newlcrecord) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 494
+   at CenturyRayonSchool.LCModule.GenrateLC.SaveLC_ServerClick(Object sender, EventArgs e) in D:\Jainab\CenturyRayonWebsite\CenturyRayonSchool\LCModule\GenrateLC.aspx.cs:line 456
+ClientConnectionId:dc60efa9-4c01-4345-a38e-dd971dd970c7
+Error Number:207,State:1,Class:16

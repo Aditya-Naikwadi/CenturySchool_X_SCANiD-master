@@ -1,0 +1,191 @@
+2025-06-19 12:28:05,275 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:28:06,571 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:32:14,572 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:32:15,503 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:43:50,668 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:43:51,510 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:45:38,854 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:52:44,958 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:55:48,322 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:55:49,163 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:57:46,612 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:57:47,660 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:58:30,597 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:58:32,419 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:58:46,639 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:58:47,866 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:59:19,399 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:59:45,228 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 12:59:53,691 INFO ErrorsLog - uploadStudent process started
+2025-06-19 12:59:54,799 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 13:01:18,253 INFO ErrorsLog - uploadStudent process started
+2025-06-19 13:03:35,224 INFO ErrorsLog - uploadStudent process started
+2025-06-19 13:03:42,079 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Jaydev','Ramesh','Jadhav','.','General','X','D','42','24895','M','2018/09/17','-','-','-','-','8779332662','0','-','0001068751','1','-','-','','-','-','Jadhav Jaydev Ramesh','-','-','-','','','12528','','','-','','regular','-','-','-','-','-','-','-','Indian','-','','','-','','','','Twentieth September Two Thousand Nine','-','1901/01/01','','-','','Secondary','','2025-2026','','-','-','1899/12/30','-1','-');
+2025-06-19 13:03:43,312 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Ankush','Shivshankar','Yadav','.','General','X (Hindi)','A','21','24900','M','2018/09/17','-','-','-','-','9833554719','0','-','0002202810','1','-','-','','-','-','Yadav Ankush Shivshankar','-','-','-','','','12529','','','-','','regular','-','-','-','-','-','-','-','Indian','-','','','-','','','','Sixth February Two Thousand Ten','-','1901/01/01','','-','','Secondary(Hindi)','','2025-2026','','-','-','1899/12/30','-1','-');
+2025-06-19 13:03:43,719 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Harshal','Madhav','Zope','.','General','X (Mar)','A','30','26186','M','2018/09/17','-','-','-','-','9838612842','0','-','0002179627','1','-','-','','-','-','Zope Harshal Madhav','-','-','-','','','12530','','','-','','regular','-','-','-','-','-','-','-','Indian','-','','','-','','','','Twenty Fifth January Two Thousand Ten','-','1901/01/01','','-','','Secondary(Marathi)','','2025-2026','','-','-','1899/12/31','-1','-');
+2025-06-19 13:03:44,114 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Rohan','Ravi','Jadhav','.','General','X (Mar)','A','31','25938','M','2018/09/17','-','-','-','-','9604313705','0','-','0001022735','1','-','-','','-','-','Jadhav Rohan Ravi','-','-','-','','','12531','','','-','','regular','-','-','-','-','-','-','-','Indian','-','','','-','','','','Seventeenth February Two Thousand Ten','-','1901/01/01','','-','','Secondary(Marathi)','','2025-2026','','-','-','1900/01/01','-1','-');
+2025-06-19 13:03:53,342 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Yadnesh','Yogesh','Galande','Aarti','General','IX','A','61','25374','M','2018/09/17','Hindu','','','','8452955942','0','-','0000000001','0','Ulhasnagar','','','-','-','Galande Yadnesh Yogesh  Aarti','-','-','-','','','12532','','','0','','regular','0','Dombivli','','','Maharashtra','','','0','Shri Guru Gobind Singh English school','','','-','','','','Twenty Second October Two Thousand Nine','VI','1901/01/01','','-','','Secondary','','2025-2026','','0','0','1900/01/02','-1','-');
+2025-06-19 13:03:54,237 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Kartik','Manoj','Agarwal','Kartik','General','IX','C','47','24985','M','2018/09/17','Select Religion','Select Caste','Select SubCaste','Select Category','7448222530','0','-','0001071371','1','.','.','','-','-','Agarwal Kartik Manoj Kartik','-','-','-','','','12533','','','0','','regular','0','.','.','.','0','.','.','0','.','','','-','','','','Twenty Seventh October Two Thousand Ten','Select Std','1901/01/01','','-','','Secondary','','2025-2026','','0','0','1900/01/03','-1','-');
+2025-06-19 13:03:54,602 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Purvi','Ravi','Pagare','Purvi','General','IX','D','18','25256','F','2018/09/17','Select Religion','Select Caste','Select SubCaste','Select Category','9322758283','0','-','0002151179','1','.','.','','-','-','Pagare Purvi Ravi Purvi','-','-','-','','','12534','','','0','','regular','0','.','.','.','0','.','.','0','.','','','-','','','','Seventeenth July Two Thousand Ten','Select Std','1901/01/01','','-','','Secondary','','2025-2026','','0','0','1900/01/04','-1','-');
+2025-06-19 13:03:54,956 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Uneza','Salim','Bagwan','Apsara','General','IX (Hindi)','A','26','25222','F','2018/09/17','Islam','Select Caste','-','General','7666100367','0','-','0000000000','1','-','-','','-','-','Bagwan Uneza Salim Apsara','D:\centuryrayonhighschool.com\httpdocs\MarksheetModule\StudentPhoto_New\New_Photo\IMG_0036_cropped.jpg','-','-','','','12535','0','','-','','regular','-','Solapur','-','-','Maharashtra','India','Hindi','Indian','C.R. Primary School, Shahad','','','-','','','','Thirteenth April Two Thousand Eleven','V','1901/01/01','','-','','Secondary','','2025-2026','','-','-','1900/01/05','-1','-');
+2025-06-19 13:03:55,310 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Jalaluddin','Habej','Ali','Jeleka Begam','-','IX (Hindi)','A','36','26746','M','2018/09/17','Muslim','-','-','-','8446615727','0','-','0000000001','1','Mharal','','','-','-','Ali Jalaluddin Habej Jeleka Begam','D:\centuryrayonhighschool.com\httpdocs\MarksheetModule\StudentPhoto_New\New_Photo\IMG_0042_cropped.jpg','-','-','','','12536','0','','0','','regular','0','Panikhat Dhula ,','','','Assam','','','0','U.M.C Hindi Primary School  No. 3','','','-','','','','Thirteenth January Two Thousand Eleven','VIII (Hindi)','1901/01/01','','-','','Secondary(Hindi)','','2025-2026','','0','0','1900/01/06','-1','-');
+2025-06-19 13:03:55,742 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Pawan','Surendra','Chauhan','Mamta','General','IX (Hindi)','A','39','24741','M','2018/09/17','Hindu','Chauhan','-','General','8975532368','0','-','0000000000','1','-','-','','-','-','Chauhan Pawan Surendra Mamta','D:\centuryrayonhighschool.com\httpdocs\MarksheetModule\StudentPhoto_New\IMG_9627_cropped.jpg','-','-','','','12537','0','','-','','regular','-','Mubarakpur','Mubarakpur','Azamgarh','Uttar Pradesh','India','Hindi','Indian','Pragati Vidyamandir, Kamba','','','-','','','','Twenty Ninth September Two Thousand Nine','V','1901/01/01','','-','','Secondary','','2025-2026','','-','-','1900/01/07','-1','-');
+2025-06-19 13:03:56,497 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Shiv','Rajeev','Gupta','Punam','-','IX (Hindi)','A','43','26747','M','2018/09/17','-','-','-','-','7057304118','0','-','0000000001','1','Mharal','Ulhasnagar','','-','-','Gupta Shiv Rajeev Punam','D:\centuryrayonhighschool.com\httpdocs\MarksheetModule\StudentPhoto_New\New_Photo\IMG_0041_cropped.jpg','-','-','','','12538','','','0','','regular','0','','','','0','','','0','','','','-','','','','Fourth March Two Thousand Eleven','VIII','1901/01/01','','-','','Secondary(Hindi)','','2025-2026','','0','0','1900/01/08','-1','-');
+2025-06-19 13:03:57,283 INFO ErrorsLog - Executing SQL Query:
+insert into StudentMaster(FNAME,MNAME,LNAME,MOTHERNAME,SHIFTNAME,STD,DIV,ROLLNO,GRNO,GENDER,DOB,RELIGION,CASTE,subcaste,CATEGORY,MOBILE,contact2,EMAIL,CARDID,sms,ADDRESS,CITY,PIN,STATE,BLOODGROUP,fullname,photopath,AadharCard,Saralid,bankname,bankacc,cid,ispromoted,fingerid,freeshiptype,status,admissiontype,subjects,placeofbirth,birthtaluka,birthdistrict,birthstate,birthcountry,mothertongue,Nationality,Lastschool,Progress,DateofLeaving,Reasonforleaving,LCNo,conduct,remark,dobwords,admissionstd,DOA,STUDENTID,accountname,IQLD,schoolsection,leftstatus,academicyear,stdstudying,house,feesinstallment,entrydate,uniformid,stdstudyingInWords)values('Shivam','Bablu','Kashyap','Ranjana','General','IX (Hindi)','A','44','25284','M','2018/09/17','Hindu','-','-','General','9730353443','0','-','0000000000','1','-','-','','-','-','Kashyap Shivam Bablu Ranjana','D:\centuryrayonhighschool.com\httpdocs\MarksheetModule\StudentPhoto_New\New_Photo\IMG_0040_cropped.jpg','-','-','','','12539','','','-','','regular','-','Azamgarh','-','-','0','India','Hindi','Indian','C.R. Primary School, Shahad','','','-','','','','Twenty Second December Two Thousand Ten','V','1901/01/01','','-','','Secondary','','2025-2026','','-','-','1900/01/09','-1','-');
+2025-06-19 13:03:57,325 INFO ErrorsLog - uploadStudent process completed
+2025-06-19 13:26:04,446 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate) in D:\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCReport.aspx.cs:line 173
+ClientConnectionId:f34aa6f7-b9e7-4304-85d4-68db02f00729
+Error Number:242,State:3,Class:16
+2025-06-19 13:26:46,149 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate) in D:\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCReport.aspx.cs:line 173
+ClientConnectionId:f34aa6f7-b9e7-4304-85d4-68db02f00729
+Error Number:242,State:3,Class:16
+2025-06-19 13:27:45,039 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate) in D:\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCReport.aspx.cs:line 173
+ClientConnectionId:60524020-cd28-4691-9e93-d1d0c60fa2c7
+Error Number:242,State:3,Class:16
+2025-06-19 13:38:59,045 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate)
+ClientConnectionId:c4c54a16-de96-4d71-9968-0ab1e7a0b230
+Error Number:242,State:3,Class:16
+2025-06-19 13:45:10,114 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate) in D:\CenturyRayonWebsite\CenturyRayonSchool\LCModule\LCReport.aspx.cs:line 173
+ClientConnectionId:befd8e15-dc16-407a-a393-4d5ff4caf1ac
+Error Number:242,State:3,Class:16
+2025-06-19 13:47:14,947 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate)
+ClientConnectionId:befd8e15-dc16-407a-a393-4d5ff4caf1ac
+Error Number:242,State:3,Class:16
+2025-06-19 13:49:29,273 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate)
+ClientConnectionId:befd8e15-dc16-407a-a393-4d5ff4caf1ac
+Error Number:242,State:3,Class:16
+2025-06-19 13:51:12,480 ERROR ErrorsLog - LCreport.PrintLCReport
+System.Data.SqlClient.SqlException (0x80131904): The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at CenturyRayonSchool.LCModule.LCReport.PrintLCReport(SqlConnection con, String std, String div, String fromdate, String todate)
+ClientConnectionId:befd8e15-dc16-407a-a393-4d5ff4caf1ac
+Error Number:242,State:3,Class:16
