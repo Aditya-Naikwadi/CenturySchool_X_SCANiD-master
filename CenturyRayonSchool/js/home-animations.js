@@ -1,124 +1,202 @@
 /*
- * Century Rayon School - Home Page Animations
- * Version: 1.0
- * Description: Scroll-triggered animations and interactions for homepage
+ * Century Rayon School - Enhanced Home Page Animations
+ * Version: 2.0
+ * Description: Enhanced scroll-triggered animations with mobile optimization
  */
 
 (function () {
     'use strict';
 
     // ==========================================
-    // INTERSECTION OBSERVER FOR SCROLL ANIMATIONS
+    // MOBILE DETECTION
     // ==========================================
-    function initScrollAnimations() {
-        if ('IntersectionObserver' in window) {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
+    const isMobile = window.innerWidth < 768;
+    const isTablet = window.innerWidth >= 768 && window.innerWidth < 1025;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-            const observer = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-in');
-                        // Optionally unobserve after animation
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+    // ==========================================
+    // RESPONSIVE SOCIAL ICONS
+    // ==========================================
+    function initResponsiveSocial() {
+        const desktopSocial = document.querySelector('.social-float');
+        const mobileSocial = document.querySelector('.mobile-social-footer');
 
-            // Observe all section wrappers
-            const sections = document.querySelectorAll('.section-wrapper');
-            sections.forEach(function (section) {
-                observer.observe(section);
-            });
+        if (isMobile) {
+            if (desktopSocial) desktopSocial.style.display = 'none';
+            if (mobileSocial) mobileSocial.style.display = 'flex';
         } else {
-            // Fallback for browsers without IntersectionObserver
-            const sections = document.querySelectorAll('.section-wrapper');
-            sections.forEach(function (section) {
-                section.classList.add('animate-in');
-            });
+            if (desktopSocial) desktopSocial.style.display = 'flex';
+            if (mobileSocial) mobileSocial.style.display = 'none';
         }
+
+        // Update on window resize
+        window.addEventListener('resize', function () {
+            const currentMobile = window.innerWidth < 768;
+            if (currentMobile) {
+                if (desktopSocial) desktopSocial.style.display = 'none';
+                if (mobileSocial) mobileSocial.style.display = 'flex';
+            } else {
+                if (desktopSocial) desktopSocial.style.display = 'flex';
+                if (mobileSocial) mobileSocial.style.display = 'none';
+            }
+        });
     }
 
     // ==========================================
-    // PARALLAX EFFECT FOR HERO CAROUSEL
+    // IMPROVED MODAL TIMING FOR MOBILE
+    // ==========================================
+    function initResponsiveModal() {
+        const admissionModal = document.getElementById('admissionFormPopup');
+        if (!admissionModal) return;
+
+        // Don't auto-show on mobile, too intrusive
+        if (isMobile) {
+            // Store that modal was suppressed
+            sessionStorage.setItem('modalSuppressed', 'true');
+
+            // Could add a floating button to open modal on mobile
+            // For now, just don't auto-show
+        } else {
+            // Show after 5 seconds on desktop/tablet
+            setTimeout(function () {
+                if (!sessionStorage.getItem('modalDismissed')) {
+                    const modalInstance = new bootstrap.Modal(admissionModal);
+                    modalInstance.show();
+                }
+            }, 5000);
+        }
+
+        // Track when user dismisses
+        admissionModal.addEventListener('hidden.bs.modal', function () {
+            sessionStorage.setItem('modalDismissed', 'true');
+        });
+    }
+
+    // ==========================================
+    // INTERSECTION OBSERVER FOR SCROLL ANIMATIONS
+    // ==========================================
+    function initScrollAnimations() {
+        if (!('IntersectionObserver' in window) || prefersReducedMotion) {
+            // Fallback: show all content immediately
+            const sections = document.querySelectorAll('.section-wrapper');
+            sections.forEach(function (section) {
+                section.classList.add('animate-in');
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+            });
+            return;
+        }
+
+        const observerOptions = {
+            root: null,
+            rootMargin: isMobile ? '-20px' : '-50px', // Trigger earlier on mobile
+            threshold: isMobile ? 0.05 : 0.1
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const sections = document.querySelectorAll('.section-wrapper');
+        sections.forEach(function (section) {
+            observer.observe(section);
+        });
+    }
+
+    // ==========================================
+    // PARALLAX EFFECT (DESKTOP ONLY)
     // ==========================================
     function initParallaxEffect() {
+        if (isMobile || prefersReducedMotion) return; // Skip on mobile for performance
+
         const heroCarousel = document.querySelector('#heroCarousel');
         if (!heroCarousel) return;
 
-        window.addEventListener('scroll', function () {
-            const scrolled = window.pageYOffset;
-            const parallaxElements = heroCarousel.querySelectorAll('.carousel-item.active img');
+        let ticking = false;
 
-            parallaxElements.forEach(function (element) {
-                const speed = 0.5;
-                element.style.transform = 'translateY(' + (scrolled * speed) + 'px) scale(1.05)';
-            });
-        });
+        window.addEventListener('scroll', function () {
+            if (!ticking) {
+                window.requestAnimationFrame(function () {
+                    const scrolled = window.pageYOffset;
+                    const parallaxElements = heroCarousel.querySelectorAll('.carousel-item.active img');
+
+                    parallaxElements.forEach(function (element) {
+                        const speed = 0.5;
+                        element.style.transform = 'translateY(' + (scrolled * speed) + 'px) scale(1.05)';
+                    });
+
+                    ticking = false;
+                });
+
+                ticking = true;
+            }
+        }, { passive: true });
     }
 
     // ==========================================
     // SMOOTH REVEAL FOR CARDS
     // ==========================================
     function initCardRevealAnimations() {
-        if ('IntersectionObserver' in window) {
-            const cardObserver = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry, index) {
-                    if (entry.isIntersecting) {
-                        // Add a slight delay for staggered effect
-                        setTimeout(function () {
-                            entry.target.style.opacity = '1';
-                            entry.target.style.transform = 'translateY(0)';
-                        }, index * 100);
-                        cardObserver.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.2
-            });
+        if (!('IntersectionObserver' in window) || prefersReducedMotion) return;
 
-            // Observe all cards
-            const cards = document.querySelectorAll('.announcement-card, .event-card, .notice-card');
-            cards.forEach(function (card, index) {
-                // Set initial state
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-                card.style.transition = 'all 0.6s ease-out';
-                cardObserver.observe(card);
+        const cardObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry, index) {
+                if (entry.isIntersecting) {
+                    const delay = isMobile ? index * 50 : index * 100;
+                    setTimeout(function () {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, delay);
+                    cardObserver.unobserve(entry.target);
+                }
             });
-        }
+        }, {
+            threshold: 0.2
+        });
+
+        const cards = document.querySelectorAll('.announcement-card, .event-card, .notice-card');
+        cards.forEach(function (card) {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease-out';
+            cardObserver.observe(card);
+        });
     }
 
     // ==========================================
-    // ENHANCED MARQUEE ANIMATION
+    // ENHANCED MARQUEE WITH TOUCH SUPPORT
     // ==========================================
     function enhanceMarqueeAnimation() {
         const marquees = document.querySelectorAll('marquee');
 
         marquees.forEach(function (marquee) {
-            // Add smooth scroll on mouse wheel
+            // Mouse wheel support
             marquee.addEventListener('wheel', function (e) {
                 e.preventDefault();
                 const delta = e.deltaY;
                 this.scrollTop += delta;
-            });
+            }, { passive: false });
 
-            // Add touch support for mobile
+            // Touch support for mobile
             let startY = 0;
+            let startScrollTop = 0;
+
             marquee.addEventListener('touchstart', function (e) {
                 startY = e.touches[0].pageY;
+                startScrollTop = this.scrollTop;
                 this.stop();
-            });
+            }, { passive: true });
 
             marquee.addEventListener('touchmove', function (e) {
                 const currentY = e.touches[0].pageY;
                 const diff = startY - currentY;
-                this.scrollTop += diff;
-                startY = currentY;
-            });
+                this.scrollTop = startScrollTop + diff;
+            }, { passive: true });
 
             marquee.addEventListener('touchend', function () {
                 this.start();
@@ -127,9 +205,58 @@
     }
 
     // ==========================================
-    // ICON ANIMATION ON HOVER
+    // TOUCH-OPTIMIZED CAROUSEL SWIPE
+    // ==========================================
+    function initCarouselSwipe() {
+        if (!isMobile) return; // Only for mobile
+
+        const carousels = document.querySelectorAll('.carousel');
+
+        carousels.forEach(function (carousel) {
+            let startX = 0;
+            let startY = 0;
+            let moving = false;
+
+            carousel.addEventListener('touchstart', function (e) {
+                startX = e.touches[0].pageX;
+                startY = e.touches[0].pageY;
+                moving = true;
+            }, { passive: true });
+
+            carousel.addEventListener('touchmove', function (e) {
+                if (!moving) return;
+
+                const currentX = e.touches[0].pageX;
+                const currentY = e.touches[0].pageY;
+                const diffX = startX - currentX;
+                const diffY = startY - currentY;
+
+                // If horizontal swipe is more significant than vertical
+                if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+                    const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+                    if (carouselInstance) {
+                        if (diffX > 0) {
+                            carouselInstance.next();
+                        } else {
+                            carouselInstance.prev();
+                        }
+                    }
+                    moving = false;
+                }
+            }, { passive: true });
+
+            carousel.addEventListener('touchend', function () {
+                moving = false;
+            });
+        });
+    }
+
+    // ==========================================
+    // ICON ANIMATION ON HOVER (DESKTOP ONLY)
     // ==========================================
     function initIconAnimations() {
+        if (isMobile) return; // Skip on mobile
+
         const iconCards = document.querySelectorAll('.event-card, .announcement-card');
 
         iconCards.forEach(function (card) {
@@ -146,57 +273,37 @@
     }
 
     // ==========================================
-    // GALLERY IMAGE LAZY LOADING WITH FADE
+    // GALLERY IMAGE LAZY LOADING
     // ==========================================
     function initGalleryLazyLoad() {
-        if ('IntersectionObserver' in window) {
-            const imageObserver = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.style.opacity = '0';
-                        img.style.transition = 'opacity 0.6s ease-in-out';
+        if (!('IntersectionObserver' in window)) return;
 
+        const imageObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.style.opacity = '0';
+                    img.style.transition = 'opacity 0.6s ease-in-out';
+
+                    if (img.complete) {
+                        img.style.opacity = '1';
+                    } else {
                         img.addEventListener('load', function () {
                             this.style.opacity = '1';
                         });
-
-                        imageObserver.unobserve(img);
                     }
-                });
-            });
 
-            const galleryImages = document.querySelectorAll('#carouselGallery img');
-            galleryImages.forEach(function (img) {
-                imageObserver.observe(img);
+                    imageObserver.unobserve(img);
+                }
             });
-        }
-    }
+        }, {
+            rootMargin: '50px'
+        });
 
-    // ==========================================
-    // SMOOTH SECTION TRANSITIONS
-    // ==========================================
-    function initSectionTransitions() {
-        const sections = document.querySelectorAll('.section-wrapper');
-
-        if ('IntersectionObserver' in window) {
-            const sectionObserver = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, {
-                threshold: 0.1,
-                rootMargin: '-50px'
-            });
-
-            sections.forEach(function (section) {
-                section.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
-                sectionObserver.observe(section);
-            });
-        }
+        const galleryImages = document.querySelectorAll('#carouselGallery img');
+        galleryImages.forEach(function (img) {
+            imageObserver.observe(img);
+        });
     }
 
     // ==========================================
@@ -204,13 +311,12 @@
     // ==========================================
     function enhanceCarouselTransitions() {
         const heroCarousel = document.querySelector('#heroCarousel');
-        if (!heroCarousel) return;
+        if (!heroCarousel || prefersReducedMotion) return;
 
         heroCarousel.addEventListener('slide.bs.carousel', function (e) {
             const nextSlide = e.relatedTarget;
             const currentSlide = e.target.querySelector('.carousel-item.active');
 
-            // Add fade effect
             if (currentSlide) {
                 currentSlide.style.transition = 'opacity 0.8s ease-in-out';
                 currentSlide.style.opacity = '0.5';
@@ -262,65 +368,110 @@
             });
         });
 
-        // Add ripple styles dynamically
-        const style = document.createElement('style');
-        style.textContent = `
-            .ripple-effect {
-                position: absolute;
-                border-radius: 50%;
-                background: rgba(255, 255, 255, 0.6);
-                transform: scale(0);
-                animation: ripple-animation 0.6s ease-out;
-                pointer-events: none;
-            }
-            @keyframes ripple-animation {
-                to {
-                    transform: scale(2);
-                    opacity: 0;
+        // Add ripple styles
+        if (!document.getElementById('ripple-styles')) {
+            const style = document.createElement('style');
+            style.id = 'ripple-styles';
+            style.textContent = `
+                .ripple-effect {
+                    position: absolute;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.6);
+                    transform: scale(0);
+                    animation: ripple-animation 0.6s ease-out;
+                    pointer-events: none;
                 }
-            }
-        `;
-        document.head.appendChild(style);
+                @keyframes ripple-animation {
+                    to {
+                        transform: scale(2);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        }
     }
 
     // ==========================================
-    // SOCIAL FLOAT SCROLL EFFECT
+    // SOCIAL FLOAT SCROLL EFFECT (DESKTOP)
     // ==========================================
     function initSocialFloatEffect() {
+        if (isMobile) return; // Skip on mobile
+
         const socialFloat = document.querySelector('.social-float');
         if (!socialFloat) return;
 
-        window.addEventListener('scroll', function () {
-            const scrolled = window.pageYOffset;
-            if (scrolled > 300) {
-                socialFloat.style.opacity = '1';
-                socialFloat.style.transform = 'translateY(-50%) translateX(0)';
-            } else {
-                socialFloat.style.opacity = '0.7';
-                socialFloat.style.transform = 'translateY(-50%) translateX(10px)';
-            }
-        });
+        let ticking = false;
 
-        // Set initial transition
+        window.addEventListener('scroll', function () {
+            if (!ticking) {
+                window.requestAnimationFrame(function () {
+                    const scrolled = window.pageYOffset;
+                    if (scrolled > 300) {
+                        socialFloat.style.opacity = '1';
+                        socialFloat.style.transform = 'translateY(-50%) translateX(0)';
+                    } else {
+                        socialFloat.style.opacity = '0.7';
+                        socialFloat.style.transform = 'translateY(-50%) translateX(10px)';
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+
         socialFloat.style.transition = 'all 0.3s ease';
+    }
+
+    // ==========================================
+    // PERFORMANCE MONITORING
+    // ==========================================
+    function logPerformance() {
+        if (window.performance && window.performance.timing) {
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    const perfData = window.performance.timing;
+                    const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+                    console.log('Page Load Time: ' + pageLoadTime + 'ms');
+                }, 0);
+            });
+        }
     }
 
     // ==========================================
     // INITIALIZE ALL ENHANCEMENTS
     // ==========================================
     function init() {
+        // Core functionality
+        initResponsiveSocial();
+        initResponsiveModal();
         initScrollAnimations();
-        initParallaxEffect();
+
+        // Progressive enhancement
+        if (!isMobile || !prefersReducedMotion) {
+            initParallaxEffect();
+            initIconAnimations();
+            initSocialFloatEffect();
+        }
+
+        // Universal enhancements
         initCardRevealAnimations();
         enhanceMarqueeAnimation();
-        initIconAnimations();
         initGalleryLazyLoad();
-        initSectionTransitions();
         enhanceCarouselTransitions();
         initButtonRipples();
-        initSocialFloatEffect();
 
-        console.log('Home page animations initialized successfully');
+        // Mobile-specific
+        if (isMobile) {
+            initCarouselSwipe();
+        }
+
+        // Performance monitoring
+        if (window.location.hostname === 'localhost') {
+            logPerformance();
+        }
+
+        console.log('Home page enhancements initialized (v2.0) - Mobile: ' + isMobile + ', Tablet: ' + isTablet);
     }
 
     // Execute on DOM ready

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/modern-theme.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/responsive-overrides.css" />
+    <link rel="stylesheet" href="css/footer-enhanced.css" />
     
     <!--[if lt IE 9]>  
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
@@ -119,63 +120,119 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
 
-        <!-- Modern Footer -->
+        <!-- Modern Enhanced Footer -->
+<footer class="modern-footer-enhanced">
+  <!-- Main Footer Content -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <!-- About School Column -->
+        <div class="footer-column">
+          <h5>About Century Rayon School</h5>
+          <p>Committed to providing quality education and nurturing young minds since 1954. Located in Shahad, Thane, we are dedicated to academic excellence and holistic development.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon facebook" aria-label="Facebook" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon instagram" aria-label="Instagram" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon whatsapp" aria-label="WhatsApp" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="social-icon twitter" aria-label="Twitter" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon youtube" aria-label="YouTube" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
 
-        <!-- Footer -->
+        <!-- Quick Links Column -->
+        <div class="footer-column">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.aspx">Home</a></li>
+            <li><a href="MissionVision.aspx">Mission & Vision</a></li>
+            <li><a href="Curriculam.aspx">Curriculum</a></li>
+            <li><a href="Gallery.aspx">Photo Gallery</a></li>
+            <li><a href="News.aspx">Latest Notices</a></li>
+            <li><a href="admissionmodule/AdmissionForm.aspx">Admissions</a></li>
+            <li><a href="Contact.aspx">Contact Us</a></li>
+          </ul>
+        </div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- Contact Info Column -->
+        <div class="footer-column">
+          <h5>Contact Us</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Century Rayon Colony, Shahad (E), Kalyan - 421103, Dist. Thane, Maharashtra, India</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>Toll Free: 1800-123-4567</span>
+            </li>
+            <li>
+              <i class="fas fa-fax"></i>
+              <span>Telefax: 0251-2223344, 2223345</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@centuryrayonschool.com">info@centuryrayonschool.com</a>
+            </li>
+          </ul>
+        </div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+        <!-- Newsletter Column -->
+        <div class="footer-column">
+          <h5>Stay Connected</h5>
+          <p>Subscribe to receive our latest updates and news.</p>
+          <div class="footer-newsletter">
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" placeholder="Enter your email" aria-label="Email for newsletter">
+              <button type="button" class="newsletter-btn" onclick="alert('Newsletter subscription feature coming soon!')">Subscribe</button>
+            </div>
+            <p class="newsletter-note">We respect your privacy and never share your information.</p>
+          </div>
+        </div>
 
-<footer class="school-footer">
-  <div class="container">
-    <div class="row">
-      <!-- School Info -->
-      <div class="col-md-4">
-        <h5>Century Rayon High School, Shahad</h5>
-        <p>Century Rayon Colony,<br>
-          Shahad (E), Kalyan - 421103,<br>
-          Dist. Thane, Maharashtra, India.</p>
-      </div>
 
-      <!-- Support -->
-      <div class="col-md-4">
-        <h5>Support</h5>
-        <p><strong>Toll Free No.:</strong> 1800-123-4567</p>
-        <p><strong>Telefax:</strong> 0251-2223344, 2223345</p>
-        <p><strong>Email:</strong> <a href="mailto:info@centuryrayonschool.com">info@centuryrayonschool.com</a></p>
-      </div>
+    </div>
+  </div>
 
-      <!-- App Section -->
-      <div class="col-md-4">
-        <h5>Century Rayon School App</h5>
-        <p>Technology enhancing your experience,<br>
-           Checkout our School App.</p>
-        <a href="#"><img src="img/googleplay.png" alt="Google Play" class="store-badge"></a>
-        <a href="#"><img src="img/appstore.png" alt="App Store" class="store-badge"></a>
       </div>
     </div>
   </div>
 
-  <div class="footer-bottom text-center">
-    <p>Copyright © 2016-2025. Century Rayon High School, Shahad. All Rights Reserved.</p>
-    <p class="developer">Developed by <a href="#">SCANiD Systems</a></p>
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="container">
+      <p>Copyright © 2016-2025. Century Rayon High School, Shahad. All Rights Reserved.</p>
+      <p>Developed by <a href="#">SCANiD Systems</a></p>
+    </div>
   </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 </footer>
 
 
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS Files - Removed missing files to prevent 404 errors -->
+  <!-- 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  -->
+  <!-- Using CDN versions instead where needed -->
 
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -192,6 +249,7 @@
         <script src="js/plugins/parallax/jquery.parallax-1.1.3.js"></script>
         <script src="js/plugins/countto/jquery.countTo.js"></script>
         <script src="js/plugins/countdown/jquery.countdown.js"></script>
+        <script src="js/navigation.js"></script>
         <script src="js/settings.js"></script>
 
         <script>

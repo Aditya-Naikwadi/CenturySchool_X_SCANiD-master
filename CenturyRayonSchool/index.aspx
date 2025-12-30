@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
       <link href="css/home-enhancements.css?v=1.0" rel="stylesheet">
+      <link href="css/responsive-overrides.css?v=2.0" rel="stylesheet">
     </head>
 
     <style>
@@ -831,32 +832,27 @@
       </a>
     </div>
 
+    <!-- Mobile Social Footer (only visible on mobile) -->
+    <div class="mobile-social-footer" style="display: none;">
+      <a href="https://facebook.com" target="_blank" class="facebook" style="background: #3b5998;">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="instagram"
+        style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/919920878141" target="_blank" class="whatsapp" style="background: #25D366;">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
 
 
     <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const admissionModal = new bootstrap.Modal(document.getElementById('admissionFormPopup'));
-        setTimeout(() => {
-          admissionModal.show(); // open automatically after 2 seconds
-        }, 2000);
-      });
-    </script>
+    <!-- Modal and carousel initialization now handled in home-animations.js v2.0 -->
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const heroCarousel = document.querySelector("#heroCarousel");
 
-        // Initialize Bootstrap carousel with custom speed
-        const carousel = new bootstrap.Carousel(heroCarousel, {
-          interval: 5000,   // Speed in milliseconds (2 seconds)
-          ride: "carousel", // Auto start
-          pause: false,     // Don’t pause on hover
-          wrap: true        // Loop infinitely
-        });
-      });
-    </script>
 
-    <script src="js/home-animations.js?v=1.0"></script>
+    <script src="js/home-animations.js?v=2.0"></script>
 
   </asp:Content>
