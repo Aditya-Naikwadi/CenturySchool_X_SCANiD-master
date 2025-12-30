@@ -17,40 +17,6 @@
 
       <div class="admin-container">
 
-        <!-- Trustees Section -->
-        <div class="admin-card">
-          <h2 class="admin-card-title">
-            <i class="fas fa-shield-alt"></i>
-            Board of Trustees
-          </h2>
-
-          <div class="admin-members-grid">
-            <div class="member-card">
-              <div class="member-icon">
-                <i class="fas fa-user-shield"></i>
-              </div>
-              <div class="member-name">Mr. O.R. Chitlange</div>
-              <span class="member-role trustee">Trustee</span>
-            </div>
-
-            <div class="member-card">
-              <div class="member-icon">
-                <i class="fas fa-user-shield"></i>
-              </div>
-              <div class="member-name">Mr. Subodh Dave</div>
-              <span class="member-role trustee">Trustee</span>
-            </div>
-
-            <div class="member-card">
-              <div class="member-icon">
-                <i class="fas fa-user-shield"></i>
-              </div>
-              <div class="member-name">Mr. Yogesh R. Shah</div>
-              <span class="member-role trustee">Trustee</span>
-            </div>
-          </div>
-        </div>
-
         <!-- School Managing Committee Section -->
         <div class="admin-card">
           <h2 class="admin-card-title">
@@ -59,43 +25,46 @@
           </h2>
 
           <div class="admin-members-grid">
+            <!-- Chairman -->
             <div class="member-card">
               <div class="member-icon">
                 <i class="fas fa-crown"></i>
               </div>
-              <div class="member-name">Mr. Yogesh R. Shah</div>
+              <div class="member-name">Mr. O. R. Chitlange</div>
               <span class="member-role chairman">Chairman</span>
             </div>
 
+            <!-- Vice Chairman -->
             <div class="member-card">
               <div class="member-icon">
                 <i class="fas fa-user-tie"></i>
               </div>
+              <div class="member-name">Mr. Digvijay Pandey</div>
+              <span class="member-role vice-chairman">Vice Chairman</span>
+            </div>
+
+            <!-- Members -->
+            <div class="member-card">
+              <div class="member-icon">
+                <i class="fas fa-user"></i>
+              </div>
               <div class="member-name">Mr. Milind Bhandarkar</div>
-              <span class="member-role vice-chairman">Vice-Chairman</span>
-            </div>
-
-            <div class="member-card">
-              <div class="member-icon">
-                <i class="fas fa-user-cog"></i>
-              </div>
-              <div class="member-name">Mr. Anil Sewaney</div>
-              <span class="member-role administrator">Administrator</span>
-            </div>
-
-            <div class="member-card">
-              <div class="member-icon">
-                <i class="fas fa-coins"></i>
-              </div>
-              <div class="member-name">Mr. Milind H. Patil</div>
-              <span class="member-role">Treasurer</span>
+              <span class="member-role">Member</span>
             </div>
 
             <div class="member-card">
               <div class="member-icon">
                 <i class="fas fa-user"></i>
               </div>
-              <div class="member-name">Mr. B.P. Karwa</div>
+              <div class="member-name">Mr. Shrikant Gore</div>
+              <span class="member-role">Member</span>
+            </div>
+
+            <div class="member-card">
+              <div class="member-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="member-name">Ms. Shilpa Shah</div>
               <span class="member-role">Member</span>
             </div>
 
@@ -111,14 +80,6 @@
               <div class="member-icon">
                 <i class="fas fa-user"></i>
               </div>
-              <div class="member-name">Mr. Anand N. Thakur</div>
-              <span class="member-role">Member</span>
-            </div>
-
-            <div class="member-card">
-              <div class="member-icon">
-                <i class="fas fa-user"></i>
-              </div>
               <div class="member-name">Mr. Sameer Saini</div>
               <span class="member-role">Member</span>
             </div>
@@ -127,7 +88,23 @@
               <div class="member-icon">
                 <i class="fas fa-user"></i>
               </div>
-              <div class="member-name">Mr. Manjeetsingh Kocchar</div>
+              <div class="member-name">Mr. Sudhakar Musale</div>
+              <span class="member-role">Member</span>
+            </div>
+
+            <div class="member-card">
+              <div class="member-icon">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <div class="member-name">Dr. Naresh Chandra</div>
+              <span class="member-role">Member</span>
+            </div>
+
+            <div class="member-card">
+              <div class="member-icon">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <div class="member-name">Dr. Avinash Patil</div>
               <span class="member-role">Member</span>
             </div>
 
@@ -135,7 +112,7 @@
               <div class="member-icon">
                 <i class="fas fa-user"></i>
               </div>
-              <div class="member-name">Mr. Leonardo D'Souza</div>
+              <div class="member-name">Ms. Ranjana Jangra</div>
               <span class="member-role">Member</span>
             </div>
 
@@ -143,7 +120,7 @@
               <div class="member-icon">
                 <i class="fas fa-user"></i>
               </div>
-              <div class="member-name">Mrs. Ranjna Jhangra</div>
+              <div class="member-name">Ms. Esmita Gupta</div>
               <span class="member-role">Member</span>
             </div>
 
@@ -151,48 +128,84 @@
               <div class="member-icon">
                 <i class="fas fa-user"></i>
               </div>
-              <div class="member-name">Mr. R.B. Singh</div>
+              <div class="member-name">Mr. Milind Patil</div>
               <span class="member-role">Member</span>
             </div>
 
+            <!-- Head Mistresses -->
             <div class="member-card">
               <div class="member-icon">
-                <i class="fas fa-user"></i>
+                <i class="fas fa-chalkboard-teacher"></i>
               </div>
-              <div class="member-name">Mr. Krishna Yadav</div>
-              <span class="member-role">Member</span>
+              <div class="member-name">Ms. Vandana Bhadane</div>
+              <span class="member-role">I/C HM Secondary</span>
             </div>
 
             <div class="member-card">
               <div class="member-icon">
                 <i class="fas fa-chalkboard-teacher"></i>
               </div>
-              <div class="member-name">Mrs. Rachna Mathur</div>
-              <span class="member-role">H.M. (Toddlers)</span>
+              <div class="member-name">Ms. Babita Singh</div>
+              <span class="member-role">HM Primary</span>
             </div>
 
             <div class="member-card">
               <div class="member-icon">
                 <i class="fas fa-chalkboard-teacher"></i>
               </div>
-              <div class="member-name">Mrs. Ritu Bhagat</div>
-              <span class="member-role">H.M. (Ex-Officio Secy.)</span>
+              <div class="member-name">Ms. Rachna Mathur</div>
+              <span class="member-role">HM Toddlers</span>
+            </div>
+
+            <!-- Administrative -->
+            <div class="member-card">
+              <div class="member-icon">
+                <i class="fas fa-user-cog"></i>
+              </div>
+              <div class="member-name">Mr. Prakash Panchal</div>
+              <span class="member-role administrator">Administrative</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Invitees Section -->
+        <div class="admin-card">
+          <h2 class="admin-card-title">
+            <i class="fas fa-user-friends"></i>
+            Special Invitees
+          </h2>
+
+          <div class="admin-members-grid">
+            <div class="member-card">
+              <div class="member-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="member-name">Mr. Harish Dubey</div>
+              <span class="member-role">Special Invitee</span>
             </div>
 
             <div class="member-card">
               <div class="member-icon">
-                <i class="fas fa-chalkboard-teacher"></i>
+                <i class="fas fa-star"></i>
               </div>
-              <div class="member-name">Mrs. Babita Singh</div>
-              <span class="member-role">H.M. Primary</span>
+              <div class="member-name">Mr. Anil Sahal</div>
+              <span class="member-role">Special Invitee</span>
             </div>
 
             <div class="member-card">
               <div class="member-icon">
-                <i class="fas fa-chalkboard-teacher"></i>
+                <i class="fas fa-star"></i>
               </div>
-              <div class="member-name">Mrs. Sarita Borkar</div>
-              <span class="member-role">Asst. H.M Secondary</span>
+              <div class="member-name">Ms. Ruchita Chauhan</div>
+              <span class="member-role">Special Invitee</span>
+            </div>
+
+            <div class="member-card">
+              <div class="member-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="member-name">Mr. Govind Jha</div>
+              <span class="member-role">Special Invitee</span>
             </div>
           </div>
         </div>

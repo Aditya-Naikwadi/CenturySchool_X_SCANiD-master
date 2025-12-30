@@ -28,8 +28,13 @@
    ========================================== */
 
 /* Mobile: 320px - 767px */
+html {
+    font-size: 17px;
+    /* Increased from 16px for better visibility */
+}
+
 body {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
 }
 
@@ -147,6 +152,11 @@ li {
 
 /* Desktop */
 @media (min-width: 1025px) {
+    html {
+        font-size: 18px;
+        /* Increased visibility for desktop */
+    }
+
     .section-title h2 {
         font-size: 2.5rem !important;
     }

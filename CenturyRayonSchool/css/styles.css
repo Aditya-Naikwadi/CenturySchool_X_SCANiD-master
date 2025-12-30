@@ -44,12 +44,13 @@ Colors:
 /******************************/
 body,
 html {
-    width: 100%;
+	width: 100%;
 	height: 100%;
 }
 
-body, p {
-	color: #555; 
+body,
+p {
+	color: #555;
 	font: 400 1rem/1.625rem "Montserrat", sans-serif;
 }
 
@@ -247,16 +248,17 @@ a:hover {
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
 	.label-control {
 		top: 0.9375rem;
 	}
 }
 
-.form-control-input:focus + .label-control,
-.form-control-input.notEmpty + .label-control,
-.form-control-textarea:focus + .label-control,
-.form-control-textarea.notEmpty + .label-control {
+.form-control-input:focus+.label-control,
+.form-control-input.notEmpty+.label-control,
+.form-control-textarea:focus+.label-control,
+.form-control-textarea.notEmpty+.label-control {
 	top: 0.125rem;
 	opacity: 1;
 	font-size: 0.75rem;
@@ -265,7 +267,8 @@ a:hover {
 
 .form-control-input,
 .form-control-select {
-	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	display: block;
+	/* needed for proper display of the label in Firefox, IE, Edge */
 	width: 100%;
 	padding-top: 1.0625rem;
 	padding-bottom: 0.0625rem;
@@ -276,7 +279,8 @@ a:hover {
 	color: #555;
 	font: 400 0.875rem/1.875rem "Montserrat", sans-serif;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+	-webkit-appearance: none;
+	/* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -286,7 +290,8 @@ a:hover {
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
 	.form-control-input {
 		padding-top: 1.25rem;
 		padding-bottom: 0.75rem;
@@ -302,26 +307,29 @@ a:hover {
 }
 
 select {
-    /* you should keep these first rules in place to maintain cross-browser behavior */
-    -webkit-appearance: none;
+	/* you should keep these first rules in place to maintain cross-browser behavior */
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-image: url('../images/down-arrow.png');
-    background-position: 96% 50%;
-    background-repeat: no-repeat;
-    outline: none;
+	-o-appearance: none;
+	appearance: none;
+	background-image: url('../images/down-arrow.png');
+	background-position: 96% 50%;
+	background-repeat: no-repeat;
+	outline: none;
 }
 
 select::-ms-expand {
-    display: none; /* removes the ugly default down arrow on select form field in IE11 */
+	display: none;
+	/* removes the ugly default down arrow on select form field in IE11 */
 }
 
 .form-control-textarea {
-	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	display: block;
+	/* used to eliminate a bottom gap difference between Chrome and IE/FF */
 	width: 100%;
-	height: 8rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 8rem;
+	/* used instead of html rows to normalize height between Chrome and IE/FF */
 	padding-top: 1.25rem;
 	padding-left: 1.3125rem;
 	border: 1px solid #c4d8dc;
@@ -336,7 +344,8 @@ select::-ms-expand {
 .form-control-select:focus,
 .form-control-textarea:focus {
 	border: 1px solid #a1a1a1;
-	outline: none; /* Removes blue border on focus */
+	outline: none;
+	/* Removes blue border on focus */
 }
 
 .form-control-input:hover,
@@ -356,7 +365,8 @@ input[type='checkbox'] {
 }
 
 /* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
 	input[type='checkbox'] {
 		vertical-align: -9%;
 	}
@@ -407,6 +417,7 @@ input[type='checkbox'] {
 .help-block.with-errors ul {
 	margin-bottom: 0;
 }
+
 /* end of form success and error message formatting */
 
 /* Form Success And Error Message Animation - Animate.css */
@@ -416,21 +427,31 @@ input[type='checkbox'] {
 		-ms-transform: scale3d(1, 1, 1);
 		transform: scale3d(1, 1, 1);
 	}
-	10%, 20% {
+
+	10%,
+	20% {
 		-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
 		-ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
 		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
 	}
-	30%, 50%, 70%, 90% {
+
+	30%,
+	50%,
+	70%,
+	90% {
 		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
 		-ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
 		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
 	}
-	40%, 60%, 80% {
+
+	40%,
+	60%,
+	80% {
 		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
 		-ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
 		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
 	}
+
 	to {
 		-webkit-transform: scale3d(1, 1, 1);
 		-ms-transform: scale3d(1, 1, 1);
@@ -444,21 +465,31 @@ input[type='checkbox'] {
 		-ms-transform: scale3d(1, 1, 1);
 		transform: scale3d(1, 1, 1);
 	}
-	10%, 20% {
+
+	10%,
+	20% {
 		-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
 		-ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
 		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
 	}
-	30%, 50%, 70%, 90% {
+
+	30%,
+	50%,
+	70%,
+	90% {
 		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
 		-ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
 		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
 	}
-	40%, 60%, 80% {
+
+	40%,
+	60%,
+	80% {
 		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
 		-ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
 		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
 	}
+
 	to {
 		-webkit-transform: scale3d(1, 1, 1);
 		-ms-transform: scale3d(1, 1, 1);
@@ -477,6 +508,7 @@ input[type='checkbox'] {
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
+
 /* end of form success and error message animation - Animate.css */
 
 /* Fade-move Animation For Details Lightbox - Magnific Popup */
@@ -492,17 +524,17 @@ input[type='checkbox'] {
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
 	opacity: 1;
-	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	transform: translateY(0) perspective(37.5rem) rotateX(0);
 }
 
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
 	opacity: 0;
-	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
 }
 
 /* dark overlay, start state */
@@ -515,10 +547,12 @@ input[type='checkbox'] {
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
 	opacity: 0.8;
 }
+
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
 /* end of fade-move animation for details lightbox - magnific popup */
 
 /* Fade Animation For Image Lightbox - Magnific Popup */
@@ -526,6 +560,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -535,6 +570,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -549,6 +585,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 1;
 	}
+
 	to {
 		opacity: 0;
 	}
@@ -558,6 +595,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 1;
 	}
+
 	to {
 		opacity: 0;
 	}
@@ -567,6 +605,7 @@ input[type='checkbox'] {
 	-webkit-animation: fadeOut 0.8s;
 	animation: fadeOut 0.8s;
 }
+
 /* end of fade animation for details lightbox - magnific popup */
 
 
@@ -585,15 +624,18 @@ input[type='checkbox'] {
 
 .spinner {
 	position: absolute;
-	top: 50%; /* centers the loading animation vertically one the screen */
-	left: 50%; /* centers the loading animation horizontally one the screen */
+	top: 50%;
+	/* centers the loading animation vertically one the screen */
+	left: 50%;
+	/* centers the loading animation horizontally one the screen */
 	width: 3.75rem;
 	height: 1.25rem;
-	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	margin: -0.625rem 0 0 -1.875rem;
+	/* is width and height divided by two */
 	text-align: center;
 }
 
-.spinner > div {
+.spinner>div {
 	display: inline-block;
 	width: 1rem;
 	height: 1rem;
@@ -614,16 +656,29 @@ input[type='checkbox'] {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-	0%, 80%, 100% { -webkit-transform: scale(0); }
-	40% { -webkit-transform: scale(1.0); }
+
+	0%,
+	80%,
+	100% {
+		-webkit-transform: scale(0);
+	}
+
+	40% {
+		-webkit-transform: scale(1.0);
+	}
 }
 
 @keyframes sk-bouncedelay {
-	0%, 80%, 100% { 
+
+	0%,
+	80%,
+	100% {
 		-webkit-transform: scale(0);
 		-ms-transform: scale(0);
 		transform: scale(0);
-	} 40% { 
+	}
+
+	40% {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
@@ -642,7 +697,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 6.5625rem;
+	width: 6.5625rem;
 	height: 5.875rem;
 }
 
@@ -670,40 +725,57 @@ input[type='checkbox'] {
 }
 
 /* Dropdown Menu */
-.navbar-custom .dropdown:hover > .dropdown-menu {
-	display: block; /* this makes the dropdown menu stay open while hovering it */
+.navbar-custom .dropdown {
+	position: relative;
+}
+
+.navbar-custom .dropdown:hover>.dropdown-menu {
+	display: block;
+	/* this makes the dropdown menu stay open while hovering it */
 	min-width: auto;
-	animation: fadeDropdown 0.2s; /* required for the fade animation */
+	animation: fadeDropdown 0.2s;
+	/* required for the fade animation */
 }
 
 @keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
+	0% {
+		opacity: 0;
+	}
 
-    100% {
-        opacity: 1;
-    }
+	100% {
+		opacity: 1;
+	}
 }
 
-.navbar-custom .dropdown-toggle:focus { /* removes dropdown outline on focus */
+.navbar-custom .dropdown-toggle:focus {
+	/* removes dropdown outline on focus */
 	outline: 0;
 }
 
 .navbar-custom .dropdown-menu {
 	margin-top: 0;
+	padding-top: 0.5rem;
+	/* adds space to create hover bridge */
 	border: none;
 	border-radius: 0.25rem;
 	background-color: #fff;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	/* better shadow for visibility */
+	z-index: 1050;
+	/* ensure dropdown appears above other content */
 }
 
 .navbar-custom .dropdown-item {
 	color: #333;
 	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	/* increased padding for easier clicking */
+	transition: all 0.2s ease;
 }
 
 .navbar-custom .dropdown-item:hover {
-	background-color: #fff;
+	background-color: #f8f9fa;
+	/* subtle background on hover */
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -722,6 +794,7 @@ input[type='checkbox'] {
 	background-color: #c4d8dc;
 	opacity: 0.2;
 }
+
 /* end of dropdown menu */
 
 .navbar-custom .social-icons {
@@ -735,19 +808,19 @@ input[type='checkbox'] {
 	font-size: 2rem;
 }
 
-.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times {
 	display: none;
 }
 
-.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars {
 	display: inline-block;
 }
 
-.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars {
 	display: none;
 }
 
-.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times {
 	display: inline-block;
 	margin-right: 0.125rem;
 }
@@ -1094,6 +1167,7 @@ input[type='checkbox'] {
 .lightbox-basic .btn-solid-reg.mfp-close:hover {
 	color: #333;
 }
+
 /* end of signup Button */
 
 /* Back Button */
@@ -1109,6 +1183,7 @@ input[type='checkbox'] {
 .lightbox-basic a.mfp-close.as-button:hover {
 	color: #333;
 }
+
 /* end of back button */
 
 .lightbox-basic button.mfp-close.x-button {
@@ -1163,7 +1238,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-4 .video-play-button:before {
 	content: "";
 	position: absolute;
@@ -1180,7 +1255,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-4 .video-play-button:after {
 	content: "";
 	position: absolute;
@@ -1197,7 +1272,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-4 .video-play-button span {
 	position: relative;
 	display: block;
@@ -1210,17 +1285,19 @@ input[type='checkbox'] {
 	border-top: 1rem solid transparent;
 	border-bottom: 1rem solid transparent;
 }
-  
+
 @keyframes pulse-border {
 	0% {
 		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
 		opacity: 1;
 	}
+
 	100% {
 		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
 		opacity: 0;
 	}
 }
+
 /* end of video play button */
 
 
@@ -1414,7 +1491,7 @@ input[type='checkbox'] {
 }
 
 .form-2 .fa-stack .fa-stack-1x {
-    color: #333;
+	color: #333;
 	transition: all 0.2s ease;
 }
 
@@ -1428,7 +1505,7 @@ input[type='checkbox'] {
 }
 
 .form-2 .fa-stack:hover .fa-stack-2x {
-    color: #333;
+	color: #333;
 }
 
 
@@ -1512,7 +1589,7 @@ input[type='checkbox'] {
 .footer {
 	padding-top: 1.75rem;
 	padding-bottom: 2rem;
-	background: linear-gradient(to bottom right,rgba(129 133 143 / 80%), rgba(126 133 143 / 80%)), url('../images/header-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(129 133 143 / 80%), rgba(126 133 143 / 80%)), url('../images/header-background.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -1524,7 +1601,7 @@ input[type='checkbox'] {
 	margin-bottom: 0.5rem;
 }
 
-.footer a { 
+.footer a {
 	text-decoration: none;
 }
 
@@ -1596,7 +1673,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #f0a731; 
+	background-color: #f0a731;
 }
 
 
@@ -1683,16 +1760,17 @@ a:hover.back-to-top {
 
 /*****************************/
 /*     21. Media Queries     */
-/*****************************/	
+/*****************************/
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 85%;
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of general styles */
 
 
@@ -1719,10 +1797,11 @@ a:hover.back-to-top {
 	.header .swiper-button-prev {
 		left: 1.5rem;
 	}
-	
+
 	.header .swiper-button-next {
 		right: 1.5rem;
 	}
+
 	/* end of header */
 
 
@@ -1730,6 +1809,7 @@ a:hover.back-to-top {
 	.form-1 {
 		padding-top: 9rem;
 	}
+
 	/* end of registration */
 
 
@@ -1747,6 +1827,7 @@ a:hover.back-to-top {
 		font-size: 1.375rem;
 		line-height: 3.25rem;
 	}
+
 	/* end of description */
 
 
@@ -1756,6 +1837,7 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of newsletter */
 
 
@@ -1772,21 +1854,23 @@ a:hover.back-to-top {
 	.ex-basic-2 .form-container {
 		margin-top: 0;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width width 768px */
 
 
 /* Min-width width 992px */
 @media (min-width: 992px) {
-	
+
 	/* Navigation */
 	.navbar-custom {
 		padding: 0.125rem 1.5rem 0.125rem 2rem;
-        background: transparent;
+		background: transparent;
 		box-shadow: none;
 	}
-	
+
 	.navbar-custom .navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -1798,7 +1882,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom.top-nav-collapse {
-        padding: 0.5rem 1.5rem 0.5rem 2rem;
+		padding: 0.5rem 1.5rem 0.5rem 2rem;
 		background-color: #fff;
 		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.05);
 	}
@@ -1844,12 +1928,12 @@ a:hover.back-to-top {
 		margin-left: 0.25rem;
 		font-size: 0.75rem;
 	}
-	
+
 	.navbar-custom .fa-stack-2x {
 		color: #ffbd50;
 		transition: all 0.2s ease;
 	}
-	
+
 	.navbar-custom .fa-stack-1x {
 		color: #333;
 		transition: all 0.2s ease;
@@ -1862,6 +1946,7 @@ a:hover.back-to-top {
 	.navbar-custom .fa-stack:hover .fa-stack-1x {
 		color: #fff;
 	}
+
 	/* end of navigation */
 
 
@@ -1869,6 +1954,7 @@ a:hover.back-to-top {
 	.p-heading {
 		width: 65%;
 	}
+
 	/* end of general styles */
 
 
@@ -1878,17 +1964,18 @@ a:hover.back-to-top {
 		width: 100%;
 		margin-right: auto;
 		margin-left: auto;
-		color:#ffbd50;
+		color: #ffbd50;
 		font-size: 3rem;
 	}
 
 	.header .swiper-button-prev {
 		left: 3rem;
 	}
-	
+
 	.header .swiper-button-next {
 		right: 3rem;
 	}
+
 	/* end of header */
 
 
@@ -1896,6 +1983,7 @@ a:hover.back-to-top {
 	.form-1 {
 		padding-top: 10rem;
 	}
+
 	/* end of registration */
 
 
@@ -1907,6 +1995,7 @@ a:hover.back-to-top {
 	.basic-1 img {
 		margin-bottom: 0;
 	}
+
 	/* end of instructor */
 
 
@@ -1915,6 +2004,7 @@ a:hover.back-to-top {
 		padding-top: 4.5rem;
 		padding-bottom: 3.5rem
 	}
+
 	/* end of description */
 
 
@@ -1927,6 +2017,7 @@ a:hover.back-to-top {
 	.basic-3 .text-container {
 		margin-bottom: 0;
 	}
+
 	/* end of students */
 
 
@@ -1942,10 +2033,11 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 		margin-left: 0.5rem;
 	}
-	
+
 	.lightbox-basic h3 {
 		margin-top: 0.5rem;
 	}
+
 	/* end of details lightbox */
 
 
@@ -1954,6 +2046,7 @@ a:hover.back-to-top {
 		padding-top: 4.5rem;
 		padding-bottom: 3.5rem;
 	}
+
 	/* end of video */
 
 
@@ -1974,6 +2067,7 @@ a:hover.back-to-top {
 		margin-right: 2rem;
 		margin-left: 2rem;
 	}
+
 	/* end of takeaways */
 
 
@@ -2007,10 +2101,11 @@ a:hover.back-to-top {
 	.slider-2 .swiper-button-prev {
 		left: 0;
 	}
-	
+
 	.slider-2 .swiper-button-next {
 		right: 0;
 	}
+
 	/* end of testimonials */
 
 
@@ -2018,6 +2113,7 @@ a:hover.back-to-top {
 	.basic-5 h2 {
 		width: 70%;
 	}
+
 	/* end of date */
 
 
@@ -2031,6 +2127,7 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of newsletter */
 
 
@@ -2038,6 +2135,7 @@ a:hover.back-to-top {
 	.form-3 .text-container {
 		margin-bottom: 0;
 	}
+
 	/* end of contact */
 
 
@@ -2051,14 +2149,16 @@ a:hover.back-to-top {
 	.ex-basic-2 {
 		padding-bottom: 5rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width width 992px */
 
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
-	
+
 	/* Header */
 	.header {
 		padding-bottom: 31rem;
@@ -2076,12 +2176,13 @@ a:hover.back-to-top {
 	.header .swiper-button-prev {
 		left: -2.25rem;
 	}
-	
+
 	.header .swiper-button-next {
 		right: -2.25rem;
 	}
+
 	/* end of header */
-	
+
 
 	/* Registration */
 	.form-1 {
@@ -2096,6 +2197,7 @@ a:hover.back-to-top {
 	.form-1 form {
 		margin-left: 1.5rem;
 	}
+
 	/* end of registration */
 
 
@@ -2104,6 +2206,7 @@ a:hover.back-to-top {
 		margin-top: 3.125rem;
 		margin-left: 3.5rem;
 	}
+
 	/* end of instructor */
 
 
@@ -2115,6 +2218,7 @@ a:hover.back-to-top {
 	.basic-2 .list-unstyled.second {
 		margin-left: 1.625rem;
 	}
+
 	/* end of description */
 
 
@@ -2123,6 +2227,7 @@ a:hover.back-to-top {
 		margin-top: 2.5rem;
 		margin-right: 3.5rem;
 	}
+
 	/* end of instructor */
 
 
@@ -2135,6 +2240,7 @@ a:hover.back-to-top {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
 	}
+
 	/* end of takeaways */
 
 
@@ -2146,6 +2252,7 @@ a:hover.back-to-top {
 	.slider-2 .text-wrapper {
 		margin-top: 0;
 	}
+
 	/* end of testimonials */
 
 
@@ -2157,6 +2264,7 @@ a:hover.back-to-top {
 	.basic-5 p {
 		width: 74%;
 	}
+
 	/* end of date */
 
 
@@ -2165,6 +2273,7 @@ a:hover.back-to-top {
 		margin-top: 2.25rem;
 		margin-right: 3.5rem;
 	}
+
 	/* end of contact */
 
 
@@ -2184,6 +2293,7 @@ a:hover.back-to-top {
 	.footer .footer-col.fourth {
 		margin-left: 1.5rem;
 	}
+
 	/* end of footer */
 
 
@@ -2201,6 +2311,8 @@ a:hover.back-to-top {
 	.ex-basic-2 .image-container-small {
 		margin-left: 1.75rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width width 1200px */

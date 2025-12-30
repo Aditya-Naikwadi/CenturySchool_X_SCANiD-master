@@ -1,60 +1,164 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="Alumini.aspx.cs" Inherits="CenturyRayonSchool.Alumini" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css2?family=Quintessential&display=swap' rel='stylesheet'/>
-     <link href="../css/fontawesome-all.css" rel="stylesheet"/>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+    CodeBehind="Alumini.aspx.cs" Inherits="CenturyRayonSchool.Alumini" %>
+    <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Custom Alumni CSS -->
+        <link href="css/alumni-modern.css" rel="stylesheet" />
+        <!-- Animate on Scroll -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </asp:Content>
 
-    <style>
-        .head1{
-            font-size:xxx-large;
-    font-weight: 600;
-    margin-top: 115px;
-    color:#74cee4;
-    font-family:Quintessential;
-    text-align:center;
+    <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        }
-
-        h1 {
-    color: #333;
-    font: 700 2.75rem/3.375rem "Montserrat", sans-serif;
-}
-        h3 {
-    color: #333;
-    font: 700 1.625rem/2.125rem "Montserrat", sans-serif;
-}
-    </style>
-
-
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <section class="nicdark_section" style="background-color:#ffed4575;" >
-     <header id="header" class="header" >
-        <!--  <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                   
-                </div> 
-            </div> 
-        </div>  -->
-        <div class="head1">Alumni</div><br />
-    </header> 
-
-         <div class="nicdark_space30"></div>
-           <div id="register" class="form-1" style="margin-left:400px">
-        <div class="container maintain my-5">
-            <div class="what-is-up">
-                <div class="spinny-cogs">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <i class="fa fa-5x fa-cog fa-spin" aria-hidden="true"></i>
-                    <i class="fa fa-3x fa-cog" aria-hidden="true"></i>
+        <!-- Hero Section -->
+        <section class="alumni-hero">
+            <div class="alumni-hero-content" data-aos="fade-up">
+                <h1>Welcome Home, Alumni</h1>
+                <p>Connect • Share • Inspire</p>
+                <div class="mt-4">
+                    <a href="#register" class="btn btn-warning btn-lg rounded-pill px-5 fw-bold">Join the Network</a>
                 </div>
-                <h1 class="maintenance">Page Under Construction</h1>
-                <h3>We'll be back soon. Sorry for the Inconvinience caused.</h3>
             </div>
-        </div>
-    </div>
-           <div class="nicdark_space60"></div>
         </section>
 
-</asp:Content>
+        <!-- Features Section -->
+        <section class="container" style="margin-top: -50px; position: relative; z-index: 2;">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="alumni-feature-card w-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Reconnect</h3>
+                        <p class="text-muted">Find old friends, teachers, and batchmates. Rebuild connections that
+                            matter.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="alumni-feature-card w-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Events & Reunions</h3>
+                        <p class="text-muted">Stay updated with upcoming alumni meets, school events, and networking
+                            sessions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="alumni-feature-card w-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Career Network</h3>
+                        <p class="text-muted">Mentor juniors, share job opportunities, and grow your professional
+                            network.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="register" class="registration-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Removing AOS to ensure visibility -->
+                        <div class="registration-card">
+                            <div class="registration-header">
+                                <h3><i class="fas fa-user-graduate me-2"></i> Alumni Registration</h3>
+                                <p class="mb-0 text-white-50">Join our growing community today</p>
+                            </div>
+                            <div class="registration-body">
+                                <div class="row g-3">
+                                    <!-- Personal Info -->
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <asp:TextBox ID="txtFirstName" runat="server" CssClass="form-control"
+                                                placeholder="First Name"></asp:TextBox>
+                                            <label for="txtFirstName">First Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control"
+                                                placeholder="Last Name"></asp:TextBox>
+                                            <label for="txtLastName">Last Name</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Contact Info -->
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"
+                                                TextMode="Email" placeholder="Email Address"></asp:TextBox>
+                                            <label for="txtEmail">Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control"
+                                                TextMode="Phone" placeholder="Phone Number"></asp:TextBox>
+                                            <label for="txtPhone">Phone Number</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Current Status -->
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <asp:TextBox ID="txtCurrentPosition" runat="server" CssClass="form-control"
+                                                placeholder="Current Position / Company"></asp:TextBox>
+                                            <label for="txtCurrentPosition">Current Position / Company</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Passing Year -->
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <asp:DropDownList ID="ddlYear" runat="server" CssClass="form-select">
+                                                <asp:ListItem Text="Select Passing Year" Value="0"></asp:ListItem>
+                                                <asp:ListItem Text="2023" Value="2023"></asp:ListItem>
+                                                <asp:ListItem Text="2022" Value="2022"></asp:ListItem>
+                                                <asp:ListItem Text="2021" Value="2021"></asp:ListItem>
+                                                <asp:ListItem Text="2020" Value="2020"></asp:ListItem>
+                                                <asp:ListItem Text="Earlier" Value="Earlier"></asp:ListItem>
+                                            </asp:DropDownList>
+                                            <label for="ddlYear">Year of Passing</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div class="col-12">
+                                        <div class="form-floating mb-4">
+                                            <asp:TextBox ID="txtMessage" runat="server" CssClass="form-control"
+                                                TextMode="MultiLine" Height="100px" placeholder="Share a memory...">
+                                            </asp:TextBox>
+                                            <label for="txtMessage">Share a memory from school...</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="col-12 text-center">
+                                        <asp:Button ID="btnSubmit" runat="server" Text="Register Now"
+                                            CssClass="btn btn-alumni"
+                                            OnClientClick="return confirm('Thank you for registering! We will review your details.');" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- AOS Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+        </script>
+
+    </asp:Content>

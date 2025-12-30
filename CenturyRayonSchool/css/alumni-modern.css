@@ -1,0 +1,376 @@
+/*
+ * Alumni Section Modern Styles
+ * Colors: Maroon (#7c3848), Gold (#ffc107), Light BG (#f9f9f9)
+ */
+
+:root {
+    --alumni-primary: #7c3848;
+    --alumni-secondary: #a24c58;
+    --alumni-gold: #ffc107;
+    --alumni-text: #2c3e50;
+    --alumni-bg-light: #f4f6f9;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+.alumni-hero {
+    /* Darker gradient for text readability, focus on top center for faces */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(124, 56, 72, 0.7)), url('../img/Carosyle/1.jpg');
+    background-size: cover;
+    background-position: top center;
+    /* Adjusted to not cut heads */
+    background-attachment: scroll;
+    /* Fixed attachment can cause issues on some devices */
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+    position: relative;
+    padding-top: 80px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.alumni-hero-content {
+    max-width: 900px;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.alumni-hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.alumni-hero-content p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    color: var(--alumni-gold);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================
+   FEATURE CARDS
+   ========================================== */
+.alumni-feature-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    /* Ensure full height in grid */
+    border-top: 5px solid var(--alumni-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alumni-feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(124, 56, 72, 0.2);
+}
+
+.feature-icon {
+    width: 90px;
+    height: 90px;
+    background: rgba(124, 56, 72, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--alumni-primary);
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.alumni-feature-card:hover .feature-icon {
+    background: var(--alumni-primary);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.alumni-feature-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--alumni-text);
+}
+
+.alumni-feature-card p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* ==========================================
+   REGISTRATION FORM
+   ========================================== */
+.registration-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 6rem 0;
+    position: relative;
+    border-top: 1px solid #e9ecef;
+}
+
+.registration-card {
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    border: none;
+    overflow: visible;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
+}
+
+.registration-header {
+    background: linear-gradient(135deg, var(--alumni-primary) 0%, var(--alumni-secondary) 100%);
+    padding: 3rem 2.5rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.registration-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.registration-header h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.registration-header p {
+    position: relative;
+    z-index: 1;
+}
+
+.registration-body {
+    padding: 3.5rem 3rem;
+    background: #fff;
+}
+
+/* Enhanced Form Controls */
+.form-floating {
+    margin-bottom: 1.5rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-select {
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    height: auto;
+    min-height: 58px;
+}
+
+.form-floating>.form-control:hover,
+.form-floating>.form-select:hover {
+    border-color: #dee2e6;
+    background-color: #fff;
+}
+
+.form-floating>.form-control:focus,
+.form-floating>.form-select:focus {
+    background-color: #fff;
+    border-color: var(--alumni-primary);
+    box-shadow: 0 0 0 4px rgba(124, 56, 72, 0.1);
+    transform: translateY(-2px);
+}
+
+.form-floating>label {
+    padding: 1.2rem 1rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Textarea specific styling */
+.form-floating>textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.btn-alumni {
+    background: linear-gradient(135deg, var(--alumni-primary) 0%, var(--alumni-secondary) 100%);
+    color: #fff;
+    padding: 1.2rem 3.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 20px rgba(124, 56, 72, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-alumni::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-alumni:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-alumni:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(124, 56, 72, 0.4);
+    color: #fff;
+}
+
+.btn-alumni:active {
+    transform: translateY(-1px) scale(1.02);
+}
+
+/* ==========================================
+   STATS SECTION
+   ========================================== */
+.stats-section {
+    padding: 4rem 0;
+    background: #2c3e50;
+    /* Solid dark background */
+    color: #fff;
+}
+
+.stat-item h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--alumni-gold);
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+@media (max-width: 992px) {
+    .alumni-hero {
+        min-height: 400px;
+    }
+
+    .alumni-hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .registration-body {
+        padding: 2.5rem 2rem;
+    }
+
+    .registration-header {
+        padding: 2.5rem 2rem;
+    }
+
+    .registration-header h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .alumni-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .alumni-hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .btn-alumni {
+        width: 100%;
+        padding: 1.2rem 2rem;
+    }
+
+    .registration-body {
+        padding: 2rem 1.5rem;
+    }
+
+    .registration-header {
+        padding: 2rem 1.5rem;
+    }
+
+    .registration-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .form-floating>.form-control,
+    .form-floating>.form-select {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .registration-section {
+        padding: 4rem 0;
+    }
+
+    .registration-card {
+        border-radius: 15px;
+    }
+
+    .registration-header {
+        border-radius: 15px 15px 0 0;
+    }
+}

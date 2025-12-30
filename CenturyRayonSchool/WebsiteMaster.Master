@@ -88,7 +88,7 @@
                     </ul>
                 </nav>
 
-                <button class="modern-mobile-toggle">
+                <button type="button" class="modern-mobile-toggle">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -98,20 +98,49 @@
         <div class="mobile-nav-modern">
             <div class="mobile-nav-header">
                 <h4>Menu</h4>
-                <button class="mobile-nav-close">
+                <button type="button" class="mobile-nav-close">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <ul class="mobile-menu-modern">
-                <li><a href="index.aspx">HOME</a></li>
-                <li><a href="MissionVision.aspx">Mission & Vision</a></li>
-                <li><a href="Curriculam.aspx">Curriculum</a></li>
-                <li><a href="Gallery.aspx">Gallery</a></li>
-                <li><a href="News.aspx">Latest Notices</a></li>
-                <li><a href="admissionmodule/AdmissionForm.aspx">ADMISSIONS</a></li>
-                <li><a href="Contact.aspx">Contact Us</a></li>
-                <li><a href="Login.aspx">Admin Login</a></li>
-                <li><a href="/ParentsModule/ParentsLogin.aspx">Parent's Login</a></li>
+                <li><a href="index.aspx">Home</a></li>
+                
+                <!-- About Dropdown -->
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle">About <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="SchoolPrayer.aspx">School Prayer</a></li>
+                        <li><a href="MissionVision.aspx">Mission & Vision</a></li>
+                        <li><a href="ChairmanMessage.aspx">From the Chairman's Desk</a></li>
+                        <li><a href="PrincipalMessage.aspx">From the Head Mistress Desk</a></li>
+                        <li><a href="SchoolPhilosopyLearning.aspx">School's Philosophy</a></li>
+                        <li><a href="SchoolFaculty.aspx">School Faculty</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Administration Dropdown -->
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle">Administration <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="Management.aspx">Management</a></li>
+                        <li><a href="Officehours.aspx">Office Hours</a></li>
+                        <li><a href="Visitinghours.aspx">Visiting Hours</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Infrastructure & Facilities Dropdown -->
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle">Infrastructure & Facilities <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="Infrastructure.aspx">Infrastructure</a></li>
+                        <li><a href="LAB.aspx">Laboratory</a></li>
+                        <li><a href="CampusSafety.aspx">Campus Safety</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Alumini.aspx">Alumni</a></li>
+                <li><a href="Contact.aspx">Contact US</a></li>
+                <li><a href="Login.aspx">Login</a></li>
             </ul>
         </div>
         <div class="mobile-nav-backdrop"></div>
@@ -332,7 +361,7 @@
                 }
 
                 // Close mobile menu on menu item click
-                const mobileMenuLinks = document.querySelectorAll('.mobile-menu-modern a');
+                const mobileMenuLinks = document.querySelectorAll('.mobile-menu-modern a:not(.mobile-dropdown-toggle)');
                 mobileMenuLinks.forEach(link => {
                     link.addEventListener('click', function() {
                         const menu = document.querySelector('.mobile-nav-modern');
@@ -344,6 +373,27 @@
                         if (toggle) {
                             toggle.classList.remove('fa-times');
                             toggle.classList.add('fa-bars');
+                        }
+                    });
+                });
+
+                // Mobile dropdown toggle functionality
+                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+                mobileDropdownToggles.forEach(toggle => {
+                    toggle.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const parent = this.parentElement;
+                        const submenu = parent.querySelector('.mobile-submenu');
+                        const icon = this.querySelector('i');
+                        
+                        // Toggle active class
+                        parent.classList.toggle('active');
+                        
+                        // Rotate icon
+                        if (parent.classList.contains('active')) {
+                            icon.style.transform = 'rotate(180deg)';
+                        } else {
+                            icon.style.transform = 'rotate(0deg)';
                         }
                     });
                 });

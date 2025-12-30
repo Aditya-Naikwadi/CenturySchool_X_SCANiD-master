@@ -1,120 +1,134 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="CenturyRayonSchool.Contact" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section id="nicdark_parallax_title" class="nicdark_section nicdark_imgparallax nicdark_parallaxx_img5">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+    CodeBehind="Contact.aspx.cs" Inherits="CenturyRayonSchool.Contact" %>
+    <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Custom Contact CSS -->
+        <link href="css/contact-modern.css" rel="stylesheet" />
+        <!-- Animate on Scroll -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </asp:Content>
 
-    <div class="nicdark_filter greydark">
+    <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <!--start nicdark_container-->
-        <div class="nicdark_container nicdark_clearfix contact-us">
-
-            <div class="grid grid_12">
-                 
-                <div class="nicdark_space100"></div>
-                 <div class="nicdark_space50"></div>
-              
-
-                <h1 class="white subtitle">CONTACT</h1>
-                <div class="nicdark_space10"></div>
-                <h3 class="subtitle white">FEEL FREE TO CONTACT US</h3>
-                <div class="nicdark_space20"></div>
-                <div class="nicdark_divider left big"><span class="nicdark_bg_white nicdark_radius"></span></div>
-               
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="content" data-aos="fade-up">
+                <h1>Get in Touch</h1>
+                <p>WE'D LOVE TO HEAR FROM YOU</p>
             </div>
+        </section>
 
-        </div>
-        <!--end nicdark_container-->
+        <div class="container pb-5">
 
-    </div>
-     
-</section>
-
-
-    <section class="nicdark_section contact-address">
-
-    <!--start nicdark_container-->
-    <div class="nicdark_container nicdark_clearfix">
-
-        <div class="nicdark_space40"></div>
-
-
-        <div class="grid grid_4">
-
-            <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow">
-                <div class="nicdark_margin20 nicdark_relative">
-                        <a href="#" class="nicdark_displaynone_ipadpotr nicdark_btn_icon nicdark_bg_yellow extrabig nicdark_radius_circle white nicdark_absolute nicdark_shadow"><i class="icon-location-outline nicdark_rotate"></i></a>
-                        <div class="nicdark_activity nicdark_marginleft100 nicdark_disable_marginleft_ipadpotr">
-                            <h4>Century Rayon High School</h4>                        
-                            <div class="nicdark_space20"></div>
-                            <p>B7, Kalyan - Ahmednagar Highway, Century Rayon Colony, Shahad, Ulhasnagar, Maharashtra 421103<br/>0251-256 6389</p>
+            <!-- Info Cards -->
+            <div class="row g-4 mb-5">
+                <!-- Address -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-card">
+                        <div class="icon-box">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
+                        <h4>Visit Us</h4>
+                        <p>Century Rayon High School<br>Shahad, Ulhasnagar<br>Maharashtra 421103</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="nicdark_space20"></div>
-
-
-           
-
-            <div class="nicdark_space20"></div>
-
-
-            <div class="nicdark_archive1 nicdark_bg_greydark nicdark_radius nicdark_shadow mail-us">
-                <div class="nicdark_margin20 nicdark_relative">
-                        <a href="#" class="nicdark_displaynone_ipadpotr nicdark_btn_icon nicdark_bg_red extrabig nicdark_radius_circle white nicdark_absolute nicdark_shadow"><i class="icon-paper-plane-empty nicdark_rotate"></i></a>
-                        <div class="nicdark_activity nicdark_marginleft100 nicdark_disable_marginleft_ipadpotr">
-                            <h4 class="white">M@IL US</h4>                        
-                            <div class="nicdark_space20"></div>
-                            <p class="white">crsshahad@gmail.com</p>
+                <!-- Phone -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card">
+                        <div class="icon-box">
+                            <i class="fas fa-phone-alt"></i>
                         </div>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:02512566389">0251-256 6389</a></p>
+                        <p class="text-muted small mt-1">Mon-Fri, 9am - 4pm</p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info-card">
+                        <div class="icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p><a href="mailto:crsshahad@gmail.com">crsshahad@gmail.com</a></p>
+                        <p class="text-muted small mt-1">We reply within 24 hours</p>
+                    </div>
                 </div>
             </div>
 
-        
-        </div>
+            <!-- Map & Form Section -->
+            <div class="row g-4 align-items-stretch">
 
+                <!-- Map -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.852136697808!2d73.1665786149038!3d19.245274886991034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7941c9fdc2557%3A0x7069f8e8cc8ded70!2sCentury%20Rayon%20High%20School%2C%20Shahad!5e0!3m2!1sen!2sin!4v1662353329785!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
 
-        <div class="grid grid_8">
-            
-           <div class="nicdark_archive1 nicdark_bg_grey nicdark_radius nicdark_shadow contact-form">
-                <div class="nicdark_textevidence nicdark_bg_orange nicdark_radius_top">
-                    <h4 class="white nicdark_margin20">CONTACT US</h4>
-                    <i class="icon-mail nicdark_iconbg right medium orange"></i>
+                <!-- Contact Form -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-form-wrapper">
+                        <div class="form-header mb-4">
+                            <h3>Send us a Message</h3>
+                            <p class="text-muted">Have a question? Fill out the form below.</p>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <asp:TextBox ID="txtName" runat="server" CssClass="form-control"
+                                        placeholder="Your Name"></asp:TextBox>
+                                    <label for="txtName">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control"
+                                        placeholder="Phone Number"></asp:TextBox>
+                                    <label for="txtPhone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email"
+                                        placeholder="Email Address"></asp:TextBox>
+                                    <label for="txtEmail">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <asp:TextBox ID="txtMessage" runat="server" CssClass="form-control"
+                                        TextMode="MultiLine" Height="120px" placeholder="Message"></asp:TextBox>
+                                    <label for="txtMessage">Your Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <asp:Button ID="btnSend" runat="server" Text="Send Message"
+                                    CssClass="btn btn-contact w-100"
+                                    OnClientClick="return confirm('Message Sent! We will get back to you shortly.');" />
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="nicdark_margin20">
-                    <input class="nicdark_bg_grey2 nicdark_radius nicdark_shadow grey small subtitle" type="text" value="" placeholder="NAME">
-                    <%--<div class="nicdark_space20"></div>--%>
-                   <%-- <input class="nicdark_bg_grey2 nicdark_radius nicdark_shadow grey small subtitle" type="text" value="" placeholder="EMAIL">--%>
-                    <div class="nicdark_space20"></div>
-                    <textarea class="nicdark_bg_grey2 nicdark_radius nicdark_shadow grey small subtitle" placeholder="MESSAGE" rows="7"></textarea>
-                    <div class="nicdark_space20"></div>
-                    <!--<input class="nicdark_btn nicdark_bg_orange medium nicdark_shadow nicdark_radius white" type="submit" value="SEND">-->
-                    <a href="submit-message.html" class="nicdark_mpopup_ajax nicdark_btn nicdark_bg_orange medium nicdark_shadow nicdark_radius white nicdark_press">SEND</a>
-                </div>
+
             </div>
 
         </div>
 
-
-       
-
-        <div class="nicdark_space50"></div>
-
-
-    </div>
-    <!--end nicdark_container-->
-            
-</section>
-<!--end section-->
-
-
-
-    <!--start section-->
-<section class="nicdark_section maps-location">
-    <div class="nicdark_textevidence">
-        <iframe class="nicdark_iframe nicdark_margintop40_negative nicdark_marginbottom90_negative" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.852136697808!2d73.1665786149038!3d19.245274886991034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7941c9fdc2557%3A0x7069f8e8cc8ded70!2sCentury%20Rayon%20High%20School%2C%20Shahad!5e0!3m2!1sen!2sin!4v1662353329785!5m2!1sen!2sin"  height="400" ></iframe>
-    </div>
-</section>
-<!--end section--><!--end-->
-</asp:Content>
+        <!-- AOS Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+        </script>
+    </asp:Content>
