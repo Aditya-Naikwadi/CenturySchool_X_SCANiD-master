@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
       <link href="css/home-enhancements.css?v=2.0" rel="stylesheet">
+      <link href="css/card-enhancements.css?v=1.0" rel="stylesheet">
       <link href="css/responsive-overrides.css?v=2.0" rel="stylesheet">
     </head>
 
@@ -474,7 +475,8 @@
 
           <!-- 🎂 Today's Birthdays (Dynamic + Cake Icons) -->
           <div class="col-lg-4 col-md-6">
-            <div class="card shadow-lg border-0 h-100" style="background:#7c3848; border-radius:15px; overflow:hidden;">
+            <div class="card shadow-lg border-0 h-100 announcement-card"
+              style="background:#7c3848; border-radius:15px; overflow:hidden;">
               <div class="card-header text-center text-white py-3" style="background:#a24c58; font-weight:600;">
                 <i class="bi bi-cake2-fill me-2 text-warning" style="font-size:1.7rem;"></i> Today's Birthdays
               </div>
@@ -506,7 +508,8 @@
 
           <!-- 📢 Notices -->
           <div class="col-lg-4 col-md-6">
-            <div class="card shadow-lg border-0 h-100" style="background:#a24c58; border-radius:15px; overflow:hidden;">
+            <div class="card shadow-lg border-0 h-100 announcement-card"
+              style="background:#a24c58; border-radius:15px; overflow:hidden;">
               <div class="card-header text-center text-white py-3" style="background:#7c3848; font-weight:600;">
                 <i class="bi bi-exclamation-triangle-fill me-2 text-warning" style="font-size:1.6rem;"></i>
                 <a href="News.aspx" class="text-white text-decoration-none">Important Notices</a>
@@ -540,8 +543,9 @@
           </div>
 
           <!-- 🎊 Events -->
-          <div class="col-lg-4 col-md-12">
-            <div class="card shadow-lg border-0 h-100" style="background:#9b3e3e; border-radius:15px; overflow:hidden;">
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-lg border-0 h-100 announcement-card"
+              style="background:#9b3e3e; border-radius:15px; overflow:hidden;">
               <div class="card-header text-center text-white py-3" style="background:#7c3848; font-weight:600;">
                 <i class="bi bi-balloon-fill text-warning me-2" style="font-size:1.6rem;"></i>
                 <a href="Event.aspx" class="text-white text-decoration-none">Upcoming Events</a>
@@ -591,7 +595,7 @@
         <div class="row g-4 justify-content-center">
           <!-- Event 1 -->
           <div class="col-lg-4 col-md-6">
-            <div class="card shadow border-0 h-100" style="border-radius:15px; overflow:hidden;">
+            <div class="card shadow border-0 h-100 event-card" style="border-radius:15px; overflow:hidden;">
               <div class="card-header text-center text-white"
                 style="background-color:#7c3848; border:none; padding:1.2rem 0;">
                 <div class="fw-bold" style="font-size:2rem;">28</div>
@@ -615,7 +619,7 @@
 
           <!-- Event 2 -->
           <div class="col-lg-4 col-md-6">
-            <div class="card shadow border-0 h-100" style="border-radius:15px; overflow:hidden;">
+            <div class="card shadow border-0 h-100 event-card" style="border-radius:15px; overflow:hidden;">
               <div class="card-header text-center text-white"
                 style="background-color:#7c3848; border:none; padding:1.2rem 0;">
                 <div class="fw-bold" style="font-size:2rem;">12</div>
@@ -639,7 +643,7 @@
 
           <!-- Event 3 -->
           <div class="col-lg-4 col-md-6">
-            <div class="card shadow border-0 h-100" style="border-radius:15px; overflow:hidden;">
+            <div class="card shadow border-0 h-100 event-card" style="border-radius:15px; overflow:hidden;">
               <div class="card-header text-center text-white"
                 style="background-color:#7c3848; border:none; padding:1.2rem 0;">
                 <div class="fw-bold" style="font-size:2rem;">25</div>

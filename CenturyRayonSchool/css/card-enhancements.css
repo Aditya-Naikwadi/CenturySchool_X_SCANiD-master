@@ -1,0 +1,465 @@
+/*
+ * Century Rayon School - Card Sections Enhancements
+ * Version: 1.0
+ * Description: Enhanced styles for Announcements, Events, and Notices card sections
+ */
+
+/* ==========================================
+   GLOBAL CARD IMPROVEMENTS
+   ========================================== */
+
+/* Ensure proper grid layout for all card sections */
+.section-wrapper .row {
+    display: flex !important;
+    flex-wrap: wrap;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.section-wrapper .row>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================
+   ANNOUNCEMENTS & UPDATES SECTION
+   ========================================== */
+
+/* Enhanced announcement cards with modern gradients */
+.announcement-card {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.announcement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 15px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.announcement-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(124, 56, 72, 0.35) !important;
+}
+
+.announcement-card:hover::before {
+    opacity: 1;
+}
+
+/* Modern scrolling content with CSS animations */
+.scrolling-content {
+    position: relative;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Replace marquee with smooth CSS scroll animation */
+.auto-scroll {
+    animation: smoothScroll 20s linear infinite;
+    animation-play-state: running;
+}
+
+.auto-scroll:hover {
+    animation-play-state: paused;
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+/* Enhanced card header with pulse effect on icons */
+.announcement-card .card-header i {
+    display: inline-block;
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+/* ==========================================
+   UPCOMING EVENTS SECTION
+   ========================================== */
+
+.event-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+}
+
+/* Shine effect on hover */
+.event-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent 30%,
+            rgba(255, 255, 255, 0.3) 50%,
+            transparent 70%);
+    transform: rotate(45deg) translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.event-card:hover::after {
+    transform: rotate(45deg) translateX(100%);
+}
+
+.event-card:hover {
+    transform: translateY(-10px) rotate(-1deg);
+    box-shadow: 0 20px 40px rgba(124, 56, 72, 0.3) !important;
+}
+
+/* Animated date badge */
+.event-card .card-header {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.event-card:hover .card-header {
+    background: linear-gradient(135deg, #7c3848, #a24c58) !important;
+    transform: scale(1.05);
+}
+
+/* Icon animations on event cards */
+.event-card .bi-geo-alt-fill,
+.event-card .bi-clock {
+    transition: all 0.3s ease;
+}
+
+.event-card:hover .bi-geo-alt-fill {
+    animation: bounce 0.8s ease-in-out;
+}
+
+.event-card:hover .bi-clock {
+    animation: rotate 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Enhanced button with ripple effect */
+.event-card .btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.event-card .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(124, 56, 72, 0.4);
+}
+
+.event-card .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.event-card .btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ==========================================
+   IMPORTANT NOTICES SECTION
+   ========================================== */
+
+.notice-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* Image zoom effect */
+.notice-card img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: center;
+}
+
+.notice-card:hover img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* Enhanced gradient overlay */
+.notice-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            transparent 100%);
+    z-index: 1;
+    transition: height 0.4s ease;
+}
+
+.notice-card:hover::before {
+    height: 70%;
+}
+
+/* Card body positioning */
+.notice-card .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+/* Notice title animation */
+.notice-card h5 {
+    transition: all 0.3s ease;
+}
+
+.notice-card:hover h5 {
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================
+   EMPTY STATE DESIGNS
+   ========================================== */
+
+.empty-state {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+.empty-state-icon {
+    font-size: 3rem;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+    display: inline-block;
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.empty-state-text {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+/* ==========================================
+   RESPONSIVE ENHANCEMENTS
+   ========================================== */
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+
+    .event-card:hover,
+    .announcement-card:hover,
+    .notice-card:hover {
+        transform: translateY(-8px) scale(1.01);
+    }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+
+    /* Reduce transform effects on mobile */
+    .event-card:hover,
+    .announcement-card:hover,
+    .notice-card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Adjust card spacing */
+    .section-wrapper .row {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+    }
+
+    /* Better touch targets */
+    .event-card .btn,
+    .announcement-card a,
+    .notice-card {
+        min-height: 44px;
+    }
+
+    /* Optimize animations for mobile */
+    .event-card::after,
+    .announcement-card::before {
+        display: none;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+
+    /* Full width cards on small screens */
+    .announcement-card,
+    .event-card,
+    .notice-card {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Reduce card header font size */
+    .announcement-card .card-header,
+    .event-card .card-header {
+        font-size: 0.95rem;
+        padding: 0.75rem;
+    }
+
+    /* Adjust icon sizes */
+    .announcement-card .card-header i,
+    .event-card i.bi-geo-alt-fill,
+    .event-card i.bi-clock {
+        font-size: 1.2rem !important;
+    }
+
+    /* Reduce scrolling content height */
+    .scrolling-content {
+        height: 180px !important;
+    }
+
+    /* Optimize empty states */
+    .empty-state {
+        padding: 2rem 1rem;
+    }
+
+    .empty-state-icon {
+        font-size: 2rem;
+    }
+
+    .empty-state-text {
+        font-size: 0.95rem;
+    }
+}
+
+/* ==========================================
+   ACCESSIBILITY IMPROVEMENTS
+   ========================================== */
+
+/* Focus states for keyboard navigation */
+.announcement-card:focus-within,
+.event-card:focus-within,
+.notice-card:focus-within {
+    outline: 3px solid #ffc107;
+    outline-offset: 3px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+
+    .announcement-card,
+    .event-card,
+    .notice-card,
+    .announcement-card::before,
+    .event-card::after,
+    .notice-card img {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+
+    .announcement-card,
+    .event-card,
+    .notice-card {
+        border: 2px solid currentColor;
+    }
+}
+
+/* ==========================================
+   PERFORMANCE OPTIMIZATIONS
+   ========================================== */
+
+/* Hardware acceleration for smooth animations */
+.announcement-card,
+.event-card,
+.notice-card {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Optimize image rendering */
+.notice-card img,
+.event-card img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
