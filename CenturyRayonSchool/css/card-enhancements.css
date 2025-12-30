@@ -1,13 +1,3 @@
-/*
- * Century Rayon School - Card Sections Enhancements
- * Version: 1.0
- * Description: Enhanced styles for Announcements, Events, and Notices card sections
- */
-
-/* ==========================================
-   GLOBAL CARD IMPROVEMENTS
-   ========================================== */
-
 /* Ensure proper grid layout for all card sections */
 .section-wrapper .row {
     display: flex !important;
@@ -282,9 +272,6 @@
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* ==========================================
-   EMPTY STATE DESIGNS
-   ========================================== */
 
 .empty-state {
     padding: 3rem 2rem;
