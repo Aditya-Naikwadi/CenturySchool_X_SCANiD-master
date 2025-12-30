@@ -8,7 +8,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-      <link href="css/home-enhancements.css?v=1.0" rel="stylesheet">
+      <link href="css/home-enhancements.css?v=2.0" rel="stylesheet">
       <link href="css/responsive-overrides.css?v=2.0" rel="stylesheet">
     </head>
 
@@ -335,6 +335,79 @@
 
         to {
           text-shadow: 0 0 15px #ffe066;
+        }
+      }
+
+      /* ==== SCROLL ANIMATIONS ==== */
+      /* Disabled for now - was causing content to be invisible 
+      .announcement-card,
+      .event-card,
+      .notice-card {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .announcement-card.animate-in,
+      .event-card.animate-in,
+      .notice-card.animate-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      */
+
+      /* ==== MOBILE SOCIAL FOOTER ==== */
+      .mobile-social-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+        /* Hidden by default, shown via JS on mobile */
+        justify-content: space-around;
+        background: rgba(124, 56, 72, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 12px 0;
+        box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+      }
+
+      .mobile-social-footer a {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 22px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .mobile-social-footer a:hover {
+        transform: scale(1.1);
+      }
+
+      /* ==== FORM VALIDATION STYLES ==== */
+      .form-control.is-invalid {
+        border: 2px solid #dc3545 !important;
+        box-shadow: 0 0 8px rgba(220, 53, 69, 0.3) !important;
+      }
+
+      .form-control.is-valid {
+        border: 2px solid #28a745 !important;
+        box-shadow: 0 0 8px rgba(40, 167, 69, 0.3) !important;
+      }
+
+      /* ==== RESPONSIVE SOCIAL BARS ==== */
+      @media (max-width: 768px) {
+        .social-float {
+          display: none !important;
+        }
+
+        .mobile-social-footer {
+          display: flex !important;
         }
       }
     </style>

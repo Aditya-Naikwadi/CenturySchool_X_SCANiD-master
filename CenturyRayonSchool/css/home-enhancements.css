@@ -193,6 +193,7 @@ html {
    SECTION ANIMATIONS
    ========================================== */
 
+/* Disabled scroll animation - was hiding all content on page load
 .section-wrapper {
     opacity: 0;
     transform: translateY(30px);
@@ -203,6 +204,7 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+*/
 
 .section-title {
     animation: fadeInDown 0.8s ease-out;
