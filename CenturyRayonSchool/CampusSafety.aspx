@@ -1,186 +1,151 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="CampusSafety.aspx.cs" Inherits="CenturyRayonSchool.CampusSafety" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+    CodeBehind="CampusSafety.aspx.cs" Inherits="CenturyRayonSchool.CampusSafety" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css2?family=Quintessential&display=swap' rel='stylesheet' />
+    <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap"
+            rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css2?family=Quintessential&display=swap' rel='stylesheet' />
+        <link href="../css/fontawesome-all.css" rel="stylesheet" />
+        <link href="css/infrastructure-modern.css" rel="stylesheet" />
+    </asp:Content>
 
-
-
-    <link href="../css/fontawesome-all.css" rel="stylesheet" />
-
-
-    <style>
-        .head1 {
-            font-size: xxx-large;
-            font-weight: 600;
-            margin-top: 115px;
-            color: #74cee4;
-            font-family: Quintessential;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-            font: 700 2.75rem/3.375rem "Montserrat", sans-serif;
-        }
-
-        h3 {
-            color: #333;
-            font: 700 1.625rem/2.125rem "Montserrat", sans-serif;
-        }
-    </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="nicdark_section" style="background-color: #9d95951a;">
-        <header id="header" class="header">
-            <div class="head1">Campus Safety</div>
-            <br />
-        </header>
-        <div class="container-fluid">
-            <div class="card curriculam" style="width: 70rem; margin: auto; border-width: 1px; border-style: ridge; border-color: #b2a787bd; border-radius: 25px; padding-left: 30px; padding-right: 30px">
-                <div class="card-body">
-                    <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                        Schools play an important role in children’s health and well being. They can be a place to develop useful life skills on health and hygiene. Century Rayon High School has inculcated a systematic procedure for an orderly, clean and secured environment. Work instructions are provided for the supervision and monitoring of hygiene and safety in the school.
+    <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <section class="infra-section">
+            <div class="infra-container">
+                <header class="infra-header animate-up">
+                    <div class="infra-title">Campus Safety</div>
+                    <p class="infra-subtitle">
+                        Century Rayon High School has inculcated a systematic procedure for an orderly, clean, and
+                        secured environment. We prioritize the mental and physical well-being of every student.
                     </p>
-                </div>
+                </header>
 
-                <br />
-                <div class="card curriculam" style="width: 60rem; margin: auto; border-width: 1px; border-style: ridge; border-color: #b2a787bd; border-radius: 25px; padding-left: 30px; padding-right: 30px">
-                    <div class="card-body">
-                        <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: medium; line-height: 28px; margin-left: 12px; font-weight: bold">Infrastucture</p>
-                        <ul>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    The school has 8-feet high boundary wall around the school premises which has been increased with a 3-4 feet MS-Jallai fencing to enhance the security of the School.
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    Cameras have been installed in the classrooms as well as in the corridor for safety of the students. Cameras have also been installed at the Main Gate of Century Rayon High School as well as in the Parking Area which covers the entire campus ensuring complete safety for students and staff.                                 
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    Efficient security guards are appointed for patrolling day and night.                                 
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    Wheelchair ramp slope is provided at the entrance.                                
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    Each classroom has window pan with grills.                                
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    Laboratories are well equipped to handle common emergencies.                               
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    Sports room is well equipped to handle common sport injuries.                             
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    The corridors and stair cases are scrutinized by staff.                            
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    A multi-purpose public address system is installed to make public announcements in case of an emergency.                           
-                                </p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                    Staircases and exits are constructed as per the safety norms.                          
-                                </p>
-                            </li>
-                        </ul>
+                <!-- Safety Infrastructure -->
+                <h2 class="safety-section-title animate-up delay-1">Secure Infrastructure</h2>
+                <div class="safety-list-grid animate-up delay-1">
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-shield-alt"></i>
+                        <div>
+                            <strong>Boundary Walls</strong>
+                            <p>8-feet high boundary walls reinforced with MS-Jallai fencing for enhanced perimeter
+                                security.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-video"></i>
+                        <div>
+                            <strong>CCTV Surveillance</strong>
+                            <p>Comprehensive camera coverage in classrooms, corridors, main gates, and parking areas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-user-secret"></i>
+                        <div>
+                            <strong>Security Personnel</strong>
+                            <p>Efficient security guards appointed for 24/7 patrolling and campus monitoring.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-wheelchair"></i>
+                        <div>
+                            <strong>Accessibility</strong>
+                            <p>Wheelchair ramps provided at entrances to ensure ease of access for everyone.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-window-maximize"></i>
+                        <div>
+                            <strong>Classroom Safety</strong>
+                            <p>All classrooms are secured with window grills and rigorous safety checks.</p>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Emergency Prep -->
+                <h2 class="safety-section-title animate-up delay-2">Emergency Preparedness</h2>
+                <div class="safety-list-grid animate-up delay-2">
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-fire-extinguisher"></i>
+                        <div>
+                            <strong>Fire Safety</strong>
+                            <p>Fire extinguishers and hydrants placed at strategic locations and maintained regularly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-people-arrows"></i>
+                        <div>
+                            <strong>Evacuation Plans</strong>
+                            <p>Clear evacuation maps displayed throughout the building with regular mock drills for
+                                students.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-bell"></i>
+                        <div>
+                            <strong>Alarm System</strong>
+                            <p>Sound-modulated alarm system for different contingencies and emergencies.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <i class="safety-icon fas fa-user-md"></i>
+                        <div>
+                            <strong>Health & First Aid</strong>
+                            <p>Well-equipped sports room and laboratories to handle common injuries and emergencies.</p>
+                        </div>
+                    </div>
+                </div>
 
-                <br />
-                <div class="card curriculam" style="width: 60rem; margin: auto; border-width: 1px; border-style: ridge; border-color: #b2a787bd; border-radius: 25px; padding-left: 30px; padding-right: 30px">
-                    <div class="card-body">
-                        <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: medium; line-height: 28px; margin-left: 12px; font-weight: bold">Emergency Situations</p>
+                <!-- Visitor Management -->
+                <h2 class="safety-section-title animate-up delay-3">Visitor Management</h2>
+                <div class="feature-grid animate-up delay-3">
+                    <div class="infra-card">
+                        <div class="card-content" style="text-align: center;">
+                            <i class="fas fa-id-card-alt"
+                                style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                            <h3 class="card-title">Digital Attendance</h3>
+                            <p class="card-desc">Electronic ID scanners mark student attendance and instantly notify
+                                parents via SMS.</p>
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Fire Extinguishers and essential Fire Hydrants are placed in school at various locations and maintained regularly.                         
-                            </p>
-                        </li>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Fire evacuation plan is displayed at different places in the building. Students know and understand the evacuation plan to avoid stampede in case of disaster. Regular mock drills are conducted.                        
-                            </p>
-                        </li>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                An alarm system with sound modulation to alert is in place for all kinds of contingencies. Mock drill practice and observations are taken, and follow up is done on a regular basis. Disaster management training in case of fire, earthquake, and other emergencies has been provided to the staff, senior students and security personnel.                       
-                            </p>
-                        </li>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Regular preventive checks to ensure safety related to higher risk areas – electrical, fire, civil work, school gates, transport, etc.                     
-                            </p>
-                        </li>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Third party safety audit is conducted periodically for the School.                   
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <br />
-                <div class="card curriculam" style="width: 60rem; margin: auto; border-width: 1px; border-style: ridge; border-color: #b2a787bd; border-radius: 25px; padding-left: 30px; padding-right: 30px">
-                    <div class="card-body">
-                        <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: medium; line-height: 28px; margin-left: 12px; font-weight: bold">Visitor Management System</p>
+                    <div class="infra-card">
+                        <div class="card-content" style="text-align: center;">
+                            <i class="fas fa-user-check"
+                                style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                            <h3 class="card-title">Visitor Registry</h3>
+                            <p class="card-desc">Strict visitor management system with mandatory registration and ID
+                                verification for all entrants.</p>
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Electronic I-card Scanners are mounted in the school to mark the attendance of students and an sms is sent to the parents immediately.                  
-                            </p>
-                        </li>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Lunch providers and drivers of autos and vans are provided with the School Identity Card.                 
-                            </p>
-                        </li>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Visitor Management system is implemented with visitor entry in the register.               
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <br />
-                <div class="card curriculam" style="width: 60rem; margin: auto; border-width: 1px; border-style: ridge; border-color: #b2a787bd; border-radius: 25px; padding-left: 30px; padding-right: 30px">
-                    <div class="card-body">
-                        <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: medium; line-height: 28px; margin-left: 12px; font-weight: bold">Workshops/Seminars</p>
+                    <div class="infra-card">
+                        <div class="card-content" style="text-align: center;">
+                            <i class="fas fa-id-badge"
+                                style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                            <h3 class="card-title">Staff Identification</h3>
+                            <p class="card-desc">All support staff, lunch providers, and drivers are issued verified
+                                School Identity Cards.</p>
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Right from the Primary Section, children are made aware of Good Touch and Bad Touch. Self-defence workshops, first-aid trainings, medical checkups, and physiotherapy sessions by well-trained personnel are regularly organized for the staff members.                          
-                            </p>
-                        </li>
-                        <li>
-                            <p class="card-text" style="color: ActiveCaption; font-family: sans-serif; font-size: large; line-height: 28px; margin-left: 12px">
-                                Martial art classes are included as a compulsory activity.                          
-                            </p>
-                        </li>
-                    </ul>
                 </div>
-                <br />
+
+                <!-- Workshops -->
+                <div class="infra-card animate-up delay-3"
+                    style="margin-top: 50px; border-left: 5px solid var(--secondary-color);">
+                    <div class="card-content">
+                        <h3 class="card-title"><i class="fas fa-chalkboard-teacher"
+                                style="margin-right: 15px;"></i>Workshops & Seminars</h3>
+                        <p class="card-desc">
+                            We believe in proactive education. Right from Primary Section, children are taught about
+                            "Good Touch and Bad Touch".
+                            Regular self-defense workshops, first-aid training, and health checkups are organized for
+                            students and staff.
+                            Martial arts are included as a compulsory activity to empower our students physically and
+                            mentally.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            <br />
-        </div>
-    </section>
-</asp:Content>
+        </section>
+    </asp:Content>
