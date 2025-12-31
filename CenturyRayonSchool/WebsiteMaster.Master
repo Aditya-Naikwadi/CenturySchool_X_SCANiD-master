@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/responsive-overrides.css" />
     <link rel="stylesheet" href="css/footer-enhanced.css" />
+    <link rel="stylesheet" href="css/mobile-fixes.css" />
     
     <!--[if lt IE 9]>  
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
@@ -156,7 +157,7 @@
     <div class="container">
       <div class="row">
         <!-- Quick Links Column -->
-        <div class="footer-column col-lg-4">
+        <div class="footer-column col-lg-6">
           <h5>Quick Links</h5>
           <ul class="footer-links">
             <li><a href="index.aspx">Home</a></li>
@@ -167,30 +168,8 @@
             <li><a href="admissionmodule/AdmissionForm.aspx">Admissions</a></li>
             <li><a href="Contact.aspx">Contact Us</a></li>
           </ul>
-        </div>
-
-        <!-- Contact Info Column -->
-        <div class="footer-column col-lg-4">
-          <h5>Contact Us</h5>
-          <ul class="footer-contact">
-            <li>
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Century Rayon Colony, Shahad (E), Kalyan - 421103, Dist. Thane, Maharashtra, India</span>
-            </li>
-            <li>
-              <i class="fas fa-phone"></i>
-              <span>Toll Free: 1800-123-4567</span>
-            </li>
-            <li>
-              <i class="fas fa-fax"></i>
-              <span>Telefax: 0251-2223344, 2223345</span>
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:info@centuryrayonschool.com">info@centuryrayonschool.com</a>
-            </li>
-          </ul>
-          <!-- Social Icons -->
+          
+          <!-- Social Media Icons Row -->
           <div class="footer-social mt-4">
             <a href="#" class="social-icon facebook" aria-label="Facebook" title="Facebook">
               <i class="fab fa-facebook-f"></i>
@@ -207,8 +186,8 @@
           </div>
         </div>
 
-        <!-- Newsletter Column -->
-        <div class="footer-column col-lg-4">
+        <!-- Stay Connected Column -->
+        <div class="footer-column col-lg-6">
           <h5>Stay Connected</h5>
           <p>Subscribe to receive our latest updates and news.</p>
           <div class="footer-newsletter">
@@ -217,6 +196,13 @@
               <button type="button" class="newsletter-btn" onclick="alert('Newsletter subscription feature coming soon!')">Subscribe</button>
             </div>
             <p class="newsletter-note">We respect your privacy and never share your information.</p>
+          </div>
+          
+          <!-- Contact Information -->
+          <div class="footer-contact-info mt-4">
+            <p class="mb-2"><i class="fas fa-map-marker-alt"></i> Century Rayon Colony, Shahad (E), Kalyan - 421103</p>
+            <p class="mb-2"><i class="fas fa-phone"></i> Toll Free: 1800-123-4567</p>
+            <p class="mb-2"><i class="fas fa-envelope"></i> <a href="mailto:info@centuryrayonschool.com">info@centuryrayonschool.com</a></p>
           </div>
         </div>
       </div>

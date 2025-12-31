@@ -1,0 +1,33 @@
+/* ==========================================
+   MOBILE FIX - Hide Floating Social Icons
+   ========================================== */
+
+/* Hide any floating/fixed social media widgets on mobile */
+@media (max-width: 768px) {
+
+    /* Hide fixed social media sidebar */
+    .icon_widget,
+    .social-sidebar,
+    .floating-social,
+    [class*="social"][style*="fixed"],
+    [class*="sidebar"][style*="fixed"] {
+        display: none !important;
+    }
+
+    /* Ensure back-to-top button doesn't interfere */
+    a.back-to-top {
+        bottom: 1rem !important;
+        right: 1rem !important;
+        z-index: 998 !important;
+    }
+}
+
+/* Additional safety for any position:fixed social elements on mobile */
+@media (max-width: 576px) {
+
+    /* Target common fixed social widget patterns */
+    div[style*="position: fixed"][style*="left"],
+    div[style*="position:fixed"][style*="left"] {
+        display: none !important;
+    }
+}
