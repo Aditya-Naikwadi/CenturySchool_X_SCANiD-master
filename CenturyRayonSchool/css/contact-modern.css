@@ -11,6 +11,24 @@
     --contact-bg: #f8f9fa;
 }
 
+/* ==========================================
+   CONTAINER FIX - Center content properly
+   ========================================== */
+.container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+
 /* Contact Hero */
 .contact-hero {
     background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(124, 56, 72, 0.8)), url('../img/Carosyle/2.jpg');

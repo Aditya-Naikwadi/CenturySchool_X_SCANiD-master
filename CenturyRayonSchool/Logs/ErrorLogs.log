@@ -162,3 +162,167 @@ System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-na
    at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 19
 ClientConnectionId:35570ce5-b625-4954-85a8-f0f2d8ee5ff3
 Error Number:15350,State:1,Class:14
+2025-12-31 10:13:30,036 ERROR ErrorsLog - NewsEventsModel.GetNewsList
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.Model.NewsEventsModel.GetNewsList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\NewsEventsModel.cs:line 107
+ClientConnectionId:2b81ef84-cef6-42ab-8eb4-8b068837bd57
+Error Number:15350,State:1,Class:14
+2025-12-31 10:13:30,038 ERROR ErrorsLog - EventModel.GetUpCommingEventList
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.EventModel.GetUpCommingEventList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\EventModel.cs:line 161
+ClientConnectionId:2b81ef84-cef6-42ab-8eb4-8b068837bd57
+Error Number:15350,State:1,Class:14
+2025-12-31 10:13:30,041 ERROR ErrorsLog - IndexPageModel.getTodayBirthday
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 19
+ClientConnectionId:2b81ef84-cef6-42ab-8eb4-8b068837bd57
+Error Number:15350,State:1,Class:14
+2025-12-31 10:14:39,065 ERROR ErrorsLog - NewsEventsModel.GetNewsList
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.Model.NewsEventsModel.GetNewsList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\NewsEventsModel.cs:line 107
+ClientConnectionId:ff2c4206-b0b8-46ea-94c7-22243dc58fa0
+Error Number:15350,State:1,Class:14
+2025-12-31 10:14:39,069 ERROR ErrorsLog - EventModel.GetUpCommingEventList
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.EventModel.GetUpCommingEventList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\EventModel.cs:line 161
+ClientConnectionId:ff2c4206-b0b8-46ea-94c7-22243dc58fa0
+Error Number:15350,State:1,Class:14
+2025-12-31 10:14:39,071 ERROR ErrorsLog - IndexPageModel.getTodayBirthday
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 19
+ClientConnectionId:ff2c4206-b0b8-46ea-94c7-22243dc58fa0
+Error Number:15350,State:1,Class:14
+2025-12-31 10:19:50,489 ERROR ErrorsLog - NewsEventsModel.GetNewsList
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.Model.NewsEventsModel.GetNewsList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\NewsEventsModel.cs:line 107
+ClientConnectionId:ac19e72d-0177-4506-8deb-e57b9e8972f5
+Error Number:15350,State:1,Class:14
+2025-12-31 10:19:50,496 ERROR ErrorsLog - EventModel.GetUpCommingEventList
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.EventModel.GetUpCommingEventList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\EventModel.cs:line 161
+ClientConnectionId:ac19e72d-0177-4506-8deb-e57b9e8972f5
+Error Number:15350,State:1,Class:14
+2025-12-31 10:19:50,499 ERROR ErrorsLog - IndexPageModel.getTodayBirthday
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 19
+ClientConnectionId:ac19e72d-0177-4506-8deb-e57b9e8972f5
+Error Number:15350,State:1,Class:14
+2025-12-31 10:28:52,282 ERROR ErrorsLog - NewsEventsModel.GetNewsList
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.Model.NewsEventsModel.GetNewsList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\NewsEventsModel.cs:line 107
+ClientConnectionId:94a61180-8581-45fa-bff5-f630bc775c00
+Error Number:15350,State:1,Class:14
+2025-12-31 10:28:52,285 ERROR ErrorsLog - EventModel.GetUpCommingEventList
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.EventModel.GetUpCommingEventList() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\EventModel.cs:line 161
+ClientConnectionId:94a61180-8581-45fa-bff5-f630bc775c00
+Error Number:15350,State:1,Class:14
+2025-12-31 10:28:52,286 ERROR ErrorsLog - IndexPageModel.getTodayBirthday
+System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file C:\Users\naikw\OneDrive\Desktop\Century Rayon\CenturySchool_X_SCANiD-master\CenturySchool_X_SCANiD-master\CenturyRayonSchool\App_Data\CenturyRayonDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at CenturyRayonSchool.Model.IndexPageModel.getTodayBirthday() in D:\NIRANJAN\Schools\Century School\CenturyRayonWebsite(Backup)\CenturyRayonWebsite\CenturyRayonSchool\Model\IndexPageModel.cs:line 19
+ClientConnectionId:94a61180-8581-45fa-bff5-f630bc775c00
+Error Number:15350,State:1,Class:14

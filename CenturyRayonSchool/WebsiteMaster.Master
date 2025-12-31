@@ -269,7 +269,121 @@
         <script src="js/settings.js"></script>
 
         <script>
+            // Enhanced Footer Functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                // Scroll to Top Button
+                const scrollTopBtn = document.getElementById('scrollTopBtn');
+                
+                if (scrollTopBtn) {
+                    // Show/hide button based on scroll position
+                    window.addEventListener('scroll', function() {
+                        if (window.pageYOffset > 300) {
+                            scrollTopBtn.classList.add('visible');
+                        } else {
+                            scrollTopBtn.classList.remove('visible');
+                        }
+                    });
+                    
+                    // Smooth scroll to top on click
+                    scrollTopBtn.addEventListener('click', function() {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+                
+                // Newsletter Form Enhancement
+                const newsletterBtn = document.querySelector('.newsletter-btn');
+                const newsletterInput = document.querySelector('.newsletter-input');
+                
+                if (newsletterBtn && newsletterInput) {
+                    newsletterBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const email = newsletterInput.value.trim();
+                        
+                        if (!email) {
+                            newsletterInput.focus();
+                            newsletterInput.style.borderColor = '#ff6b6b';
+                            setTimeout(() => {
+                                newsletterInput.style.borderColor = '';
+                            }, 2000);
+                            return;
+                        }
+                        
+                        // Basic email validation
+                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailRegex.test(email)) {
+                            alert('Please enter a valid email address.');
+                            newsletterInput.focus();
+                            return;
+                        }
+                        
+                        // Success feedback
+                        const originalText = newsletterBtn.textContent;
+                        newsletterBtn.textContent = 'Subscribed!';
+                        newsletterBtn.style.background = 'linear-gradient(135deg, #4caf50, #45a049)';
+                        newsletterInput.value = '';
+                        
+                        setTimeout(() => {
+                            newsletterBtn.textContent = originalText;
+                            newsletterBtn.style.background = '';
+                        }, 3000);
+                    });
+                    
+                    // Enter key support for newsletter
+                    newsletterInput.addEventListener('keypress', function(e) {
+                        if (e.key === 'Enter') {
+                            newsletterBtn.click();
+                        }
+                    });
+                }
+                
+                // Social Icon Ripple Effect
+                const socialIcons = document.querySelectorAll('.social-icon');
+                socialIcons.forEach(icon => {
+                    icon.addEventListener('click', function(e) {
+                        const ripple = document.createElement('span');
+                        ripple.style.cssText = `
+                            position: absolute;
+                            border-radius: 50%;
+                            background: rgba(255, 255, 255, 0.6);
+                            width: 10px;
+                            height: 10px;
+                            animation: ripple 0.6s ease-out;
+                            pointer-events: none;
+                        `;
+                        
+                        const rect = this.getBoundingClientRect();
+                        ripple.style.left = (e.clientX - rect.left - 5) + 'px';
+                        ripple.style.top = (e.clientY - rect.top - 5) + 'px';
+                        
+                        this.style.position = 'relative';
+                        this.appendChild(ripple);
+                        
+                        setTimeout(() => ripple.remove(), 600);
+                    });
+                });
+                
+                // Add ripple animation to CSS
+                if (!document.getElementById('footer-ripple-style')) {
+                    const style = document.createElement('style');
+                    style.id = 'footer-ripple-style';
+                    style.textContent = `
+                        @keyframes ripple {
+                            to {
+                                width: 100px;
+                                height: 100px;
+                                opacity: 0;
+                            }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+            });
+
             // Modern mobile menu toggle (using new class names)
+
             function toggleMobileMenu() {
                 const menu = document.querySelector('.mobile-nav-modern');
                 const backdrop = document.querySelector('.mobile-nav-backdrop');
