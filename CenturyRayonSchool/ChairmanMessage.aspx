@@ -216,17 +216,6 @@
                 color: var(--text-dark);
                 margin-bottom: 30px;
                 text-align: justify;
-                text-indent: 50px;
-            }
-
-            .message-text::first-letter {
-                font-size: 4em;
-                font-weight: 700;
-                color: var(--maroon-primary);
-                float: left;
-                line-height: 0.9;
-                margin: 10px 15px 0 0;
-                font-family: 'Playfair Display', serif;
             }
 
             /* Signature Section */
@@ -437,7 +426,6 @@
                 .message-text {
                     font-size: 1.05rem;
                     line-height: 1.8;
-                    text-indent: 30px;
                 }
 
                 .quote-mark,
@@ -543,7 +531,7 @@
                     <div class="hero-icon">
                         <i class="fas fa-user-tie"></i>
                     </div>
-                    <h1 class="hero-title">From the Chairman's Desk</h1>
+                    <h1 class="hero-title">Chairman's Desk</h1>
                     <p class="hero-subtitle">"Leadership is not about being in charge. It's about taking care of those
                         in your charge."</p>
                 </div>

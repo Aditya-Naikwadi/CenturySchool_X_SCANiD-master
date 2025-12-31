@@ -60,8 +60,8 @@
                             <ul class="modern-submenu">
                                 <li><a href="SchoolPrayer.aspx">School Prayer</a></li>
                                 <li><a href="MissionVision.aspx">Mission & Vision</a></li>
-                                <li><a href="ChairmanMessage.aspx">From the Chairman's Desk</a></li>
-                                <li><a href="PrincipalMessage.aspx">From the Head Mistress Desk</a></li>
+                                    <li><a href="ChairmanMessage.aspx">Chairman's Desk</a></li>
+                                    <li><a href="PrincipalMessage.aspx">Head Mistress Desk</a></li>
                                 <li><a href="SchoolPhilosopyLearning.aspx">School's Philosophy</a></li>
                                 <li><a href="SchoolFaculty.aspx">School Faculty</a></li>
                             </ul>
@@ -83,7 +83,7 @@
                             </ul>
                         </li>
                         <li><a href="Alumini.aspx">Alumni</a></li>
-                        <li><a href="Contact.aspx">Contact US</a></li>
+                        <li><a href="Contact.aspx">Contact Us</a></li>
                         <li><a href="Login.aspx">Login</a></li>
                     </ul>
                 </nav>
@@ -111,8 +111,8 @@
                     <ul class="mobile-submenu">
                         <li><a href="SchoolPrayer.aspx">School Prayer</a></li>
                         <li><a href="MissionVision.aspx">Mission & Vision</a></li>
-                        <li><a href="ChairmanMessage.aspx">From the Chairman's Desk</a></li>
-                        <li><a href="PrincipalMessage.aspx">From the Head Mistress Desk</a></li>
+                        <li><a href="ChairmanMessage.aspx">Chairman's Desk</a></li>
+                        <li><a href="PrincipalMessage.aspx">Head Mistress Desk</a></li>
                         <li><a href="SchoolPhilosopyLearning.aspx">School's Philosophy</a></li>
                         <li><a href="SchoolFaculty.aspx">School Faculty</a></li>
                     </ul>
@@ -139,7 +139,7 @@
                 </li>
                 
                 <li><a href="Alumini.aspx">Alumni</a></li>
-                <li><a href="Contact.aspx">Contact US</a></li>
+                <li><a href="Contact.aspx">Contact Us</a></li>
                 <li><a href="Login.aspx">Login</a></li>
             </ul>
         </div>
@@ -155,31 +155,8 @@
   <div class="footer-main">
     <div class="container">
       <div class="row">
-        <!-- About School Column -->
-        <div class="footer-column">
-          <h5>About Century Rayon School</h5>
-          <p>Committed to providing quality education and nurturing young minds since 1954. Located in Shahad, Thane, we are dedicated to academic excellence and holistic development.</p>
-          <div class="footer-social">
-            <a href="#" class="social-icon facebook" aria-label="Facebook" title="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-icon instagram" aria-label="Instagram" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="social-icon whatsapp" aria-label="WhatsApp" title="WhatsApp">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="#" class="social-icon twitter" aria-label="Twitter" title="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-icon youtube" aria-label="YouTube" title="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-
         <!-- Quick Links Column -->
-        <div class="footer-column">
+        <div class="footer-column col-lg-4">
           <h5>Quick Links</h5>
           <ul class="footer-links">
             <li><a href="index.aspx">Home</a></li>
@@ -193,7 +170,7 @@
         </div>
 
         <!-- Contact Info Column -->
-        <div class="footer-column">
+        <div class="footer-column col-lg-4">
           <h5>Contact Us</h5>
           <ul class="footer-contact">
             <li>
@@ -213,10 +190,25 @@
               <a href="mailto:info@centuryrayonschool.com">info@centuryrayonschool.com</a>
             </li>
           </ul>
+          <!-- Social Icons -->
+          <div class="footer-social mt-4">
+            <a href="#" class="social-icon facebook" aria-label="Facebook" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon instagram" aria-label="Instagram" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon whatsapp" aria-label="WhatsApp" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="social-icon youtube" aria-label="YouTube" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Newsletter Column -->
-        <div class="footer-column">
+        <div class="footer-column col-lg-4">
           <h5>Stay Connected</h5>
           <p>Subscribe to receive our latest updates and news.</p>
           <div class="footer-newsletter">
@@ -227,11 +219,6 @@
             <p class="newsletter-note">We respect your privacy and never share your information.</p>
           </div>
         </div>
-
-
-    </div>
-  </div>
-
       </div>
     </div>
   </div>

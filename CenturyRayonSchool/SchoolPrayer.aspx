@@ -160,15 +160,6 @@
                 position: relative;
             }
 
-            .prayer-text::first-letter {
-                font-size: 2.5em;
-                font-weight: 700;
-                color: var(--maroon-primary);
-                float: left;
-                line-height: 1;
-                margin-right: 10px;
-            }
-
             /* Special Styling for Pledge */
             .pledge-card .prayer-text {
                 text-align: justify;

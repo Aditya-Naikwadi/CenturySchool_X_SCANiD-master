@@ -216,17 +216,6 @@
                 color: var(--text-dark);
                 margin-bottom: 30px;
                 text-align: justify;
-                text-indent: 50px;
-            }
-
-            .message-text::first-letter {
-                font-size: 4em;
-                font-weight: 700;
-                color: var(--maroon-primary);
-                float: left;
-                line-height: 0.9;
-                margin: 10px 15px 0 0;
-                font-family: 'Playfair Display', serif;
             }
 
             /* Signature Section */
@@ -354,7 +343,6 @@
                 .message-text {
                     font-size: 1.05rem;
                     line-height: 1.8;
-                    text-indent: 30px;
                 }
 
                 .quote-mark,
@@ -430,7 +418,7 @@
                     <div class="hero-icon">
                         <i class="fas fa-user-graduate"></i>
                     </div>
-                    <h1 class="hero-title">From the Head Mistress's Desk</h1>
+                    <h1 class="hero-title">Head Mistress Desk</h1>
                     <p class="hero-subtitle">"Education is not the filling of a pail, but the lighting of a fire."</p>
                 </div>
             </div>
@@ -455,26 +443,29 @@
                     <!-- Message Body -->
                     <div class="message-body">
                         <div class="message-text">
-                            I take massive pleasure to welcome you to the website of Century Rayon school. The school
-                            website is most collaborative for parents and students. It furnishes a lot of necessary
-                            details and facts. We, at Century Rayon School, think that every child is specific and
-                            require an open schooling atmosphere where a child is allowed to believe, reflects to ask
-                            doubts without hesitation.
+                            It gives me immense pleasure to welcome you to the website of Century Rayon School. The
+                            school
+                            website serves as a collaborative platform for parents and students, providing essential
+                            information and updates. We, at Century Rayon School, believe that every child is unique and
+                            requires an open schooling atmosphere where they are encouraged to think, reflect, and ask
+                            questions without hesitation.
                         </div>
 
                         <div class="message-text">
-                            Here learning is acquired knowledge through study or by experiences. If a child cannot learn
-                            the way we teach, we must teach in a way the child can learn. We get ready your children by
-                            furnishing them with more chances to learn problem-solving skills with compassion. As
-                            parents, you want the best for your child. We ensure you that they are given the right
-                            knowledge to face future challenges.
+                            Here, learning is acquired through study and experiences. If a child cannot learn
+                            the way we teach, we must teach in a way the child can learn. We prepare your children by
+                            providing them with opportunities to develop problem-solving skills with compassion. As
+                            parents, you want the best for your child. We assure you that they are given the right
+                            knowledge and skills to face future challenges.
                         </div>
 
                         <div class="message-text">
-                            Education is a shared commitment between dedicated teachers, motivated students and
+                            Education is a shared commitment between dedicated teachers, motivated students, and
                             enthusiastic parents with high expectations. We thank you for taking the time to visit the
-                            school website. Contact us in case you like to know more about our school. We are bound to
-                            keep on improving our devices to provide quality education to your children.
+                            school website. Please contact us if you would like to know more about our school. We are
+                            committed to
+                            continuously improving our methods and facilities to provide quality education to your
+                            children.
                         </div>
 
                         <!-- Signature Section -->
