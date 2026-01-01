@@ -79,6 +79,28 @@
 /* ==========================================
    FEATURE CARDS
    ========================================== */
+
+/* Ensure cards stay in one row on desktop */
+@media (min-width: 992px) {
+    .alumni-feature-card {
+        min-height: 320px;
+        /* Ensure equal height */
+    }
+
+    /* Force single row layout */
+    .row.g-4 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .row.g-4>[class*="col-"] {
+        flex: 0 0 calc(33.333% - 1rem);
+        max-width: calc(33.333% - 1rem);
+    }
+}
+
 .alumni-feature-card {
     background: #fff;
     border-radius: 15px;

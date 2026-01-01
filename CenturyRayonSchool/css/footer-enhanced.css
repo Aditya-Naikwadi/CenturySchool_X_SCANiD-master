@@ -45,11 +45,11 @@
     pointer-events: none;
 }
 
-/* Footer Main Content */
+/* Footer Main Content - Minimized */
 .footer-main {
     position: relative;
     z-index: 1;
-    padding: 3.5rem 0 2.5rem;
+    padding: 2rem 0 1.5rem;
 }
 
 .footer-main .container {
@@ -61,7 +61,7 @@
 .footer-main .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    gap: 2.5rem;
     align-items: start;
 }
 
@@ -74,13 +74,13 @@
 .footer-column h5 {
     color: var(--accent-gold);
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
 }
 
 .footer-column h5::after {
@@ -96,24 +96,24 @@
 
 .footer-column p {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 0.875rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
 }
 
 /* Footer Contact Info (Compact Version) */
 .footer-contact-info {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .footer-contact-info p {
     display: flex;
     align-items: flex-start;
-    gap: 0.75rem;
+    gap: 0.5rem;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 0.8125rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
 }
 
 .footer-contact-info i {
@@ -138,8 +138,8 @@
 /* Footer Social Icons */
 .footer-social {
     display: flex;
-    gap: 0.75rem;
-    margin-top: 1.25rem;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
     flex-wrap: wrap;
 }
 
@@ -147,12 +147,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: rgba(255, 255, 255, 0.08);
-    border-radius: 10px;
+    border-radius: 8px;
     color: var(--white);
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     text-decoration: none;
     transition: all var(--transition-base);
     border: 1.5px solid rgba(255, 255, 255, 0.12);
@@ -196,18 +196,18 @@
 }
 
 .footer-links li {
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer-links li a {
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     display: inline-flex;
     align-items: center;
     transition: all var(--transition-base);
     position: relative;
-    padding-left: 1.25rem;
+    padding-left: 1rem;
 }
 
 .footer-links li a::before {
@@ -304,6 +304,8 @@
     color: var(--white);
     font-size: 0.875rem;
     transition: all var(--transition-base);
+    min-width: 0;
+    /* Allow flex shrinking */
 }
 
 .newsletter-input::placeholder {
@@ -317,19 +319,23 @@
 }
 
 .newsletter-btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
     color: var(--text-dark);
     border: none;
     border-radius: 6px;
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     cursor: pointer;
     transition: all var(--transition-base);
     white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     box-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
+    flex-shrink: 0;
+    /* Prevent button from shrinking */
+    min-width: fit-content;
+    /* Ensure button fits its content */
 }
 
 .newsletter-btn:hover {
@@ -354,7 +360,7 @@
     position: relative;
     z-index: 1;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1.75rem 0;
+    padding: 1rem 0;
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -373,8 +379,8 @@
 .footer-bottom p {
     margin: 0;
     color: rgba(255, 255, 255, 0.75);
-    font-size: 0.8125rem;
-    line-height: 1.6;
+    font-size: 0.75rem;
+    line-height: 1.5;
 }
 
 .footer-bottom a {
