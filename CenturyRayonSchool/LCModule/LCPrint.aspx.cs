@@ -1,10 +1,10 @@
-﻿using CenturyRayonSchool.FeesModule.Model;
+﻿//using CenturyRayonSchool.FeesModule.Model;
 using CenturyRayonSchool.LCModule.Dataset;
 using CenturyRayonSchool.LCModule.LCFile;
 //using CenturyRayonSchool.LCModule.LCFile;
 using CenturyRayonSchool.LCModule.Reports;
 using CenturyRayonSchool.MarksheetModule;
-using CenturyRayonSchool.Model;
+//using CenturyRayonSchool.Model;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using System;

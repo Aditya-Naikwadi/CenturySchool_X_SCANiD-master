@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MarksheetModule/Marksheet.Master" AutoEventWireup="true" CodeBehind="PrintMarksheet.aspx.cs" Inherits="CenturyRayonSchool.MarksheetModule.PrintMarksheet" Async="true" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MarksheetModule/Marksheet.Master" AutoEventWireup="true" CodeFile="PrintMarksheet.aspx.cs" Inherits="CenturyRayonSchool.MarksheetModule.PrintMarksheet" Async="true" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

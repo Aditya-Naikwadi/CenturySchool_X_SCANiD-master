@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="CenturyRayonSchool.News" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeFile="News.aspx.cs" Inherits="CenturyRayonSchool.News" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href='https://fonts.googleapis.com/css2?family=Quintessential&display=swap' rel='stylesheet' />

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LCModule/LeavingMaster.Master" AutoEventWireup="true" CodeBehind="LCSettings.aspx.cs" Inherits="CenturyRayonSchool.LCModule.LCSettings" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/LCModule/LeavingMaster.Master" AutoEventWireup="true" CodeFile="LCSettings.aspx.cs" Inherits="CenturyRayonSchool.LCModule.LCSettings" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .div-academicyear {

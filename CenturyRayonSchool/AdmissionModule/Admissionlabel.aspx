@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Search Form" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeBehind="Admissionlabel.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.Admissionlabel" %>
+<%@ Page Title="Search Form" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeFile="Admissionlabel.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.Admissionlabel" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
     .custom-label {

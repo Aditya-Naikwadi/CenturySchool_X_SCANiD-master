@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PaymentGatewayResponse.aspx.cs" Inherits="CenturyRayonSchool.PaymentGatewayResponse" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="PaymentGatewayResponse.aspx.cs" Inherits="CenturyRayonSchool.PaymentGatewayResponse" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">

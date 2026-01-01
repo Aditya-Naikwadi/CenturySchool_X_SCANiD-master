@@ -1,7 +1,7 @@
-﻿using CenturyRayonSchool.FeesModule.Model;
+﻿//using CenturyRayonSchool.FeesModule.Model;
 using CenturyRayonSchool.MarksheetModule.DataSet.ds1to2;
 using CenturyRayonSchool.MarksheetModule.Reports;
-using CenturyRayonSchool.Model;
+//using CenturyRayonSchool.Model;
 using CrystalDecisions.Shared;
 using SCANiD_Marksheet.DataSet.ds10;
 using System;

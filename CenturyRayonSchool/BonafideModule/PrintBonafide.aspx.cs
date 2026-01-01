@@ -1,7 +1,7 @@
 ﻿using CenturyRayonSchool.BonafideModule.Reports;
-using CenturyRayonSchool.FeesModule.Model;
+//using CenturyRayonSchool.FeesModule.Model;
 using CenturyRayonSchool.MarksheetModule;
-using CenturyRayonSchool.Model;
+//using CenturyRayonSchool.Model;
 using System;
 using System.Data;
 using System.Data.SqlClient;

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LCModule/LeavingMaster.Master" AutoEventWireup="true" CodeBehind="LCDashboard.aspx.cs" Inherits="CenturyRayonSchool.LCModule.LCDashboard" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/LCModule/LeavingMaster.Master" AutoEventWireup="true" CodeFile="LCDashboard.aspx.cs" Inherits="CenturyRayonSchool.LCModule.LCDashboard" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

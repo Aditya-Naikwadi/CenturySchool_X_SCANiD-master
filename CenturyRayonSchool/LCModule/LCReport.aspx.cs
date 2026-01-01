@@ -1,7 +1,7 @@
-﻿using CenturyRayonSchool.FeesModule.Model;
+﻿//using CenturyRayonSchool.FeesModule.Model;
 using CenturyRayonSchool.LCModule.Dataset;
 using CenturyRayonSchool.LCModule.Reports;
-using CenturyRayonSchool.Model;
+//using CenturyRayonSchool.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;

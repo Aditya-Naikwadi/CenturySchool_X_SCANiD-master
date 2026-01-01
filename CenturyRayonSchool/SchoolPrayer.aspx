@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
-    CodeBehind="SchoolPrayer.aspx.cs" Inherits="CenturyRayonSchool.SchoolPrayer" %>
+    CodeFile="SchoolPrayer.aspx.cs" Inherits="CenturyRayonSchool.SchoolPrayer" %>
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link
             href="https://fonts.googleapis.com/css2?family=Quintessential&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700;800&display=swap"
@@ -419,12 +419,12 @@
                 <!-- Vande Mataram Card -->
                 <div class="prayer-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="prayer-icon">
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-map-marked-alt"></i>
                     </div>
                     <h2 class="prayer-header">Vande Mataram</h2>
                     <div class="decorative-line"></div>
                     <div class="prayer-text">
-                        Vande Mataram… Vande Mataram…<br>
+                        Vande Mataram� Vande Mataram�<br>
                         Sujalam Suphalam Malayaja Shitalam<br>
                         Sasyashyamalam Mataram<br>
                         Vande mataram<br>

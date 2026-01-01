@@ -1,6 +1,6 @@
-﻿using CenturyRayonSchool.FeesModule.Model;
+﻿//using CenturyRayonSchool.FeesModule.Model;
 using CenturyRayonSchool.FeesModule.Reports;
-using CenturyRayonSchool.Model;
+//using CenturyRayonSchool.Model;
 using CrystalDecisions.CrystalReports.Engine;
 using System;
 using System.Data;

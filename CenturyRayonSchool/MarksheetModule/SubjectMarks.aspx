@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MarksheetModule/Marksheet.Master" AutoEventWireup="true" CodeBehind="SubjectMarks.aspx.cs" Inherits="CenturyRayonSchool.MarksheetModule.SubjectMarks" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MarksheetModule/Marksheet.Master" AutoEventWireup="true" CodeFile="SubjectMarks.aspx.cs" Inherits="CenturyRayonSchool.MarksheetModule.SubjectMarks" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .div-academicyear {

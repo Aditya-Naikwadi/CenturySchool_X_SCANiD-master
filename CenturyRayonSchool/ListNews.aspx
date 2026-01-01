@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="ListNews.aspx.cs" Inherits="CenturyRayonSchool.ListNews" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeFile="ListNews.aspx.cs" Inherits="CenturyRayonSchool.ListNews" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         div1-style {

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FeesModule/Master.Master" AutoEventWireup="true" CodeBehind="ActiveAcademicYear.aspx.cs" Inherits="CenturyRayonSchool.FeesModule.ActiveAcademicYear" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/FeesModule/Master.Master" AutoEventWireup="true" CodeFile="ActiveAcademicYear.aspx.cs" Inherits="CenturyRayonSchool.FeesModule.ActiveAcademicYear" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .uppercase{

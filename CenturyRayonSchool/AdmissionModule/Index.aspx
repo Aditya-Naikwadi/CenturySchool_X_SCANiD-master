@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Fees Form" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.Index" %>
+<%@ Page Title="Fees Form" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.Index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <script>
         function showModal() {

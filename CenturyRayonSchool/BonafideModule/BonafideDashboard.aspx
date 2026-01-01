@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BonafideModule/BonafideMaster.Master" AutoEventWireup="true" CodeBehind="BonafideDashboard.aspx.cs" Inherits="CenturyRayonSchool.BonafideModule.BonafideDashboard" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/BonafideModule/BonafideMaster.Master" AutoEventWireup="true" CodeFile="BonafideDashboard.aspx.cs" Inherits="CenturyRayonSchool.BonafideModule.BonafideDashboard" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .font-color {

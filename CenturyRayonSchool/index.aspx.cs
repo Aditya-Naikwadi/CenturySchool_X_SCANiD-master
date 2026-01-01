@@ -1,4 +1,4 @@
-﻿using CenturyRayonSchool.Model;
+﻿////using CenturyRayonSchool.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -17,6 +17,7 @@ namespace CenturyRayonSchool
         {
             if (!IsPostBack)
             {
+                /* Reference controls removed from .aspx
                 DataTable News = new NewsEventsModel().GetNewsList();
                 ListViewNews.DataSource = News;
                 ListViewNews.DataBind();
@@ -33,16 +34,17 @@ namespace CenturyRayonSchool
 
                     if (tb.isstaff)
                     {
-                        staffbirthday += $"<li style='font-size:16px; margin:6px 0; list-style:none;'>{cakeIcon}{tb.fullname}</li>";
+                        staffbirthday += string.Format("<li style='font-size:16px; margin:6px 0; list-style:none;'>{0}{1}</li>", cakeIcon, tb.fullname);
                     }
                     else
                     {
-                        studentbirthday += $"<li style='font-size:16px; margin:6px 0; list-style:none;'>{cakeIcon}{tb.fullname} {tb.std}-{tb.div}</li>";
+                        studentbirthday += string.Format("<li style='font-size:16px; margin:6px 0; list-style:none;'>{0}{1} {2}-{3}</li>", cakeIcon, tb.fullname, tb.std, tb.div);
                     }
                 }
 
                 litStudentBirthday.Text = studentbirthday;
                 litStaffBirthday.Text = staffbirthday;
+                */
 
             }
         }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login_1.aspx.cs" Inherits="CenturyRayonSchool.Login_1" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login_1.aspx.cs" Inherits="CenturyRayonSchool.Login_1" %>
 
 <!DOCTYPE html>
 

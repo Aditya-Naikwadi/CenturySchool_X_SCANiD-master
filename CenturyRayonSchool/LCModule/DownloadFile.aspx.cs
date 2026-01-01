@@ -1,5 +1,5 @@
 ﻿using CenturyRayonSchool.LCModule.Reports;
-using CenturyRayonSchool.Model;
+//using CenturyRayonSchool.Model;
 using CenturyRayonSchool.Properties;
 using CrystalDecisions.Shared;
 using System;

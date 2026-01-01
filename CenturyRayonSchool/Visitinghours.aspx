@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
-  CodeBehind="Visitinghours.aspx.cs" Inherits="CenturyRayonSchool.Visitinghours" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+  CodeFile="Visitinghours.aspx.cs" Inherits="CenturyRayonSchool.Visitinghours" %>
   <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- Modern CSS -->
     <link href="css/admin-modern.css" rel="stylesheet" />

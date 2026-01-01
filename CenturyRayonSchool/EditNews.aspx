@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="EditNews.aspx.cs" Inherits="CenturyRayonSchool.EditNews" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeFile="EditNews.aspx.cs" Inherits="CenturyRayonSchool.EditNews" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Notice</title>
      <link href="../css/bootstrap-datepicker.min.css" rel="stylesheet" />

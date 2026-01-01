@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ParentsLogin.aspx.cs" Inherits="CenturyRayonSchool.ParentsModule.ParentsLogin" EnableEventValidation="false" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ParentsLogin.aspx.cs" Inherits="CenturyRayonSchool.ParentsModule.ParentsLogin" EnableEventValidation="false" %>
 
 <!DOCTYPE html>
 

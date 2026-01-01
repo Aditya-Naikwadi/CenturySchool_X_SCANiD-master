@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ParentsModule/ParentModule.Master" AutoEventWireup="true" CodeBehind="Printslip.aspx.cs" Inherits="CenturyRayonSchool.ParentsModule.Printslip" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/ParentsModule/ParentModule.Master" AutoEventWireup="true" CodeFile="Printslip.aspx.cs" Inherits="CenturyRayonSchool.ParentsModule.Printslip" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

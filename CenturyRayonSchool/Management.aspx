@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
-  CodeBehind="Management.aspx.cs" Inherits="CenturyRayonSchool.Management" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+  CodeFile="Management.aspx.cs" Inherits="CenturyRayonSchool.Management" %>
   <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- Modern CSS -->
     <link href="css/admin-modern.css" rel="stylesheet" />

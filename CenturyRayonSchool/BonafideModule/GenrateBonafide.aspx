@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BonafideModule/BonafideMaster.Master" AutoEventWireup="true" CodeBehind="GenrateBonafide.aspx.cs" Inherits="CenturyRayonSchool.BonafideModule.GenrateBonafide" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/BonafideModule/BonafideMaster.Master" AutoEventWireup="true" CodeFile="GenrateBonafide.aspx.cs" Inherits="CenturyRayonSchool.BonafideModule.GenrateBonafide" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .div-academicyear {

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Admin Login" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.AdminLogin" %>
+<%@ Page Title="Admin Login" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeFile="AdminLogin.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.AdminLogin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">

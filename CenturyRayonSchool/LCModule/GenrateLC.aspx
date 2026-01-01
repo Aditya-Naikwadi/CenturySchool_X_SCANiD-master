@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LCModule/LeavingMaster.Master" AutoEventWireup="true" CodeBehind="GenrateLC.aspx.cs" Inherits="CenturyRayonSchool.LCModule.GenrateLC" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/LCModule/LeavingMaster.Master" AutoEventWireup="true" CodeFile="GenrateLC.aspx.cs" Inherits="CenturyRayonSchool.LCModule.GenrateLC" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FeesModule/ModuleSelection.Master" AutoEventWireup="true" CodeBehind="SelectModule.aspx.cs" Inherits="CenturyRayonSchool.FeesModule.SelectModule" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/FeesModule/ModuleSelection.Master" AutoEventWireup="true" CodeFile="SelectModule.aspx.cs" Inherits="CenturyRayonSchool.FeesModule.SelectModule" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style>
         .font-color{

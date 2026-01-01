@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ParentsForgotPassword.aspx.cs" Inherits="CenturyRayonSchool.ParentsModule.ParentsForgotPassword" EnableEventValidation="false" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ParentsForgotPassword.aspx.cs" Inherits="CenturyRayonSchool.ParentsModule.ParentsForgotPassword" EnableEventValidation="false" %>
 
 <!DOCTYPE html>
 

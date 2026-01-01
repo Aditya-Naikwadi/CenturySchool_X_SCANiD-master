@@ -1,5 +1,5 @@
 ﻿using CenturyRayonSchool.BonafideModule.Reports;
-using CenturyRayonSchool.Model;
+//using CenturyRayonSchool.Model;
 using CenturyRayonSchool.Properties;
 using System;
 using System.Data.SqlClient;

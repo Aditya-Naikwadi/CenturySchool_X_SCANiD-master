@@ -1,4 +1,4 @@
-﻿using CenturyRayonSchool.Model;
+﻿//using CenturyRayonSchool.Model;
 using System;
 using System.Data.SqlClient;
 using System.Net.Mail;

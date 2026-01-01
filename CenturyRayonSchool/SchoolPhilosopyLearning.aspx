@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
-    CodeBehind="SchoolPhilosopyLearning.aspx.cs" Inherits="CenturyRayonSchool.SchoolPhilosopyLearning" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+    CodeFile="SchoolPhilosopyLearning.aspx.cs" Inherits="CenturyRayonSchool.SchoolPhilosopyLearning" %>
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Raleway:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
@@ -361,7 +361,7 @@
                         "Education is a meaningless ritual unless it moulds the character of students and imparts in
                         them strong sense of values."
                     </p>
-                    <p class="quote-author">— Dr. Sarala Birla</p>
+                    <p class="quote-author">� Dr. Sarala Birla</p>
                 </div>
 
                 <!-- Philosophy Cards Grid -->

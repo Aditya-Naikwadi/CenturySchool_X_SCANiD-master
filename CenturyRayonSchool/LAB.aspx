@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="LAB.aspx.cs"
+<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeFile="LAB.aspx.cs"
     Inherits="CenturyRayonSchool.LAB" %>
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap"

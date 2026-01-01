@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="ManagingCommittee.aspx.cs" Inherits="CenturyRayonSchool.ManagingCommittee" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeFile="ManagingCommittee.aspx.cs" Inherits="CenturyRayonSchool.ManagingCommittee" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet" />
@@ -101,7 +101,7 @@
                             </tr>
                                <tr>
                               <th scope="row">10.</th>
-                              <td>Mr. Leonardo D’Souza</td>
+                              <td>Mr. Leonardo D�Souza</td>
                               <td></td>
                               <td>Member</td>
                             </tr>

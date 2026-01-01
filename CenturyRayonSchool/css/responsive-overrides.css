@@ -28,14 +28,21 @@
    ========================================== */
 
 /* Mobile: 320px - 767px */
+/* Mobile: 320px - 767px */
 html {
     font-size: 17px;
     /* Increased from 16px for better visibility */
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
 }
 
 body {
     font-size: 1rem;
     line-height: 1.7;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100%;
 }
 
 .container,
@@ -69,10 +76,34 @@ body {
 }
 
 /* ==========================================
-   RESPONSIVE SECTION SPACING
-   ========================================== */
+  /* Global Spacing and Layout Overrides */
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-/* Mobile */
+/* Ensure Header doesn't add space */
+.modern-header {
+    margin-bottom: 0 !important;
+}
+
+/* Banner Container Fix */
+.tp-banner-container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Adjust Section Padding globally */
+.section-wrapper,
+.section-modern {
+    padding: 3rem 0;
+}
+
+/* Mobile Devices */
 .section-wrapper {
     padding: 2rem 0 !important;
 }
@@ -87,8 +118,17 @@ body {
 /* Desktop */
 @media (min-width: 1025px) {
     .section-wrapper {
-        padding: 4rem 0 !important;
+        padding: 3rem 0 !important;
+        /* Reduced from 4rem */
     }
+}
+
+/* No Padding Utility - Forcefully remove padding */
+.section-wrapper.no-padding,
+.section-modern.no-padding,
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 /* ==========================================
@@ -591,10 +631,7 @@ button,
 }
 
 /* Grid fallbacks */
-.row {
-    display: -ms-grid;
-    display: grid;
-}
+/* Removed dangerous .row grid override that breaks Bootstrap */
 
 /* Backdrop-filter fallbacks for older browsers */
 @supports not (backdrop-filter: blur(10px)) {
@@ -626,7 +663,14 @@ html {
 
 @media (max-width: 767px) {
     body {
-        padding-bottom: 60px;
-        /* Space for fixed social bar */
+        padding-bottom: 100px !important;
+        /* Increased space for fixed social bar and mobile nav */
     }
+}
+
+/* ==========================================
+   UTILITY OVERRIDES
+   ========================================== */
+.section-wrapper.no-padding {
+    padding: 0 !important;
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LCModule/LeavingMaster.Master" AutoEventWireup="true" CodeBehind="BulkLCGenerate.aspx.cs" Inherits="CenturyRayonSchool.LCModule.BulkLCGenerate" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/LCModule/LeavingMaster.Master" AutoEventWireup="true" CodeFile="BulkLCGenerate.aspx.cs" Inherits="CenturyRayonSchool.LCModule.BulkLCGenerate" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

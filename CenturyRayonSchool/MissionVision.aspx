@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
-    CodeBehind="MissionVision.aspx.cs" Inherits="CenturyRayonSchool.MissionVision" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true"
+    CodeFile="MissionVision.aspx.cs" Inherits="CenturyRayonSchool.MissionVision" %>
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Raleway:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"

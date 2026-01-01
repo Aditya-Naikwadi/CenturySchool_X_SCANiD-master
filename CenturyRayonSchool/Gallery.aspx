@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeBehind="Gallery.aspx.cs" Inherits="CenturyRayonSchool.Photogallery" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/WebsiteMaster.Master" AutoEventWireup="true" CodeFile="Gallery.aspx.cs" Inherits="CenturyRayonSchool.Photogallery" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <link href='https://fonts.googleapis.com/css2?family=Quintessential&display=swap' rel='stylesheet'/>
     <link rel="stylesheet" href="css/photogallery.css" />

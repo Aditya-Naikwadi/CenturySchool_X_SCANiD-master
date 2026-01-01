@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Search Form" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeBehind="SearchForm.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.SearchForm" %>
+<%@ Page Title="Search Form" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeFile="SearchForm.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.SearchForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
       <script type="text/javascript">
         $(document).ready(function () {

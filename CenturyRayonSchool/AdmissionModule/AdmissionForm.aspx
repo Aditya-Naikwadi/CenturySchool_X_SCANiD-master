@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Registration Form" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeBehind="AdmissionForm.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.AdmissionForm" %>
+<%@ Page Title="Registration Form" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeFile="AdmissionForm.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.AdmissionForm" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

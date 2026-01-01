@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FeesModule/Master.Master" AutoEventWireup="true" CodeBehind="FeeCancel.aspx.cs" Inherits="CenturyRayonSchool.FeesModule.FeeCancel" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/FeesModule/Master.Master" AutoEventWireup="true" CodeFile="FeeCancel.aspx.cs" Inherits="CenturyRayonSchool.FeesModule.FeeCancel" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style>
         .div-academicyear{

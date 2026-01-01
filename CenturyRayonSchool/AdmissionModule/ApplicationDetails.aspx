@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Application Details" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeBehind="ApplicationDetails.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.ApplicationDetails" %>
+<%@ Page Title="Application Details" Language="C#" MasterPageFile="~/AdmissionModule/MasterPage.Master" AutoEventWireup="true" CodeFile="ApplicationDetails.aspx.cs" Inherits="CenturyRayonSchool.AdmissionModule.ApplicationDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
         $(document).ready(function () {
