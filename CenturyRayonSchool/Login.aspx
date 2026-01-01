@@ -1,408 +1,294 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="CenturyRayonSchool.Login" %>
 
-    <%--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
-        id="bootstrap-css">--%>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!------ Include the above in your HEAD tag ---------->
+    <!DOCTYPE html>
+    <html lang="en">
 
-        <!DOCTYPE html>
-        <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login - Century Rayon High School</title>
 
-        <head>
-            <title>Login Page</title>
-            <!--Made with love by Mutiullah Samim -->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-            <!--Bootsrap 4 CDN-->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-                crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-            <!--Fontawesome CDN-->
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-                integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-                crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/login-modern.css">
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-            <style>
-                /* Made with love by Mutiullah Samim*/
+        <script type="text/javascript">
+            $(document).ready(function () {
+                getLocalStorageValues();
 
-                @import url('https://fonts.googleapis.com/css?family=Numans');
+                // Remember me functionality
+                $("#ckb1").on("click", function (e) {
+                    if ($("#ckb1").is(":checked")) {
+                        var iserror = false;
+                        var Uname = $('#<%= Uname.ClientID %>').val();
 
-                html,
-                body {
-                    /*background-image: url('../img/544750.jpg');*/
-                    background-image: url('../img/front-view-jar-with-coins-academic-cap.jpg');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    height: 100%;
-                    font-family: 'Numans', sans-serif;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .container {
-                    height: 100%;
-                    align-content: center;
-                }
-
-                .card {
-                    height: auto;
-                    min-height: 390px;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                    width: 90%;
-                    max-width: 400px;
-                    background-color: rgba(0, 0, 0, 0.5) !important;
-                }
-
-                .social_icon span {
-                    font-size: 60px;
-                    margin-left: 10px;
-                    color: #FFC312;
-                }
-
-                .social_icon span:hover {
-                    color: white;
-                    cursor: pointer;
-                }
-
-                .card-header h3 {
-                    color: white;
-                }
-
-                .social_icon {
-                    position: absolute;
-                    right: 20px;
-                    top: -45px;
-                }
-
-                .input-group-prepend span {
-                    width: 50px;
-                    background-color: #FFC312;
-                    color: black;
-                    border: 0 !important;
-                }
-
-                input:focus {
-                    outline: 0 0 0 0 !important;
-                    box-shadow: 0 0 0 0 !important;
-                }
-
-                .remember {
-                    color: white;
-                }
-
-                .remember input {
-                    width: 20px;
-                    height: 20px;
-                    margin-left: 15px;
-                    margin-right: 5px;
-                }
-
-                .login_btn {
-                    color: black;
-                    background-color: #FFC312;
-                    width: 100px;
-                }
-
-                .login_btn:hover {
-                    color: black;
-                    background-color: white;
-                }
-
-                .links {
-                    color: white;
-                }
-
-                .links a {
-                    margin-left: 4px;
-                }
-
-                header {
-                    display: block;
-                    padding: 10px;
-                }
-
-                .header h1 {
-                    font-size: 1.8rem;
-                }
-
-                .header h3 {
-                    font-size: 1rem;
-                }
-
-                @media (max-width: 576px) {
-                    .header h1 {
-                        font-size: 1.4rem;
-                    }
-
-                    .header h3 {
-                        font-size: 0.8rem;
-                    }
-                }
-
-                .card-footer {
-                    padding: 2rem 1rem !important;
-                }
-            </style>
-
-            <script type="text/javascript">
-
-                $(document).ready(function () {
-
-                    getLocalStorageValues();
-
-                    $("#ckb1").on("click", function (e) {
-
-                        if ($("#ckb1").is(":checked")) {
-                            var iserror = false;
-                            // save username and password
-                            var Uname = $('#Uname').val();
-
-
-                            if (Uname.length == 0) {
-                                iserror = true;
-                            }
-
-
-
-                            if (iserror == false) {
-
-                                localStorage.century_username = Uname;
-                                /*localStorage.payroll_password = password;*/
-                                localStorage.century_ckb1 = $('#ckb1').val();
-
-                            }
-                            else {
-                                $('#ckb1').prop('checked', false);
-                                $("#lblmessage").text("Kindly enter Emailid");
-                                $("#alertmessagemodal").modal("show");
-
-                            }
-
-                        }
-                        else {
-                            localStorage.century_username = "";
-                            /*localStorage.payroll_password = "";*/
-                            localStorage.century_ckb1 = "";
+                        if (Uname.length == 0) {
+                            iserror = true;
                         }
 
-
-
-                    });
+                        if (iserror == false) {
+                            localStorage.century_username = Uname;
+                            localStorage.century_ckb1 = $('#ckb1').val();
+                        } else {
+                            $('#ckb1').prop('checked', false);
+                            showAlert("Please enter your username first");
+                        }
+                    } else {
+                        localStorage.century_username = "";
+                        localStorage.century_ckb1 = "";
+                    }
                 });
 
-                function showAlertModal() {
-                    var myModal = new bootstrap.Modal(document.getElementById('alertmessagemodal'))
-                    myModal.show()
+                // Password toggle functionality
+                $('.password-toggle').on('click', function () {
+                    const input = $(this).siblings('input');
+                    const icon = $(this).find('i');
 
-
-                }
-
-
-                function getLocalStorageValues() {
-                    var century_username = localStorage.getItem('century_username');
-                    /* var payroll_password = localStorage.getItem('payroll_password');*/
-                    var century_ckb1 = localStorage.getItem('century_ckb1');
-
-                    if (century_ckb1 == "on") {
-                        $('#Uname').val(century_username);
-                        /*$('#txt_password').val(payroll_password);*/
-                        $('#ckb1').attr('checked', true);
+                    if (input.attr('type') === 'password') {
+                        input.attr('type', 'text');
+                        icon.removeClass('fa-eye').addClass('fa-eye-slash');
+                    } else {
+                        input.attr('type', 'password');
+                        icon.removeClass('fa-eye-slash').addClass('fa-eye');
                     }
+                });
+
+                // Add loading spinner on login button click
+                $('.btn-login-modern').on('click', function (e) {
+                    if (Page_ClientValidate('LoginGroup')) {
+                        $(this).html('<span>Signing In</span><span class="loading-spinner"></span>');
+                    }
+                });
+
+                // Input focus animations
+                $('.form-control-modern').on('focus', function () {
+                    $(this).parent().find('.input-icon').addClass('active');
+                }).on('blur', function () {
+                    $(this).parent().find('.input-icon').removeClass('active');
+                });
+            });
+
+            function showAlertModal() {
+                var myModal = new bootstrap.Modal(document.getElementById('alertmessagemodal'));
+                myModal.show();
+            }
+
+            function showAlert(message) {
+                $('#lblalertmessage').text(message);
+                showAlertModal();
+            }
+
+            function getLocalStorageValues() {
+                var century_username = localStorage.getItem('century_username');
+                var century_ckb1 = localStorage.getItem('century_ckb1');
+
+                if (century_ckb1 == "on") {
+                    $('#<%= Uname.ClientID %>').val(century_username);
+                    $('#ckb1').attr('checked', true);
                 }
+            }
+        </script>
+    </head>
 
+    <body>
+        <!-- Animated Background -->
+        <div class="login-background"></div>
 
-            </script>
+        <!-- Floating Shapes -->
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
 
-        </head>
+        <!-- Main Container -->
+        <div class="login-container">
+            <div class="w-100">
+                <!-- Header -->
+                <div class="login-header">
+                    <div class="school-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h1 class="school-name">Century Rayon High School</h1>
+                    <p class="school-address">Kalyan - Ahmednagar Highway, Century Rayon Colony, Shahad, Ulhasnagar,
+                        Maharashtra 421103</p>
+                </div>
 
-        <body>
-            <div class="container-fluid">
-                <header id="header" class="header">
-
-                    <div class="row">
-                        <div class="col-md-12" style="padding-right: 0px; padding-left: 0px; text-align: center;">
-                            <div class="text-container"
-                                style="color: #FFC312; padding-top: 20px; padding-bottom: 10px; width: 100%; font-weight: 600;">
-
-                                <h1>Century Rayon High School, Shahad </h1>
-                                <h3 class="font-2">Kalyan - Ahmednagar Highway, Century Rayon Colony, Shahad,
-                                    Ulhasnagar, Maharashtra 421103</h3>
-
-                            </div>
-                        </div>
+                <!-- Login Card -->
+                <div class="login-card mx-auto">
+                    <div class="card-header-modern">
+                        <h3>Welcome Back</h3>
+                        <p>Sign in to access your account</p>
                     </div>
 
-                </header>
-
-                <div class="d-flex justify-content-center h-100">
-                    <div class="card">
-                        <div class="card-header text-center">
-                            <%--<h3 style="color: #FFC312;font-weight: 600;">Century Rayon High School, Shahad </h3>--%>
-
-
-                                <h3>Sign In</h3>
-                                <div class="d-flex justify-content-end social_icon">
-                                    <%--<span><i class="fab fa-facebook-square"></i></span>
-                                        <span><i class="fab fa-google-plus-square"></i></span>
-                                        <span><i class="fab fa-twitter-square"></i></span>--%>
-                                </div>
-                        </div>
-                        <div class="card-body">
-                            <form runat="server">
-                                <asp:Panel ID="LoginPanel" runat="server" DefaultButton="btn1_Login">
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                        </div>
-                                        <%--<input type="text" class="form-control" placeholder="username">--%>
-                                            <asp:TextBox ID="Uname" runat="server" CssClass="form-control"
-                                                placeholder="username"></asp:TextBox>
-
+                    <div class="card-body-modern">
+                        <form runat="server">
+                            <!-- Login Panel -->
+                            <asp:Panel ID="LoginPanel" runat="server" DefaultButton="btn1_Login">
+                                <!-- Username Field -->
+                                <div class="form-group-modern">
+                                    <label for="<%= Uname.ClientID %>">Username</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-user input-icon"></i>
+                                        <asp:TextBox ID="Uname" runat="server" CssClass="form-control-modern"
+                                            placeholder="Enter your username" autocomplete="username"></asp:TextBox>
                                     </div>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
-                                        ControlToValidate="Uname" ErrorMessage="Please Enter Your Username"
-                                        ForeColor="Red" ValidationGroup="LoginGroup"></asp:RequiredFieldValidator>
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                        </div>
-                                        <%--<input type="password" class="form-control" placeholder="password">--%>
-                                            <asp:TextBox ID="Upass" runat="server" CssClass="form-control"
-                                                TextMode="Password" placeholder="password"></asp:TextBox>
-
-                                    </div>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
-                                        ControlToValidate="Upass" ErrorMessage="Please Enter Your Password"
-                                        ForeColor="Red" ValidationGroup="LoginGroup"></asp:RequiredFieldValidator>
-                                    <div class="row align-items-center remember">
-                                        <input id="ckb1" type="checkbox">Remember Me
-                                    </div>
-                                    <div class="form-group">
-                                        <%--<input type="submit" value="Login" class="btn float-right login_btn">--%>
-                                            <asp:Button ID="btn1_Login" runat="server" Text="Login"
-                                                CssClass="btn float-right login_btn" OnClick="btn1_Login_Click"
-                                                ValidationGroup="LoginGroup" />
-                                    </div>
-                                </asp:Panel>
-
-                                <asp:Panel ID="ForgotPasswordPanel" runat="server" Visible="false"
-                                    DefaultButton="btnResetPassword">
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                        </div>
-                                        <asp:TextBox ID="txtForgotUsername" runat="server" CssClass="form-control"
-                                            placeholder="Enter your username"></asp:TextBox>
-                                    </div>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
-                                        ControlToValidate="txtForgotUsername" ErrorMessage="Please Enter Your Username"
-                                        ForeColor="Red" ValidationGroup="ForgotPasswordGroup">
+                                        ControlToValidate="Uname" ErrorMessage="Please enter your username"
+                                        CssClass="validation-message" Display="Dynamic" ValidationGroup="LoginGroup">
                                     </asp:RequiredFieldValidator>
-
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                        </div>
-                                        <asp:TextBox ID="txtNewPassword" runat="server" CssClass="form-control"
-                                            TextMode="Password" placeholder="New password"></asp:TextBox>
-                                    </div>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"
-                                        ControlToValidate="txtNewPassword" ErrorMessage="Please Enter New Password"
-                                        ForeColor="Red" ValidationGroup="ForgotPasswordGroup">
-                                    </asp:RequiredFieldValidator>
-
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                        </div>
-                                        <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control"
-                                            TextMode="Password" placeholder="Confirm password"></asp:TextBox>
-                                    </div>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
-                                        ControlToValidate="txtConfirmPassword" ErrorMessage="Please Confirm Password"
-                                        ForeColor="Red" ValidationGroup="ForgotPasswordGroup">
-                                    </asp:RequiredFieldValidator>
-                                    <asp:CompareValidator ID="CompareValidator1" runat="server"
-                                        ControlToCompare="txtNewPassword" ControlToValidate="txtConfirmPassword"
-                                        ErrorMessage="Passwords do not match" ForeColor="Red"
-                                        ValidationGroup="ForgotPasswordGroup"></asp:CompareValidator>
-
-                                    <div class="form-group" style="margin-top: -10px;">
-                                        <asp:Button ID="btnBack" runat="server" Text="Back" CssClass="btn login_btn"
-                                            OnClick="btnBack_Click" CausesValidation="false" />
-                                        <asp:Button ID="btnResetPassword" runat="server" Text="Reset"
-                                            CssClass="btn float-right login_btn" OnClick="btnResetPassword_Click"
-                                            ValidationGroup="ForgotPasswordGroup" />
-                                    </div>
-                                </asp:Panel>
-                                <div class="card-footer">
-                                    <div class="d-flex justify-content-center">
-                                        <asp:LinkButton ID="lnkForgotPassword" runat="server"
-                                            Text="Forgot your password?" ForeColor="White"
-                                            OnClick="lnkForgotPassword_Click" CausesValidation="false" Visible="true">
-                                        </asp:LinkButton>
-
-                                    </div>
                                 </div>
 
-                            </form>
-                        </div>
+                                <!-- Password Field -->
+                                <div class="form-group-modern">
+                                    <label for="<%= Upass.ClientID %>">Password</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-lock input-icon"></i>
+                                        <asp:TextBox ID="Upass" runat="server" CssClass="form-control-modern"
+                                            TextMode="Password" placeholder="Enter your password"
+                                            autocomplete="current-password"></asp:TextBox>
+                                        <span class="password-toggle">
+                                            <i class="fas fa-eye"></i>
+                                        </span>
+                                    </div>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                                        ControlToValidate="Upass" ErrorMessage="Please enter your password"
+                                        CssClass="validation-message" Display="Dynamic" ValidationGroup="LoginGroup">
+                                    </asp:RequiredFieldValidator>
+                                </div>
+
+                                <!-- Remember Me & Forgot Password -->
+                                <div class="form-options">
+                                    <div class="remember-me">
+                                        <input id="ckb1" type="checkbox">
+                                        <label for="ckb1">Remember Me</label>
+                                    </div>
+                                    <asp:LinkButton ID="lnkForgotPassword" runat="server" Text="Forgot Password?"
+                                        CssClass="forgot-password" OnClick="lnkForgotPassword_Click"
+                                        CausesValidation="false">
+                                    </asp:LinkButton>
+                                </div>
+
+                                <!-- Buttons -->
+                                <div class="button-group">
+                                    <a href="index.aspx"
+                                        class="btn-back-modern text-center text-decoration-none d-flex align-items-center justify-content-center"
+                                        style="padding: 14px;">
+                                        <i class="fas fa-arrow-left me-2"></i>Back to Home
+                                    </a>
+                                    <asp:Button ID="btn1_Login" runat="server" Text="Sign In"
+                                        CssClass="btn-login-modern" OnClick="btn1_Login_Click"
+                                        ValidationGroup="LoginGroup" style="width: 48%;" />
+                                </div>
+                            </asp:Panel>
+
+                            <!-- Forgot Password Panel -->
+                            <asp:Panel ID="ForgotPasswordPanel" runat="server" Visible="false"
+                                DefaultButton="btnResetPassword">
+                                <!-- Username Field -->
+                                <div class="form-group-modern">
+                                    <label for="<%= txtForgotUsername.ClientID %>">Username</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-user input-icon"></i>
+                                        <asp:TextBox ID="txtForgotUsername" runat="server"
+                                            CssClass="form-control-modern" placeholder="Enter your username">
+                                        </asp:TextBox>
+                                    </div>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
+                                        ControlToValidate="txtForgotUsername" ErrorMessage="Please enter your username"
+                                        CssClass="validation-message" Display="Dynamic"
+                                        ValidationGroup="ForgotPasswordGroup"></asp:RequiredFieldValidator>
+                                </div>
+
+                                <!-- New Password Field -->
+                                <div class="form-group-modern">
+                                    <label for="<%= txtNewPassword.ClientID %>">New Password</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-lock input-icon"></i>
+                                        <asp:TextBox ID="txtNewPassword" runat="server" CssClass="form-control-modern"
+                                            TextMode="Password" placeholder="Enter new password"></asp:TextBox>
+                                        <span class="password-toggle">
+                                            <i class="fas fa-eye"></i>
+                                        </span>
+                                    </div>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"
+                                        ControlToValidate="txtNewPassword" ErrorMessage="Please enter new password"
+                                        CssClass="validation-message" Display="Dynamic"
+                                        ValidationGroup="ForgotPasswordGroup"></asp:RequiredFieldValidator>
+                                </div>
+
+                                <!-- Confirm Password Field -->
+                                <div class="form-group-modern">
+                                    <label for="<%= txtConfirmPassword.ClientID %>">Confirm Password</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-lock input-icon"></i>
+                                        <asp:TextBox ID="txtConfirmPassword" runat="server"
+                                            CssClass="form-control-modern" TextMode="Password"
+                                            placeholder="Confirm new password"></asp:TextBox>
+                                        <span class="password-toggle">
+                                            <i class="fas fa-eye"></i>
+                                        </span>
+                                    </div>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
+                                        ControlToValidate="txtConfirmPassword" ErrorMessage="Please confirm password"
+                                        CssClass="validation-message" Display="Dynamic"
+                                        ValidationGroup="ForgotPasswordGroup"></asp:RequiredFieldValidator>
+                                    <asp:CompareValidator ID="CompareValidator1" runat="server"
+                                        ControlToCompare="txtNewPassword" ControlToValidate="txtConfirmPassword"
+                                        ErrorMessage="Passwords do not match" CssClass="validation-message"
+                                        Display="Dynamic" ValidationGroup="ForgotPasswordGroup"></asp:CompareValidator>
+                                </div>
+
+                                <!-- Buttons -->
+                                <div class="button-group">
+                                    <asp:Button ID="btnBack" runat="server" Text="Back" CssClass="btn-back-modern"
+                                        OnClick="btnBack_Click" CausesValidation="false" />
+                                    <asp:Button ID="btnResetPassword" runat="server" Text="Reset Password"
+                                        CssClass="btn-login-modern" OnClick="btnResetPassword_Click"
+                                        ValidationGroup="ForgotPasswordGroup" style="width: 48%;" />
+                                </div>
+                            </asp:Panel>
+                        </form>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="modal" id="errorMessageModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">Error Message</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <asp:Label ID="errorMessage" runat="server" Style="font-weight: bold;"></asp:Label>
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-
+        <!-- Alert Modal -->
+        <div class="modal fade" id="alertmessagemodal" tabindex="-1" aria-labelledby="alertModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border-radius: 15px; overflow: hidden;">
+                    <div class="modal-header"
+                        style="background: linear-gradient(135deg, #702030 0%, #4a1520 100%); border: none;">
+                        <h5 class="modal-title text-white" id="alertModalLabel">
+                            <i class="fas fa-exclamation-circle me-2"></i>Alert
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; text-align: center;">
+                        <asp:Label Text="" runat="server" ID="lblalertmessage"
+                            Style="font-size: 1.1rem; color: #333;" />
+                    </div>
+                    <div class="modal-footer" style="border: none; padding: 20px;">
+                        <button type="button" class="btn btn-login-modern" data-bs-dismiss="modal"
+                            style="width: auto; padding: 10px 30px;">OK</button>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="modal fade" id="alertmessagemodal" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Alert Message!!
-                            </h5>
+    </body>
 
-                            <img src="../img/alertimage.png" style="height: 100px; width: auto;" />
-                        </div>
-                        <div class="modal-body">
-                            <asp:Label Text="" runat="server" ID="lblalertmessage" Style="font-weight: normal;" />
-                            <%--<label id="lblmessage" style="font-weight: normal;"></label>--%>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </body>
-
-        </html>
+    </html>

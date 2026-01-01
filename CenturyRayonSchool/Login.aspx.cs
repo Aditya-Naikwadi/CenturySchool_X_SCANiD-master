@@ -95,7 +95,7 @@ namespace CenturyRayonSchool
                         Session["personname"] = personname;
                         Session["std"] = std;
                         Session["div"] = div;
-                        Session["listmodules"] = new RightModel().getModuleList(userid);
+                        //Session["listmodules"] = new RightModel().getModuleList(userid);
 
 
                         if (userid == "138")
